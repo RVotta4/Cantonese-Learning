@@ -32,17 +32,8 @@
     </div>
   </section>
 
-  <main class="container main-content">
-    <div class="placeholder-card">
-      <span class="placeholder-badge">Phase 3</span>
-      <h2>Flashcards are coming</h2>
-      <p class="muted">
-        Flip cards to test yourself, rate how well you knew each word, and the app
-        will schedule reviews so the tricky ones come back more often. Your progress
-        saves right in your browser — no account needed.
-      </p>
-      <a href="index.html" class="btn btn-primary">Back to Dashboard</a>
-    </div>
+  <main class="container main-content lesson-page">
+    <div id="flashcards-page"><p class="muted">Loading flashcards…</p></div>
   </main>
 
   <footer class="site-footer">
@@ -51,6 +42,9 @@
     </div>
   </footer>
 
+  <script src="data/lessons.js"></script>
+  <script src="js/data-utils.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/flashcards.js"></script>
 </body>
 </html>

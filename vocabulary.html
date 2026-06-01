@@ -28,20 +28,12 @@
   <section class="page-head">
     <div class="container">
       <h1>Vocabulary</h1>
-      <p class="muted">Word lists with characters, jyutping, meaning, and audio.</p>
+      <p class="muted">Every word from your lessons. Search, filter, and tap 🔊 to listen.</p>
     </div>
   </section>
 
   <main class="container main-content">
-    <div class="placeholder-card">
-      <span class="placeholder-badge">Phase 3</span>
-      <h2>Vocabulary lists are on the way</h2>
-      <p class="muted">
-        Browse and search themed word lists (food, family, numbers, daily life…),
-        each with jyutping and audio. These will also feed your flashcard reviews.
-      </p>
-      <a href="index.html" class="btn btn-primary">Back to Dashboard</a>
-    </div>
+    <div id="vocab-page"><p class="muted">Loading vocabulary…</p></div>
   </main>
 
   <footer class="site-footer">
@@ -50,6 +42,9 @@
     </div>
   </footer>
 
+  <script src="data/lessons.js"></script>
+  <script src="js/data-utils.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/vocab.js"></script>
 </body>
 </html>

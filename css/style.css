@@ -460,6 +460,130 @@ a:hover { text-decoration: underline; }
 .btn-ghost-dark { background: transparent; color: var(--red); border-color: var(--line); }
 .btn-ghost-dark:hover { border-color: var(--red); background: #fdeef0; }
 
+/* ===== Vocabulary page ===== */
+.vocab-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+#vocab-search {
+  flex: 1 1 280px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+#vocab-search:focus, #vocab-filter:focus { outline: 2px solid var(--red); border-color: var(--red); }
+#vocab-filter {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+}
+.vocab-count { margin: 4px 0 16px; font-size: .9rem; }
+.vocab-lesson {
+  font-size: .8rem;
+  color: var(--muted);
+  margin-top: 6px;
+  display: inline-block;
+}
+.known-dot { color: #4caf82; margin-left: auto; font-size: .9rem; }
+
+/* ===== Flashcards ===== */
+.fc-start { text-align: center; padding: 20px 0; }
+.fc-stats {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.fc-stat {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 24px;
+  min-width: 120px;
+}
+.fc-stat-num { display: block; font-size: 1.9rem; font-weight: 700; color: var(--red); }
+.fc-stat-label { color: var(--muted); font-size: .88rem; }
+.fc-start-btn { font-size: 1.05rem; padding: 13px 28px; }
+.fc-caught-up { font-size: 1.15rem; margin-bottom: 18px; }
+.fc-note { margin-top: 22px; font-size: .85rem; }
+.fc-reset {
+  display: block;
+  margin: 18px auto 0;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: .82rem;
+}
+.fc-reset:hover { color: var(--red); }
+
+/* Progress + counter */
+.fc-progressbar {
+  height: 6px;
+  background: var(--line);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.fc-progress-fill { height: 100%; background: linear-gradient(90deg, var(--red), var(--gold)); }
+.fc-counter { text-align: center; color: var(--muted); font-size: .9rem; margin: 0 0 16px; }
+.fc-newtag { color: var(--gold); font-weight: 700; }
+
+/* The card */
+.flashcard {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 18px;
+}
+.fc-face { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.fc-back { display: none; }
+.flashcard.flipped .fc-front { display: none; }
+.flashcard.flipped .fc-back { display: flex; }
+.fc-hanzi { font-size: 4rem; font-weight: 700; color: var(--ink); line-height: 1.1; }
+.fc-audio { font-size: 1.1rem; }
+.fc-hint { color: var(--muted); font-size: .85rem; }
+.fc-jyutping { font-size: 1.8rem; color: var(--red); font-weight: 600; }
+.fc-english { font-size: 1.5rem; color: var(--ink); }
+.fc-lesson { font-size: .85rem; }
+
+/* Rating buttons */
+.fc-flip { display: block; width: 100%; padding: 14px; font-size: 1.05rem; }
+.fc-rating { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.fc-rate {
+  padding: 14px 8px;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: .95rem;
+  cursor: pointer;
+  color: #fff;
+  transition: transform .1s, filter .15s;
+}
+.fc-rate:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.fc-again { background: #d64545; }
+.fc-hard { background: #e08a2b; }
+.fc-good { background: #3a8f5f; }
+.fc-easy { background: #2e7bd6; }
+
 /* ===== Footer ===== */
 .site-footer {
   background: var(--ink);
