@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio Diagnostics — Cantonese Learning</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .diag { max-width: 760px; }
+    .diag-box { background:#fff; border:1px solid var(--line); border-radius:12px; padding:18px; box-shadow:var(--shadow-sm); margin-bottom:16px; }
+    .voice-item { display:flex; align-items:center; gap:10px; padding:8px 10px; border-bottom:1px solid var(--line); font-size:.95rem; }
+    .voice-item:last-child { border-bottom:0; }
+    .voice-item.cant { background:#fff8e6; border-radius:8px; }
+    .pill { font-size:.72rem; font-weight:700; padding:2px 8px; border-radius:99px; background:#eee; }
+    .pill.ok { background:#d8f5e3; color:#1c7a45; }
+    .pill.lang { background:#e8eefc; color:#274690; }
+    code { background:#f1f2f6; padding:2px 6px; border-radius:5px; }
+    .big-test { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .big-test button { font-size:1rem; padding:12px 18px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">粵</span>
+        <span class="brand-text">Cantonese<span class="brand-text-accent">Learning</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Dashboard</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="vocabulary.html">Vocabulary</a>
+        <a href="flashcards.html">Flashcards</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container"><h1>Audio Diagnostics</h1>
+    <p class="muted">A quick tool to figure out why audio isn't playing.</p></div>
+  </section>
+
+  <main class="container main-content diag">
+    <div class="diag-box">
+      <h2>1. Browser support</h2>
+      <p id="support">Checking…</p>
+    </div>
+
+    <div class="diag-box">
+      <h2>2. Quick test</h2>
+      <p class="muted">Click each button and tell me which (if any) make sound:</p>
+      <div class="big-test">
+        <button class="btn btn-primary" data-say="你好" data-mode="auto">🔊 Speak 你好 (auto)</button>
+        <button class="btn btn-ghost-dark" data-say="你好" data-mode="forcehk">🔊 Force zh-HK</button>
+        <button class="btn btn-ghost-dark" data-say="hello test" data-mode="english">🔊 English test</button>
+      </div>
+      <p id="test-status" class="muted" style="margin-top:10px"></p>
+    </div>
+
+    <div class="diag-box">
+      <h2>3. Voices available on this device</h2>
+      <p class="muted">Cantonese voices are highlighted. If this list is empty, click "refresh" after a few seconds.</p>
+      <p><button class="btn btn-ghost-dark" id="refresh">Refresh voice list</button></p>
+      <div id="voices"><em>Loading…</em></div>
+    </div>
+
+    <div class="diag-box">
+      <h2>4. What to tell me</h2>
+      <ul>
+        <li>Which of the 3 test buttons made sound (if any)?</li>
+        <li>Do you see any <strong>Chinese (Hong Kong)</strong> / Cantonese voices in the list above?</li>
+        <li>Is your computer connected to the internet right now? (Edge's Cantonese voices are online.)</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>Audio diagnostics · Cantonese Learning</p></div></footer>
+
+  <script>
+  (function () {
+    var supportEl = document.getElementById("support");
+    var voicesEl = document.getElementById("voices");
+    var statusEl = document.getElementById("test-status");
+
+    if (!("speechSynthesis" in window)) {
+      supportEl.innerHTML = "❌ This browser does <strong>not</strong> support speech synthesis.";
+      return;
+    }
+    supportEl.innerHTML = "✅ Speech synthesis is supported.";
+
+    function getVoices() { return window.speechSynthesis.getVoices() || []; }
+
+    function isCantonese(v) {
+      return /zh[-_]?(HK|yue)/i.test(v.lang) || /cantonese|粵|廣東|hiu|hk/i.test(v.name);
+    }
+
+    function renderVoices() {
+      var vs = getVoices();
+      if (!vs.length) { voicesEl.innerHTML = "<em>No voices reported yet. Wait a moment and click Refresh.</em>"; return; }
+      var html = "";
+      vs.forEach(function (v) {
+        var cant = isCantonese(v);
+        html += '<div class="voice-item' + (cant ? ' cant' : '') + '">' +
+          (cant ? '<span class="pill ok">CANTONESE?</span>' : '') +
+          '<span class="pill lang">' + v.lang + '</span>' +
+          '<span>' + v.name + '</span>' +
+          '<button class="audio-btn" data-voice="' + v.name.replace(/"/g,'&quot;') + '" title="Test this voice">🔊</button>' +
+          '</div>';
+      });
+      voicesEl.innerHTML = html + '<p class="muted" style="margin-top:10px">Total voices: ' + vs.length + '</p>';
+    }
+
+    window.speechSynthesis.onvoiceschanged = renderVoices;
+    setTimeout(renderVoices, 300);
+    renderVoices();
+    document.getElementById("refresh").addEventListener("click", renderVoices);
+
+    function speak(text, opts) {
+      opts = opts || {};
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      if (opts.voiceName) {
+        var match = getVoices().filter(function (v){ return v.name === opts.voiceName; })[0];
+        if (match) { u.voice = match; u.lang = match.lang; }
+      } else if (opts.mode === "forcehk") {
+        u.lang = "zh-HK";
+      } else if (opts.mode === "english") {
+        u.lang = "en-US";
+      } else { // auto
+        var cant = getVoices().filter(isCantonese)[0];
+        if (cant) { u.voice = cant; u.lang = cant.lang; } else { u.lang = "zh-HK"; }
+      }
+      u.rate = 0.9;
+      u.onstart = function(){ statusEl.textContent = "▶ playing… (lang=" + u.lang + ", voice=" + (u.voice ? u.voice.name : "default") + ")"; };
+      u.onend   = function(){ statusEl.textContent = "✅ finished (lang=" + u.lang + ", voice=" + (u.voice ? u.voice.name : "default") + ")"; };
+      u.onerror = function(e){ statusEl.textContent = "❌ error: " + (e.error || "unknown"); };
+      window.speechSynthesis.speak(u);
+    }
+
+    document.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-say]");
+      if (b) { speak(b.getAttribute("data-say"), { mode: b.getAttribute("data-mode") }); return; }
+      var vb = e.target.closest("[data-voice]");
+      if (vb) { speak("你好", { voiceName: vb.getAttribute("data-voice") }); }
+    });
+  })();
+  </script>
+</body>
+</html>
