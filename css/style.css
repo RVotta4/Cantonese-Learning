@@ -406,6 +406,22 @@ a:hover { text-decoration: underline; }
 .jyutping { color: var(--red); font-size: .98rem; }
 .english { color: var(--muted); }
 
+/* Example sentences */
+.example-list { display: flex; flex-direction: column; gap: 10px; }
+.example-line {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--red);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.example-top { display: flex; align-items: center; gap: 8px; }
+.example-line .hanzi { font-size: 1.3rem; }
+
 /* Audio button */
 .audio-btn {
   border: 1px solid var(--line);

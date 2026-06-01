@@ -86,6 +86,25 @@
     html += '</div></section>';
   }
 
+  // ----- Example sentences -----
+  if (lesson.examples && lesson.examples.length) {
+    html += '<section class="lesson-section">';
+    html += '<h2 class="lesson-section-title">Example Sentences</h2>';
+    html += '<div class="example-list">';
+    lesson.examples.forEach(function (ex) {
+      html +=
+        '<div class="example-line">' +
+          '<div class="example-top">' +
+            '<span class="hanzi" lang="yue">' + escapeHtml(ex.hanzi) + '</span>' +
+            audioBtn(ex.hanzi) +
+          '</div>' +
+          '<span class="jyutping">' + escapeHtml(ex.jyutping) + '</span>' +
+          '<span class="english">' + escapeHtml(ex.english) + '</span>' +
+        '</div>';
+    });
+    html += '</div></section>';
+  }
+
   // ----- Notes -----
   if (lesson.notes && lesson.notes.length) {
     html += '<section class="lesson-section">';
