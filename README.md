@@ -70,6 +70,24 @@ cantonese-learning/
 
 ---
 
+## 🔊 Getting the audio to work
+
+The 🔊 buttons use your **browser's built-in text-to-speech**. They only produce
+real Cantonese audio if your device has a **Cantonese (zh-HK) voice** installed.
+No installs are needed if you use the right browser:
+
+- **Windows:** Use **Microsoft Edge** — it has built-in online Cantonese voices
+  (Microsoft HiuMaan / HiuGaai) that work automatically. Chrome on Windows often
+  has *no* Cantonese voice, so it stays silent.
+  - To add a system voice for Chrome too: **Settings → Time & language → Speech →
+    Manage voices → Add voices → Chinese (Traditional, Hong Kong SAR)**, then restart the browser.
+- **Mac / iPhone / iPad:** Cantonese is usually available. If silent, go to
+  **Settings → Accessibility → Spoken Content → Voices → Chinese → 粵語 (Cantonese)**
+  and download it.
+- **Android:** Install/enable a Cantonese voice in **Settings → Text-to-speech**.
+
+If no Cantonese voice is found, a yellow tip appears on lesson pages explaining this.
+
 ## ✏️ Making it yours
 
 - Your name appears in the dashboard greeting and footer — search for `Robbie`

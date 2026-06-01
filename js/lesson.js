@@ -108,6 +108,30 @@
     });
   }
 
+  // Show a one-time hint if the device has no proper Cantonese voice.
+  // Voices can load late, so we re-check after they're ready.
+  function maybeShowVoiceHint() {
+    if (!spk || !window.hasCantoneseVoice || window.hasCantoneseVoice()) return;
+    if (document.querySelector(".voice-hint")) return;
+    var head = mount.querySelector(".lesson-head");
+    if (!head) return;
+    var note = document.createElement("div");
+    note.className = "voice-hint";
+    note.innerHTML =
+      '🔊 <strong>Audio tip:</strong> your browser has no Cantonese voice installed yet, ' +
+      'so playback may be silent or use the wrong accent. The quickest fix on Windows is to ' +
+      'open this site in <strong>Microsoft Edge</strong> (it has built-in Cantonese voices). ' +
+      'See the README for how to add a Cantonese voice to your system.';
+    head.appendChild(note);
+  }
+  if (spk) {
+    maybeShowVoiceHint();
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.addEventListener("voiceschanged", maybeShowVoiceHint);
+      setTimeout(maybeShowVoiceHint, 1200);
+    }
+  }
+
   // ---------- helpers ----------
   function audioBtn(text) {
     if (!spk) return "";
