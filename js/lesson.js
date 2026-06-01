@@ -27,6 +27,12 @@
 
   document.title = lesson.title + " — Cantonese Learning";
 
+  // Record this visit for streak + "continue where you left off".
+  if (window.Store) {
+    window.Store.recordActivity();
+    window.Store.setLastLesson(lesson.id);
+  }
+
   var spk = ttsSupported();
   var html = "";
 
@@ -94,10 +100,33 @@
     html += '</section>';
   }
 
+  // ----- Mark-complete bar -----
+  html += '<div class="complete-bar" id="complete-bar"></div>';
+
   // ----- Footer nav (prev / next within whole list) -----
   html += buildPrevNext(lesson);
 
   mount.innerHTML = html;
+
+  // Wire the mark-complete toggle.
+  var completeBar = document.getElementById("complete-bar");
+  function renderComplete() {
+    if (!completeBar || !window.Store) return;
+    var done = window.Store.isLessonComplete(lesson.id);
+    completeBar.innerHTML =
+      '<button class="btn ' + (done ? "btn-ghost-dark" : "btn-primary") + '" id="complete-toggle">' +
+      (done ? "✓ Completed — tap to undo" : "Mark this lesson complete") + "</button>";
+    document.getElementById("complete-toggle").addEventListener("click", function () {
+      if (window.Store.isLessonComplete(lesson.id)) {
+        window.Store.unmarkLessonComplete(lesson.id);
+      } else {
+        window.Store.markLessonComplete(lesson.id);
+        window.Store.recordActivity();
+      }
+      renderComplete();
+    });
+  }
+  renderComplete();
 
   // Wire up audio buttons.
   if (spk) {

@@ -32,15 +32,16 @@
     html += '<div class="lesson-list">';
 
     lessons.forEach(function (l, i) {
+      var done = window.Store && window.Store.isLessonComplete(l.id);
       html +=
-        '<a class="lesson-row" href="lesson.html?id=' + encodeURIComponent(l.id) + '">' +
-          '<span class="lesson-num">' + (i + 1) + '</span>' +
+        '<a class="lesson-row' + (done ? ' done' : '') + '" href="lesson.html?id=' + encodeURIComponent(l.id) + '">' +
+          '<span class="lesson-num">' + (done ? '✓' : (i + 1)) + '</span>' +
           '<span class="lesson-info">' +
             '<span class="lesson-title">' + escapeHtml(l.title) + '</span>' +
             '<span class="lesson-sub">' + escapeHtml(l.subtitle || "") + '</span>' +
           '</span>' +
           '<span class="lesson-meta">' +
-            (l.minutes ? l.minutes + ' min' : '') +
+            (done ? 'Completed' : (l.minutes ? l.minutes + ' min' : '')) +
           '</span>' +
           '<span class="lesson-go">→</span>' +
         '</a>';

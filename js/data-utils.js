@@ -113,6 +113,45 @@
 
   function reset() { save({ srs: {} }); }
 
+  // ---------- Lesson completion ----------
+  function markLessonComplete(id) {
+    var d = load(); d.completed = d.completed || {}; d.completed[id] = true; save(d);
+  }
+  function unmarkLessonComplete(id) {
+    var d = load(); if (d.completed) { delete d.completed[id]; save(d); }
+  }
+  function isLessonComplete(id) { return !!(load().completed || {})[id]; }
+  function completedCount() { return Object.keys(load().completed || {}).length; }
+
+  function setLastLesson(id) { var d = load(); d.lastLesson = id; save(d); }
+  function getLastLesson() { return load().lastLesson || null; }
+
+  // ---------- Daily streak ----------
+  function dateStr(d) {
+    return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+  }
+  function todayStr() { return dateStr(new Date()); }
+  function yesterdayStr() { var y = new Date(); y.setDate(y.getDate() - 1); return dateStr(y); }
+
+  // Call when the user does something meaningful (study/lesson/review).
+  function recordActivity() {
+    var d = load();
+    var today = todayStr();
+    if (d.lastActive !== today) {
+      d.streak = (d.lastActive === yesterdayStr()) ? (d.streak || 0) + 1 : 1;
+      d.lastActive = today;
+      save(d);
+    }
+    return d.streak || 0;
+  }
+  // Read streak without recording; returns 0 if it has lapsed.
+  function getStreak() {
+    var d = load();
+    if (!d.lastActive) return 0;
+    if (d.lastActive === todayStr() || d.lastActive === yesterdayStr()) return d.streak || 0;
+    return 0;
+  }
+
   window.Store = {
     getState: getState,
     rate: rate,
@@ -120,6 +159,14 @@
     newCards: newCards,
     knownCount: knownCount,
     reset: reset,
+    markLessonComplete: markLessonComplete,
+    unmarkLessonComplete: unmarkLessonComplete,
+    isLessonComplete: isLessonComplete,
+    completedCount: completedCount,
+    setLastLesson: setLastLesson,
+    getLastLesson: getLastLesson,
+    recordActivity: recordActivity,
+    getStreak: getStreak,
     DAY: DAY
   };
 })();

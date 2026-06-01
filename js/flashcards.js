@@ -118,6 +118,7 @@
 
   function rateCurrent(rating) {
     window.Store.rate(current.id, rating);
+    window.Store.recordActivity();
     // "Again" puts the card back near the end of this session too.
     if (rating === "again") queue.push(current);
     done++;

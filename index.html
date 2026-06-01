@@ -67,12 +67,12 @@
         <h2>Continue Learning</h2>
         <a href="lessons.html" class="section-link">See all lessons →</a>
       </div>
-      <a class="continue-card" href="lesson.html?id=tones-jyutping">
+      <a class="continue-card" id="continue-card" href="lesson.html?id=tones-jyutping">
         <div class="continue-thumb" aria-hidden="true">▶</div>
         <div class="continue-body">
-          <p class="continue-kicker">Start here</p>
-          <h3>The Six Tones &amp; Jyutping</h3>
-          <p class="muted">The foundation of Cantonese pronunciation · 7 min</p>
+          <p class="continue-kicker" id="continue-kicker">Start here</p>
+          <h3 id="continue-title">The Six Tones &amp; Jyutping</h3>
+          <p class="muted" id="continue-sub">The foundation of Cantonese pronunciation · 7 min</p>
         </div>
       </a>
     </section>
@@ -83,21 +83,21 @@
         <h2>Your Pathway</h2>
       </div>
       <div class="level-grid">
-        <article class="level-card level-1">
+        <article class="level-card level-1" data-level="1">
           <span class="level-tag">Level 1</span>
           <h3>Absolute Beginner</h3>
           <p class="muted">Jyutping, the six tones, greetings & survival phrases.</p>
-          <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
-          <span class="level-meta">Foundations you already have</span>
+          <div class="progress"><div class="progress-bar" style="width:0%"></div></div>
+          <span class="level-meta">—</span>
         </article>
-        <article class="level-card level-2 current">
+        <article class="level-card level-2 current" data-level="2">
           <span class="level-tag">Level 2</span>
           <h3>Beginner</h3>
           <p class="muted">Everyday vocabulary, sentence patterns & conversation.</p>
-          <div class="progress"><div class="progress-bar" style="width:20%"></div></div>
-          <span class="level-meta">You are here · ~250 words</span>
+          <div class="progress"><div class="progress-bar" style="width:0%"></div></div>
+          <span class="level-meta">You are here</span>
         </article>
-        <article class="level-card level-3">
+        <article class="level-card level-3" data-level="3">
           <span class="level-tag">Level 3</span>
           <h3>Intermediate</h3>
           <p class="muted">Grammar depth, listening practice & richer vocabulary.</p>
@@ -112,14 +112,15 @@
       <div class="section-head">
         <h2>Word of the Day</h2>
       </div>
-      <div class="wotd-card">
-        <div class="wotd-char" lang="yue">你好</div>
+      <a class="wotd-card" id="wotd-card" href="vocabulary.html">
+        <div class="wotd-char" id="wotd-char" lang="yue">你好</div>
         <div class="wotd-body">
-          <p class="wotd-jyutping">nei5 hou2</p>
-          <p class="wotd-meaning">hello</p>
-          <p class="muted">A new word each day arrives in a later phase.</p>
+          <p class="wotd-jyutping" id="wotd-jyutping">nei5 hou2</p>
+          <p class="wotd-meaning" id="wotd-meaning">hello</p>
+          <p class="muted" id="wotd-from">Tap to browse all your vocabulary →</p>
         </div>
-      </div>
+        <button class="audio-btn wotd-audio" id="wotd-audio" aria-label="Play audio" title="Play audio">🔊</button>
+      </a>
     </section>
   </main>
 

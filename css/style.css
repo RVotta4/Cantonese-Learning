@@ -449,6 +449,20 @@ a:hover { text-decoration: underline; }
 .note-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
 .note-card p { margin: 0; color: #444b5a; }
 
+/* Mark-complete bar */
+.complete-bar { margin-top: 30px; text-align: center; }
+.complete-bar .btn { min-width: 260px; }
+
+/* Completed lesson rows */
+.lesson-row.done { border-color: #bfe6cf; background: #f4fbf7; }
+.lesson-row.done .lesson-num { background: #4caf82; color: #fff; border-color: #4caf82; }
+
+/* Word of the day as a link + audio */
+.wotd-card { color: #fff; transition: transform .12s, box-shadow .15s; position: relative; }
+.wotd-card:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(20,24,40,.18); }
+.wotd-audio { align-self: flex-start; background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.25); }
+.wotd-audio:hover { background: rgba(255,255,255,.22); }
+
 /* Prev / next nav */
 .lesson-nav {
   display: flex;
