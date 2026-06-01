@@ -110,27 +110,28 @@
 
   // Show a one-time hint if the device has no proper Cantonese voice.
   // Voices can load late, so we re-check after they're ready.
+  // Audio plays via an online Cantonese voice when no local voice exists, so we
+  // only warn when there's also no internet (then nothing can play).
   function maybeShowVoiceHint() {
-    if (!spk || !window.hasCantoneseVoice || window.hasCantoneseVoice()) return;
+    var hasLocal = window.hasCantoneseVoice && window.hasCantoneseVoice();
+    var online = navigator.onLine !== false;
+    if (hasLocal || online) return; // audio will work one way or another
     if (document.querySelector(".voice-hint")) return;
     var head = mount.querySelector(".lesson-head");
     if (!head) return;
     var note = document.createElement("div");
     note.className = "voice-hint";
     note.innerHTML =
-      '🔊 <strong>Audio tip:</strong> your browser has no Cantonese voice installed yet, ' +
-      'so playback may be silent or use the wrong accent. The quickest fix on Windows is to ' +
-      'open this site in <strong>Microsoft Edge</strong> (it has built-in Cantonese voices). ' +
-      'See the README for how to add a Cantonese voice to your system.';
+      '🔊 <strong>Audio tip:</strong> you appear to be offline and have no Cantonese voice ' +
+      'installed, so playback may be silent. Reconnect to the internet to use audio.';
     head.appendChild(note);
   }
-  if (spk) {
-    maybeShowVoiceHint();
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.addEventListener("voiceschanged", maybeShowVoiceHint);
-      setTimeout(maybeShowVoiceHint, 1200);
-    }
-  }
+  maybeShowVoiceHint();
+  window.addEventListener("online", function () {
+    var n = document.querySelector(".voice-hint");
+    if (n) n.remove();
+  });
+  window.addEventListener("offline", maybeShowVoiceHint);
 
   // ---------- helpers ----------
   function audioBtn(text) {

@@ -48,25 +48,56 @@
     return { voice: null, isCantonese: false };
   }
 
-  // Returns: "cantonese" | "fallback" | "unsupported"
-  window.speakCantonese = function (text) {
-    if (!("speechSynthesis" in window)) return "unsupported";
+  // ---- Online Cantonese audio (no install needed) ----
+  // Uses Google Translate's Cantonese (yue) text-to-speech, played through an
+  // <audio> element. This is what makes audio "just work" without any system
+  // voice installed. Requires an internet connection.
+  var currentAudio = null;
+  function speakOnline(text) {
+    try {
+      if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+      var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=yue&q=" +
+                encodeURIComponent(text);
+      currentAudio = new Audio(url);
+      currentAudio.play().catch(function () {
+        // If online playback is blocked/unavailable, try the local engine.
+        speakLocal(text, true);
+      });
+      return true;
+    } catch (e) {
+      return speakLocal(text, true);
+    }
+  }
+
+  function speakLocal(text, anyVoice) {
+    if (!("speechSynthesis" in window)) return false;
     refreshVoices();
-    window.speechSynthesis.cancel(); // stop anything already playing
+    window.speechSynthesis.cancel();
     var pick = pickVoice();
     var u = new SpeechSynthesisUtterance(text);
-    if (pick.voice) {
+    if (pick.voice && (anyVoice || pick.isCantonese)) {
       u.voice = pick.voice;
       u.lang = pick.voice.lang;
     } else {
-      u.lang = "zh-HK"; // best effort; Edge's online voices respond to this
+      u.lang = "zh-HK";
     }
     u.rate = 0.9;
     window.speechSynthesis.speak(u);
-    return pick.isCantonese ? "cantonese" : (pick.voice ? "fallback" : "fallback");
+    return true;
+  }
+
+  // Main entry point used by lesson/vocab/flashcard pages.
+  // Prefers a real local Cantonese voice (instant, offline); otherwise plays
+  // the online Cantonese voice.
+  window.speakCantonese = function (text) {
+    refreshVoices();
+    if (pickVoice().isCantonese) {
+      return speakLocal(text, false) ? "local" : speakOnline(text) && "online";
+    }
+    return speakOnline(text) ? "online" : "unsupported";
   };
 
-  // True only if a real Cantonese voice is installed.
+  // True only if a real local Cantonese voice is installed.
   window.hasCantoneseVoice = function () {
     refreshVoices();
     return !!pickVoice().isCantonese;

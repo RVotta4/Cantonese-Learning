@@ -50,8 +50,8 @@
       <h2>2. Quick test</h2>
       <p class="muted">Click each button and tell me which (if any) make sound:</p>
       <div class="big-test">
-        <button class="btn btn-primary" data-say="你好" data-mode="auto">🔊 Speak 你好 (auto)</button>
-        <button class="btn btn-ghost-dark" data-say="你好" data-mode="forcehk">🔊 Force zh-HK</button>
+        <button class="btn btn-primary" data-say="你好" data-mode="online">🔊 Online Cantonese 你好 (new!)</button>
+        <button class="btn btn-ghost-dark" data-say="你好" data-mode="auto">🔊 Local voice 你好</button>
         <button class="btn btn-ghost-dark" data-say="hello test" data-mode="english">🔊 English test</button>
       </div>
       <p id="test-status" class="muted" style="margin-top:10px"></p>
@@ -115,8 +115,24 @@
     renderVoices();
     document.getElementById("refresh").addEventListener("click", renderVoices);
 
+    var onlineAudio = null;
+    function speakOnline(text) {
+      if (onlineAudio) { onlineAudio.pause(); }
+      var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=yue&q=" + encodeURIComponent(text);
+      onlineAudio = new Audio(url);
+      statusEl.textContent = "▶ requesting online audio…";
+      onlineAudio.onplaying = function(){ statusEl.textContent = "✅ online audio playing"; };
+      onlineAudio.onerror = function(){ statusEl.textContent = "❌ online audio failed to load (network blocked?)"; };
+      onlineAudio.play().then(function(){
+        statusEl.textContent = "✅ online audio playing";
+      }).catch(function(e){
+        statusEl.textContent = "❌ online audio blocked: " + (e && e.message ? e.message : e);
+      });
+    }
+
     function speak(text, opts) {
       opts = opts || {};
+      if (opts.mode === "online") { speakOnline(text); return; }
       window.speechSynthesis.cancel();
       var u = new SpeechSynthesisUtterance(text);
       if (opts.voiceName) {
