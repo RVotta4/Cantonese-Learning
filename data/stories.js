@@ -19,7 +19,7 @@ window.STORIES = [
     level: 1,
     category: "beginner",
     title: "A Morning Greeting",
-    titleJyutping: "zou2 san4 dak1 ji6",
+    titleJyutping: "zou2 san4",
     blurb: "Two people meet in the morning and introduce themselves.",
     minutes: 2,
     words: [
@@ -32,7 +32,7 @@ window.STORIES = [
     sentences: [
       { hanzi: "早晨！", jyutping: "zou2 san4!", english: "Good morning!" },
       { hanzi: "你好嗎？", jyutping: "nei5 hou2 maa3?", english: "How are you?" },
-      { hanzi: "我好好，多謝。", jyutping: "ngo5 hou2 hou2, do1 ze6.", english: "I'm very well, thank you." },
+      { hanzi: "我幾好，多謝。", jyutping: "ngo5 gei2 hou2, do1 ze6.", english: "I'm very well, thank you." },
       { hanzi: "你叫咩名呀？", jyutping: "nei5 giu3 me1 meng2 aa3?", english: "What's your name?" },
       { hanzi: "我叫小明。", jyutping: "ngo5 giu3 siu2 ming4.", english: "My name is Siu Ming." },
       { hanzi: "好高興認識你！", jyutping: "hou2 gou1 hing3 jing6 sik1 nei5!", english: "Nice to meet you!" }
@@ -79,7 +79,7 @@ window.STORIES = [
     ],
     sentences: [
       { hanzi: "今日我哋去飲茶。", jyutping: "gam1 jat6 ngo5 dei6 heoi3 jam2 caa4.", english: "Today we go for yum cha." },
-      { hanzi: "唔該，我要一壺普洱。", jyutping: "m4 goi1, ngo5 jiu3 jat1 wu4 pou2 nei2.", english: "Excuse me, I'd like a pot of pu'er tea." },
+      { hanzi: "唔該，我要一壺普洱。", jyutping: "m4 goi1, ngo5 jiu3 jat1 wu4 pou2 lei2.", english: "Excuse me, I'd like a pot of pu'er tea." },
       { hanzi: "我鍾意食蝦餃。", jyutping: "ngo5 zung1 ji3 sik6 haa1 gaau2.", english: "I like to eat shrimp dumplings." },
       { hanzi: "呢啲點心好好食。", jyutping: "ni1 di1 dim2 sam1 hou2 hou2 sik6.", english: "This dim sum is delicious." },
       { hanzi: "唔該埋單。", jyutping: "m4 goi1 maai4 daan1.", english: "The bill, please." }
