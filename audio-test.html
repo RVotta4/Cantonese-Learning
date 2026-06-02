@@ -65,7 +65,14 @@
     </div>
 
     <div class="diag-box">
-      <h2>4. What to tell me</h2>
+      <h2>4. Pre-generated audio</h2>
+      <p class="muted">High-quality MP3s committed under <code>audio/</code>. These play first; live TTS is only a fallback.</p>
+      <p id="coverage">Checking…</p>
+      <p><button class="btn btn-primary" id="play-sample">🔊 Play a pre-generated sample</button></p>
+    </div>
+
+    <div class="diag-box">
+      <h2>5. What to tell me</h2>
       <ul>
         <li>Which of the 3 test buttons made sound (if any)?</li>
         <li>Do you see any <strong>Chinese (Hong Kong)</strong> / Cantonese voices in the list above?</li>
@@ -76,6 +83,8 @@
 
   <footer class="site-footer"><div class="container"><p>Audio diagnostics · Cantonese Learning</p></div></footer>
 
+  <script src="data/lessons.js"></script>
+  <script src="audio/manifest.js"></script>
   <script>
   (function () {
     var supportEl = document.getElementById("support");
@@ -159,6 +168,37 @@
       var vb = e.target.closest("[data-voice]");
       if (vb) { speak("你好", { voiceName: vb.getAttribute("data-voice") }); }
     });
+
+    // ---- Pre-generated audio coverage ----
+    function allPhrases() {
+      var set = {};
+      (window.LESSONS || []).forEach(function (l) {
+        ["dialogue", "vocab", "examples"].forEach(function (k) {
+          (l[k] || []).forEach(function (item) { if (item && item.hanzi) set[item.hanzi] = 1; });
+        });
+      });
+      return Object.keys(set);
+    }
+    var manifest = window.AUDIO_MANIFEST || {};
+    var manifestKeys = Object.keys(manifest);
+    var totalPhrases = allPhrases().length;
+    var covEl = document.getElementById("coverage");
+    if (covEl) {
+      covEl.innerHTML = manifestKeys.length
+        ? "✅ <strong>" + manifestKeys.length + "</strong> phrases have pre-generated audio (of " + totalPhrases + " total)."
+        : "⚠️ No pre-generated audio yet (manifest empty). Run the "Generate Cantonese audio" GitHub Action.";
+    }
+    var sampleBtn = document.getElementById("play-sample");
+    if (sampleBtn) {
+      sampleBtn.addEventListener("click", function () {
+        if (!manifestKeys.length) { statusEl.textContent = "No pre-generated audio to play."; return; }
+        var first = manifestKeys[0];
+        statusEl.textContent = "▶ playing pre-generated: " + first;
+        var a = new Audio("audio/" + manifest[first] + ".mp3");
+        a.onerror = function () { statusEl.textContent = "❌ failed to load audio/" + manifest[first] + ".mp3"; };
+        a.play().catch(function (e) { statusEl.textContent = "❌ " + (e && e.message ? e.message : e); });
+      });
+    }
   })();
   </script>
 </body>
