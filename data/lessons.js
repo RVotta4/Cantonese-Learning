@@ -1223,5 +1223,274 @@ window.LESSONS = [
       { hanzi: "聽日朝早見。", jyutping: "ting1 jat6 ziu1 zou2 gin3.", english: "See you tomorrow morning." },
       { hanzi: "我而家喺屋企。", jyutping: "ngo5 ji4 gaa1 hai2 uk1 kei2.", english: "I'm at home now." }
     ]
+  },
+  {
+    id: "making-plans",
+    level: 2,
+    levelName: "Beginner",
+    order: 35,
+    title: "Making Plans",
+    subtitle: "一齊 / 去 / 聽日 / 有冇空 / 好呀 / 約",
+    minutes: 5,
+    intro: "How to invite a friend and arrange to do something together.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "一齊", jyutping: "jat1 cai4", english: "together" },
+      { hanzi: "去", jyutping: "heoi3", english: "to go" },
+      { hanzi: "聽日", jyutping: "ting1 jat6", english: "tomorrow" },
+      { hanzi: "有冇空", jyutping: "jau5 mou5 hung1", english: "are you free?" },
+      { hanzi: "好呀", jyutping: "hou2 aa3", english: "sure, okay (agreeing)" },
+      { hanzi: "約", jyutping: "joek3", english: "to make an appointment, arrange" },
+      { hanzi: "得閒", jyutping: "dak1 haan4", english: "free, have free time" }
+    ],
+    examples: [
+      { hanzi: "你聽日有冇空？", jyutping: "nei5 ting1 jat6 jau5 mou5 hung1?", english: "Are you free tomorrow?" },
+      { hanzi: "我哋一齊去食飯啦。", jyutping: "ngo5 dei6 jat1 cai4 heoi3 sik6 faan6 laa1.", english: "Let's go eat together." },
+      { hanzi: "好呀，約你聽日。", jyutping: "hou2 aa3, joek3 nei5 ting1 jat6.", english: "Sure, let's arrange for tomorrow." }
+    ]
+  },
+  {
+    id: "at-the-doctor",
+    level: 2,
+    levelName: "Beginner",
+    order: 36,
+    title: "At the Doctor",
+    subtitle: "醫生 / 睇醫生 / 唔舒服 / 發燒 / 頭痛 / 咳",
+    minutes: 5,
+    intro: "Telling a doctor how you feel when you are sick.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "醫生", jyutping: "ji1 sang1", english: "doctor" },
+      { hanzi: "睇醫生", jyutping: "tai2 ji1 sang1", english: "to see a doctor" },
+      { hanzi: "唔舒服", jyutping: "m4 syu1 fuk6", english: "unwell, sick" },
+      { hanzi: "發燒", jyutping: "faat3 siu1", english: "to have a fever" },
+      { hanzi: "頭痛", jyutping: "tau4 tung3", english: "headache" },
+      { hanzi: "咳", jyutping: "kat1", english: "to cough" },
+      { hanzi: "肚痛", jyutping: "tou5 tung3", english: "stomachache" }
+    ],
+    examples: [
+      { hanzi: "我唔舒服，想睇醫生。", jyutping: "ngo5 m4 syu1 fuk6, soeng2 tai2 ji1 sang1.", english: "I'm unwell, I want to see a doctor." },
+      { hanzi: "我發燒同頭痛。", jyutping: "ngo5 faat3 siu1 tung4 tau4 tung3.", english: "I have a fever and a headache." },
+      { hanzi: "我咳咗幾日。", jyutping: "ngo5 kat1 zo2 gei2 jat6.", english: "I've been coughing for a few days." }
+    ]
+  },
+  {
+    id: "pharmacy",
+    level: 2,
+    levelName: "Beginner",
+    order: 37,
+    title: "At the Pharmacy",
+    subtitle: "藥房 / 藥 / 感冒 / 止痛藥 / 一日食幾次",
+    minutes: 5,
+    intro: "Buying medicine and asking how to take it.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "藥房", jyutping: "joek6 fong2", english: "pharmacy" },
+      { hanzi: "藥", jyutping: "joek6", english: "medicine" },
+      { hanzi: "感冒", jyutping: "gam2 mou6", english: "cold (illness)" },
+      { hanzi: "止痛藥", jyutping: "zi2 tung3 joek6", english: "painkiller" },
+      { hanzi: "食藥", jyutping: "sik6 joek6", english: "to take medicine" },
+      { hanzi: "一日", jyutping: "jat1 jat6", english: "one day, per day" },
+      { hanzi: "幾次", jyutping: "gei2 ci3", english: "how many times" }
+    ],
+    examples: [
+      { hanzi: "我感冒，想買藥。", jyutping: "ngo5 gam2 mou6, soeng2 maai5 joek6.", english: "I have a cold, I want to buy medicine." },
+      { hanzi: "有冇止痛藥？", jyutping: "jau5 mou5 zi2 tung3 joek6?", english: "Do you have any painkillers?" },
+      { hanzi: "呢隻藥一日食幾次？", jyutping: "ni1 zek3 joek6 jat1 jat6 sik6 gei2 ci3?", english: "How many times a day do I take this medicine?" }
+    ]
+  },
+  {
+    id: "bank-post",
+    level: 2,
+    levelName: "Beginner",
+    order: 38,
+    title: "Bank & Post Office",
+    subtitle: "銀行 / 郵局 / 錢 / 換錢 / 寄信 / 郵票",
+    minutes: 5,
+    intro: "Simple errands at the bank and the post office.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "銀行", jyutping: "ngan4 hong4", english: "bank" },
+      { hanzi: "郵局", jyutping: "jau4 guk2", english: "post office" },
+      { hanzi: "錢", jyutping: "cin2", english: "money" },
+      { hanzi: "換錢", jyutping: "wun6 cin2", english: "to change money, exchange currency" },
+      { hanzi: "寄信", jyutping: "gei3 seon3", english: "to mail a letter" },
+      { hanzi: "郵票", jyutping: "jau4 piu3", english: "stamp" }
+    ],
+    examples: [
+      { hanzi: "銀行喺邊度？", jyutping: "ngan4 hong4 hai2 bin1 dou6?", english: "Where is the bank?" },
+      { hanzi: "我想換錢。", jyutping: "ngo5 soeng2 wun6 cin2.", english: "I want to change money." },
+      { hanzi: "我想喺郵局寄信，要郵票。", jyutping: "ngo5 soeng2 hai2 jau4 guk2 gei3 seon3, jiu3 jau4 piu3.", english: "I want to mail a letter at the post office, I need a stamp." }
+    ]
+  },
+  {
+    id: "hotel",
+    level: 2,
+    levelName: "Beginner",
+    order: 39,
+    title: "At the Hotel",
+    subtitle: "酒店 / 房 / 訂房 / 鎖匙 / 幾多錢一晚 / 入住",
+    minutes: 5,
+    intro: "Checking in and asking about a hotel room.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "酒店", jyutping: "zau2 dim3", english: "hotel" },
+      { hanzi: "房", jyutping: "fong2", english: "room" },
+      { hanzi: "訂房", jyutping: "deng6 fong2", english: "to book a room" },
+      { hanzi: "鎖匙", jyutping: "so2 si4", english: "key" },
+      { hanzi: "一晚", jyutping: "jat1 maan5", english: "one night" },
+      { hanzi: "入住", jyutping: "jap6 zyu6", english: "to check in" }
+    ],
+    examples: [
+      { hanzi: "我想訂房。", jyutping: "ngo5 soeng2 deng6 fong2.", english: "I want to book a room." },
+      { hanzi: "幾多錢一晚？", jyutping: "gei2 do1 cin2 jat1 maan5?", english: "How much per night?" },
+      { hanzi: "我想入住，呢個係鎖匙。", jyutping: "ngo5 soeng2 jap6 zyu6, ni1 go3 hai6 so2 si4.", english: "I'd like to check in; this is the key." }
+    ]
+  },
+  {
+    id: "airport-travel",
+    level: 2,
+    levelName: "Beginner",
+    order: 40,
+    title: "Airport & Travel",
+    subtitle: "機場 / 飛機 / 護照 / 行李 / 登機 / 去旅行",
+    minutes: 5,
+    intro: "Key words for the airport and for going on a trip.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "機場", jyutping: "gei1 coeng4", english: "airport" },
+      { hanzi: "飛機", jyutping: "fei1 gei1", english: "airplane" },
+      { hanzi: "護照", jyutping: "wu6 ziu3", english: "passport" },
+      { hanzi: "行李", jyutping: "hang4 lei5", english: "luggage" },
+      { hanzi: "登機", jyutping: "dang1 gei1", english: "to board (a plane)" },
+      { hanzi: "去旅行", jyutping: "heoi3 leoi5 hang4", english: "to go travelling" }
+    ],
+    examples: [
+      { hanzi: "我去機場搭飛機。", jyutping: "ngo5 heoi3 gei1 coeng4 daap3 fei1 gei1.", english: "I'm going to the airport to take a plane." },
+      { hanzi: "唔該俾我睇你嘅護照。", jyutping: "m4 goi1 bei2 ngo5 tai2 nei5 ge3 wu6 ziu3.", english: "Please show me your passport." },
+      { hanzi: "我聽日去旅行。", jyutping: "ngo5 ting1 jat6 heoi3 leoi5 hang4.", english: "I'm going travelling tomorrow." }
+    ]
+  },
+  {
+    id: "describing-people",
+    level: 2,
+    levelName: "Beginner",
+    order: 41,
+    title: "Describing People",
+    subtitle: "高 / 矮 / 肥 / 瘦 / 靚 / 後生 / 老",
+    minutes: 5,
+    intro: "Adjectives for describing how someone looks.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "高", jyutping: "gou1", english: "tall" },
+      { hanzi: "矮", jyutping: "ai2", english: "short (in height)" },
+      { hanzi: "肥", jyutping: "fei4", english: "fat" },
+      { hanzi: "瘦", jyutping: "sau3", english: "thin, slim" },
+      { hanzi: "靚", jyutping: "leng3", english: "pretty, good-looking" },
+      { hanzi: "後生", jyutping: "hau6 saang1", english: "young" },
+      { hanzi: "老", jyutping: "lou5", english: "old (of people)" }
+    ],
+    examples: [
+      { hanzi: "佢好高。", jyutping: "keoi5 hou2 gou1.", english: "He/she is very tall." },
+      { hanzi: "佢個女好靚。", jyutping: "keoi5 go3 neoi2 hou2 leng3.", english: "Her daughter is very pretty." },
+      { hanzi: "我嫲嫲好老。", jyutping: "ngo5 maa4 maa4 hou2 lou5.", english: "My grandma is very old." }
+    ]
+  },
+  {
+    id: "personality",
+    level: 2,
+    levelName: "Beginner",
+    order: 42,
+    title: "Personality",
+    subtitle: "好人 / 惡 / 善良 / 聰明 / 勤力 / 懶",
+    minutes: 5,
+    intro: "Words to describe what someone is like.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "好人", jyutping: "hou2 jan4", english: "good person, kind person" },
+      { hanzi: "惡", jyutping: "ok3", english: "fierce, strict" },
+      { hanzi: "善良", jyutping: "sin6 loeng4", english: "kind-hearted" },
+      { hanzi: "聰明", jyutping: "cung1 ming4", english: "smart, clever" },
+      { hanzi: "勤力", jyutping: "kan4 lik6", english: "hardworking, diligent" },
+      { hanzi: "懶", jyutping: "laan5", english: "lazy" }
+    ],
+    examples: [
+      { hanzi: "佢係好人。", jyutping: "keoi5 hai6 hou2 jan4.", english: "He/she is a good person." },
+      { hanzi: "我老師好惡。", jyutping: "ngo5 lou5 si1 hou2 ok3.", english: "My teacher is very strict." },
+      { hanzi: "佢好聰明又勤力。", jyutping: "keoi5 hou2 cung1 ming4 jau6 kan4 lik6.", english: "He/she is smart and hardworking." }
+    ]
+  },
+  {
+    id: "measure-words",
+    level: 2,
+    levelName: "Beginner",
+    order: 43,
+    title: "Measure Words",
+    subtitle: "個 / 隻 / 張 / 條 / 本 / 杯 / 件",
+    minutes: 6,
+    intro: "Classifiers go between a number and a noun in Cantonese.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "個", jyutping: "go3", english: "general classifier (people, things)" },
+      { hanzi: "隻", jyutping: "zek3", english: "classifier for animals, one of a pair" },
+      { hanzi: "張", jyutping: "zoeng1", english: "classifier for flat things (paper, tables)" },
+      { hanzi: "條", jyutping: "tiu4", english: "classifier for long thin things (roads, fish)" },
+      { hanzi: "本", jyutping: "bun2", english: "classifier for books" },
+      { hanzi: "杯", jyutping: "bui1", english: "classifier for cups/glasses (a cup of)" },
+      { hanzi: "件", jyutping: "gin6", english: "classifier for items/clothing" }
+    ],
+    examples: [
+      { hanzi: "一個人。", jyutping: "jat1 go3 jan4.", english: "one person." },
+      { hanzi: "三本書。", jyutping: "saam1 bun2 syu1.", english: "three books." },
+      { hanzi: "我要一杯水。", jyutping: "ngo5 jiu3 jat1 bui1 seoi2.", english: "I want a glass of water." }
+    ]
+  },
+  {
+    id: "festivals-cny",
+    level: 2,
+    levelName: "Beginner",
+    order: 44,
+    title: "Lunar New Year",
+    subtitle: "農曆新年 / 恭喜發財 / 利是 / 拜年 / 團年飯 / 煙花",
+    minutes: 5,
+    intro: "Words and greetings for Lunar New Year in Hong Kong.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "農曆新年", jyutping: "nung4 lik6 san1 nin4", english: "Lunar New Year" },
+      { hanzi: "恭喜發財", jyutping: "gung1 hei2 faat3 coi4", english: "wishing you prosperity (New Year greeting)" },
+      { hanzi: "利是", jyutping: "lai6 si6", english: "red packet (lucky money)" },
+      { hanzi: "拜年", jyutping: "baai3 nin4", english: "to pay New Year visits" },
+      { hanzi: "團年飯", jyutping: "tyun4 nin4 faan6", english: "reunion dinner" },
+      { hanzi: "煙花", jyutping: "jin1 faa1", english: "fireworks" }
+    ],
+    examples: [
+      { hanzi: "恭喜發財！", jyutping: "gung1 hei2 faat3 coi4!", english: "Happy New Year (wishing you prosperity)!" },
+      { hanzi: "細路鍾意收利是。", jyutping: "sai3 lou6 zung1 ji3 sau1 lai6 si6.", english: "Kids love getting red packets." },
+      { hanzi: "我哋一齊食團年飯。", jyutping: "ngo5 dei6 jat1 cai4 sik6 tyun4 nin4 faan6.", english: "We have reunion dinner together." }
+    ]
+  },
+  {
+    id: "emergencies",
+    level: 2,
+    levelName: "Beginner",
+    order: 45,
+    title: "Emergencies & Help",
+    subtitle: "救命 / 幫手 / 報警 / 火警 / 醫院 / 小心",
+    minutes: 5,
+    intro: "Important words for getting help in an emergency.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "救命", jyutping: "gau3 meng6", english: "help! (save me)" },
+      { hanzi: "幫手", jyutping: "bong1 sau2", english: "to help, give a hand" },
+      { hanzi: "報警", jyutping: "bou3 ging2", english: "to call the police" },
+      { hanzi: "火警", jyutping: "fo2 ging2", english: "fire (emergency)" },
+      { hanzi: "醫院", jyutping: "ji1 jyun2", english: "hospital" },
+      { hanzi: "小心", jyutping: "siu2 sam1", english: "be careful" }
+    ],
+    examples: [
+      { hanzi: "救命呀！", jyutping: "gau3 meng6 aa3!", english: "Help!" },
+      { hanzi: "唔該幫手報警。", jyutping: "m4 goi1 bong1 sau2 bou3 ging2.", english: "Please help me call the police." },
+      { hanzi: "小心啲！", jyutping: "siu2 sam1 di1!", english: "Be careful!" }
+    ]
   }
 ];
