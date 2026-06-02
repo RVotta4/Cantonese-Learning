@@ -487,5 +487,249 @@ window.LESSONS = [
         body: "Slot any destination after 點去 to ask the way: 點去機場呀？ (dim2 heoi3 gei1 coeng4 aa3?) = \"How do I get to the airport?\""
       }
     ]
+  },
+  {
+    id: "pronouns-basics",
+    level: 1,
+    levelName: "Absolute Beginner",
+    order: 4,
+    title: "Pronouns: I, You, We",
+    subtitle: "我 / 你 / 佢 and their plurals with 哋",
+    minutes: 5,
+    intro: "Master these six pronouns and you can talk about anyone — add 哋 to make any of them plural.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "我", jyutping: "ngo5", english: "I, me" },
+      { hanzi: "你", jyutping: "nei5", english: "you (singular)" },
+      { hanzi: "佢", jyutping: "keoi5", english: "he, she, it" },
+      { hanzi: "我哋", jyutping: "ngo5 dei6", english: "we, us" },
+      { hanzi: "你哋", jyutping: "nei5 dei6", english: "you (plural)" },
+      { hanzi: "佢哋", jyutping: "keoi5 dei6", english: "they, them" }
+    ],
+    examples: [
+      { hanzi: "我係學生。", jyutping: "ngo5 hai6 hok6 saang1.", english: "I am a student." },
+      { hanzi: "佢係香港人。", jyutping: "keoi5 hai6 hoeng1 gong2 jan4.", english: "He is from Hong Kong." },
+      { hanzi: "我哋鍾意飲茶。", jyutping: "ngo5 dei6 zung1 ji3 jam2 caa4.", english: "We like going for dim sum." }
+    ]
+  },
+  {
+    id: "question-words",
+    level: 1,
+    levelName: "Absolute Beginner",
+    order: 5,
+    title: "Question Words",
+    subtitle: "what / who / where / when / how",
+    minutes: 5,
+    intro: "These five question words let you ask about almost anything in everyday conversation.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "咩", jyutping: "me1", english: "what" },
+      { hanzi: "邊個", jyutping: "bin1 go3", english: "who, which one" },
+      { hanzi: "邊度", jyutping: "bin1 dou6", english: "where" },
+      { hanzi: "幾時", jyutping: "gei2 si4", english: "when" },
+      { hanzi: "點", jyutping: "dim2", english: "how" },
+      { hanzi: "呀", jyutping: "aa3", english: "(question particle)" }
+    ],
+    examples: [
+      { hanzi: "你叫咩名呀？", jyutping: "nei5 giu3 me1 meng2 aa3?", english: "What is your name?" },
+      { hanzi: "佢係邊個呀？", jyutping: "keoi5 hai6 bin1 go3 aa3?", english: "Who is he?" },
+      { hanzi: "廁所喺邊度呀？", jyutping: "ci3 so2 hai2 bin1 dou6 aa3?", english: "Where is the toilet?" }
+    ]
+  },
+  {
+    id: "to-have",
+    level: 1,
+    levelName: "Absolute Beginner",
+    order: 6,
+    title: "To Have — 有 & 冇",
+    subtitle: "有 (have) and 冇 (not have)",
+    minutes: 5,
+    intro: "有 means \"have\" and its opposite 冇 means \"not have\" — note Cantonese uses 冇, not 唔有.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "有", jyutping: "jau5", english: "to have, there is" },
+      { hanzi: "冇", jyutping: "mou5", english: "to not have, there isn't" },
+      { hanzi: "錢", jyutping: "cin2", english: "money" },
+      { hanzi: "時間", jyutping: "si4 gaan3", english: "time" },
+      { hanzi: "車", jyutping: "ce1", english: "car" },
+      { hanzi: "冇問題", jyutping: "mou5 man6 tai4", english: "no problem" }
+    ],
+    examples: [
+      { hanzi: "我有錢。", jyutping: "ngo5 jau5 cin2.", english: "I have money." },
+      { hanzi: "我冇時間。", jyutping: "ngo5 mou5 si4 gaan3.", english: "I don't have time." },
+      { hanzi: "你有冇車呀？", jyutping: "nei5 jau5 mou5 ce1 aa3?", english: "Do you have a car?" }
+    ]
+  },
+  {
+    id: "this-that",
+    level: 1,
+    levelName: "Absolute Beginner",
+    order: 7,
+    title: "This, That & 個",
+    subtitle: "呢個 / 嗰個 / 邊個 and the classifier 個",
+    minutes: 5,
+    intro: "呢 (this) and 嗰 (that) plus the classifier 個 let you point at things — 呢個 (this one), 嗰個 (that one).",
+    dialogue: [],
+    vocab: [
+      { hanzi: "呢", jyutping: "ni1", english: "this" },
+      { hanzi: "嗰", jyutping: "go2", english: "that" },
+      { hanzi: "個", jyutping: "go3", english: "(classifier for things/people)" },
+      { hanzi: "呢個", jyutping: "ni1 go3", english: "this one" },
+      { hanzi: "嗰個", jyutping: "go2 go3", english: "that one" },
+      { hanzi: "邊個", jyutping: "bin1 go3", english: "which one" }
+    ],
+    examples: [
+      { hanzi: "呢個幾錢呀？", jyutping: "ni1 go3 gei2 cin2 aa3?", english: "How much is this one?" },
+      { hanzi: "我要嗰個。", jyutping: "ngo5 jiu3 go2 go3.", english: "I want that one." },
+      { hanzi: "你要邊個呀？", jyutping: "nei5 jiu3 bin1 go3 aa3?", english: "Which one do you want?" }
+    ]
+  },
+  {
+    id: "colours",
+    level: 2,
+    levelName: "Beginner",
+    order: 9,
+    title: "Colours",
+    subtitle: "Name the basic colours",
+    minutes: 5,
+    intro: "Colours come up everywhere — clothes, food, directions. Here are the everyday ones.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "顏色", jyutping: "ngaan4 sik1", english: "colour" },
+      { hanzi: "紅色", jyutping: "hung4 sik1", english: "red" },
+      { hanzi: "藍色", jyutping: "laam4 sik1", english: "blue" },
+      { hanzi: "黃色", jyutping: "wong4 sik1", english: "yellow" },
+      { hanzi: "綠色", jyutping: "luk6 sik1", english: "green" },
+      { hanzi: "黑色", jyutping: "hak1 sik1", english: "black" },
+      { hanzi: "白色", jyutping: "baak6 sik1", english: "white" }
+    ],
+    examples: [
+      { hanzi: "我鍾意紅色。", jyutping: "ngo5 zung1 ji3 hung4 sik1.", english: "I like red." },
+      { hanzi: "呢件衫係咩顏色呀？", jyutping: "ni1 gin6 saam1 hai6 me1 ngaan4 sik1 aa3?", english: "What colour is this shirt?" },
+      { hanzi: "天係藍色。", jyutping: "tin1 hai6 laam4 sik1.", english: "The sky is blue." }
+    ]
+  },
+  {
+    id: "months-dates",
+    level: 2,
+    levelName: "Beginner",
+    order: 10,
+    title: "Months & Dates",
+    subtitle: "Months, 號 for dates, and this/next month",
+    minutes: 6,
+    intro: "Cantonese months are just a number plus 月, and you give a date with the number plus 號.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "月", jyutping: "jyut6", english: "month" },
+      { hanzi: "一月", jyutping: "jat1 jyut6", english: "January" },
+      { hanzi: "十二月", jyutping: "sap6 ji6 jyut6", english: "December" },
+      { hanzi: "號", jyutping: "hou6", english: "date (day of month)" },
+      { hanzi: "今個月", jyutping: "gam1 go3 jyut6", english: "this month" },
+      { hanzi: "下個月", jyutping: "haa6 go3 jyut6", english: "next month" }
+    ],
+    examples: [
+      { hanzi: "今日係五月三號。", jyutping: "gam1 jat6 hai6 ng5 jyut6 saam1 hou6.", english: "Today is the 3rd of May." },
+      { hanzi: "我下個月去旅行。", jyutping: "ngo5 haa6 go3 jyut6 heoi3 leoi5 hang4.", english: "I'm travelling next month." },
+      { hanzi: "你幾時生日呀？", jyutping: "nei5 gei2 si4 saang1 jat6 aa3?", english: "When is your birthday?" }
+    ]
+  },
+  {
+    id: "weather",
+    level: 2,
+    levelName: "Beginner",
+    order: 11,
+    title: "Weather",
+    subtitle: "天氣 / 熱 / 凍 / 落雨 / 天晴",
+    minutes: 5,
+    intro: "Hong Kong weather swings from hot to rainy — here are the words to describe it.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "天氣", jyutping: "tin1 hei3", english: "weather" },
+      { hanzi: "熱", jyutping: "jit6", english: "hot" },
+      { hanzi: "凍", jyutping: "dung3", english: "cold" },
+      { hanzi: "落雨", jyutping: "lok6 jyu5", english: "to rain" },
+      { hanzi: "天晴", jyutping: "tin1 cing4", english: "sunny, clear sky" },
+      { hanzi: "好", jyutping: "hou2", english: "very" }
+    ],
+    examples: [
+      { hanzi: "今日好熱。", jyutping: "gam1 jat6 hou2 jit6.", english: "It's very hot today." },
+      { hanzi: "出面落雨。", jyutping: "ceot1 min6 lok6 jyu5.", english: "It's raining outside." },
+      { hanzi: "今日天氣好好。", jyutping: "gam1 jat6 tin1 hei3 hou2 hou2.", english: "The weather is very good today." }
+    ]
+  },
+  {
+    id: "body-parts",
+    level: 2,
+    levelName: "Beginner",
+    order: 12,
+    title: "Body Parts",
+    subtitle: "頭 / 眼 / 耳 / 口 / 手 / 腳 / 肚",
+    minutes: 5,
+    intro: "Knowing your body parts helps a lot at the doctor — these are the everyday ones.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "頭", jyutping: "tau4", english: "head" },
+      { hanzi: "眼", jyutping: "ngaan5", english: "eye" },
+      { hanzi: "耳仔", jyutping: "ji5 zai2", english: "ear" },
+      { hanzi: "口", jyutping: "hau2", english: "mouth" },
+      { hanzi: "手", jyutping: "sau2", english: "hand" },
+      { hanzi: "腳", jyutping: "goek3", english: "leg, foot" },
+      { hanzi: "肚", jyutping: "tou5", english: "belly, stomach" }
+    ],
+    examples: [
+      { hanzi: "我個頭好痛。", jyutping: "ngo5 go3 tau4 hou2 tung3.", english: "My head really hurts." },
+      { hanzi: "佢隻手好凍。", jyutping: "keoi5 zek3 sau2 hou2 dung3.", english: "His hand is very cold." },
+      { hanzi: "我肚好餓。", jyutping: "ngo5 tou5 hou2 ngo6.", english: "I'm very hungry." }
+    ]
+  },
+  {
+    id: "feelings",
+    level: 2,
+    levelName: "Beginner",
+    order: 13,
+    title: "Feelings",
+    subtitle: "開心 / 唔開心 / 攰 / 肚餓 / 口渴 / 驚",
+    minutes: 5,
+    intro: "Say how you feel with these everyday words — most just follow 我 (I am ...).",
+    dialogue: [],
+    vocab: [
+      { hanzi: "開心", jyutping: "hoi1 sam1", english: "happy" },
+      { hanzi: "唔開心", jyutping: "m4 hoi1 sam1", english: "unhappy" },
+      { hanzi: "攰", jyutping: "gui6", english: "tired" },
+      { hanzi: "肚餓", jyutping: "tou5 ngo6", english: "hungry" },
+      { hanzi: "口渴", jyutping: "hau2 hot3", english: "thirsty" },
+      { hanzi: "驚", jyutping: "geng1", english: "scared, afraid" }
+    ],
+    examples: [
+      { hanzi: "我好開心。", jyutping: "ngo5 hou2 hoi1 sam1.", english: "I'm very happy." },
+      { hanzi: "我好攰。", jyutping: "ngo5 hou2 gui6.", english: "I'm very tired." },
+      { hanzi: "你肚唔肚餓呀？", jyutping: "nei5 tou5 m4 tou5 ngo6 aa3?", english: "Are you hungry?" }
+    ]
+  },
+  {
+    id: "common-verbs",
+    level: 2,
+    levelName: "Beginner",
+    order: 14,
+    title: "Common Verbs",
+    subtitle: "食 / 飲 / 睇 / 聽 / 講 / 行 / 坐 / 瞓",
+    minutes: 6,
+    intro: "These eight everyday verbs cover most of what you do in a day — eat, drink, watch, walk, sleep.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "食", jyutping: "sik6", english: "to eat" },
+      { hanzi: "飲", jyutping: "jam2", english: "to drink" },
+      { hanzi: "睇", jyutping: "tai2", english: "to watch, to look, to read" },
+      { hanzi: "聽", jyutping: "teng1", english: "to listen" },
+      { hanzi: "講", jyutping: "gong2", english: "to speak, to say" },
+      { hanzi: "行", jyutping: "haang4", english: "to walk" },
+      { hanzi: "坐", jyutping: "co5", english: "to sit" },
+      { hanzi: "瞓", jyutping: "fan3", english: "to sleep" }
+    ],
+    examples: [
+      { hanzi: "我想飲茶。", jyutping: "ngo5 soeng2 jam2 caa4.", english: "I want to drink tea." },
+      { hanzi: "佢鍾意睇電視。", jyutping: "keoi5 zung1 ji3 tai2 din6 si6.", english: "He likes watching TV." },
+      { hanzi: "我要瞓覺。", jyutping: "ngo5 jiu3 fan3 gaau3.", english: "I need to sleep." }
+    ]
   }
 ];
