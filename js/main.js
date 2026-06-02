@@ -53,24 +53,24 @@
   // <audio> element. This is what makes audio "just work" without any system
   // voice installed. Requires an internet connection.
   var currentAudio = null;
-  function speakOnline(text) {
+  function speakOnline(text, onEnd) {
     try {
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=yue&q=" +
                 encodeURIComponent(text);
       currentAudio = new Audio(url);
+      if (onEnd) currentAudio.onended = onEnd;
       currentAudio.play().catch(function () {
-        // If online playback is blocked/unavailable, try the local engine.
-        speakLocal(text, true);
+        speakLocal(text, true, onEnd);
       });
       return true;
     } catch (e) {
-      return speakLocal(text, true);
+      return speakLocal(text, true, onEnd);
     }
   }
 
-  function speakLocal(text, anyVoice) {
-    if (!("speechSynthesis" in window)) return false;
+  function speakLocal(text, anyVoice, onEnd) {
+    if (!("speechSynthesis" in window)) { if (onEnd) onEnd(); return false; }
     refreshVoices();
     window.speechSynthesis.cancel();
     var pick = pickVoice();
@@ -82,24 +82,20 @@
       u.lang = "zh-HK";
     }
     u.rate = 0.9;
+    if (onEnd) u.onend = onEnd;
     window.speechSynthesis.speak(u);
     return true;
   }
 
-  // Fallback chain (used when there's no pre-generated file): a real local
-  // Cantonese voice first (instant, offline), otherwise the online voice.
-  function fallbackSpeak(text) {
+  function fallbackSpeak(text, onEnd) {
     refreshVoices();
     if (pickVoice().isCantonese) {
-      return speakLocal(text, false) ? "local" : (speakOnline(text) && "online");
+      return speakLocal(text, false, onEnd) ? "local" : (speakOnline(text, onEnd) && "online");
     }
-    return speakOnline(text) ? "online" : "unsupported";
+    return speakOnline(text, onEnd) ? "online" : "unsupported";
   }
 
-  // Play a pre-generated MP3 if one exists for this exact phrase. Returns true
-  // if a file was found and playback attempted; on load/play error it falls
-  // back to the live TTS chain.
-  function speakFile(text) {
+  function speakFile(text, onEnd) {
     var manifest = window.AUDIO_MANIFEST;
     if (!manifest || !Object.prototype.hasOwnProperty.call(manifest, text)) {
       return false;
@@ -108,16 +104,15 @@
     var audio = new Audio("audio/" + manifest[text] + ".mp3");
     currentAudio = audio;
     var fellBack = false;
-    function fb() { if (!fellBack) { fellBack = true; fallbackSpeak(text); } }
+    function fb() { if (!fellBack) { fellBack = true; fallbackSpeak(text, onEnd); } }
     audio.onerror = fb;
+    if (onEnd) audio.onended = onEnd;
     audio.play().catch(fb);
     return true;
   }
 
-  // Main entry point used by lesson/vocab/flashcard pages. Prefers a
-  // pre-generated MP3 (reliable, high quality); otherwise uses live TTS.
-  window.speakCantonese = function (text) {
-    return speakFile(text) ? "file" : fallbackSpeak(text);
+  window.speakCantonese = function (text, onEnd) {
+    return speakFile(text, onEnd) ? "file" : fallbackSpeak(text, onEnd);
   };
 
   // True only if a real local Cantonese voice is installed.

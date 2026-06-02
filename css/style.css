@@ -656,3 +656,22 @@ a:hover { text-decoration: underline; }
 .fc-jyutping { font-size: 2.4rem; color: var(--red); font-weight: 700; line-height: 1.15; }
 .fc-hanzi-sub { font-size: 2rem; font-weight: 600; color: var(--ink); line-height: 1.1; }
 .fc-prompt { font-size: 2.2rem; font-weight: 600; }
+
+/* ===== Stories ===== */
+.story-controls { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+.story-body { display: flex; flex-direction: column; gap: 10px; }
+.story-line {
+  background: var(--card); border: 1px solid var(--line);
+  border-left: 4px solid var(--gold); border-radius: var(--radius);
+  padding: 14px 16px; box-shadow: var(--shadow-sm); cursor: pointer;
+  transition: border-color .15s, box-shadow .15s;
+}
+.story-line:hover { border-color: var(--red); }
+.story-line.playing { border-left-color: var(--red); box-shadow: var(--shadow); }
+.story-line-top { display: flex; align-items: flex-start; gap: 10px; }
+.story-line-text { display: flex; flex-direction: column; gap: 2px; }
+.story-jyut { color: var(--red); font-size: 1.2rem; font-weight: 600; }
+.story-hanzi { font-size: 1.35rem; color: var(--ink); }
+.story-kw { background: #fde7c2; color: inherit; border-radius: 4px; padding: 0 2px; }
+.story-english { margin: 8px 0 0; color: var(--muted); display: none; }
+.story-line.revealed .story-english { display: block; }
