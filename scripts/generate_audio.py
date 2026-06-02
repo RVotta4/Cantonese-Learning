@@ -51,12 +51,12 @@ async def synth(text, key):
     for attempt in range(1, RETRIES + 1):
         try:
             await edge_tts.Communicate(text, VOICE).save(path)
-            if os.path.exists(path) and os.path.getsize(path) > 0:
+            if has_audio(key):
                 return True
             raise RuntimeError("empty file written")
-        except Exception as e:  # report, clean up, retry
+        except Exception as e:  # report, drop any bad/partial file, retry
             print("  attempt %d/%d failed for %r: %s" % (attempt, RETRIES, text, e))
-            if os.path.exists(path) and os.path.getsize(path) == 0:
+            if os.path.exists(path):
                 os.remove(path)
             if attempt < RETRIES:
                 await asyncio.sleep(attempt)
@@ -96,7 +96,8 @@ async def run(dry_run):
         else:
             failed += 1
 
-    write_manifest(mapping)
+    if mapping:
+        write_manifest(mapping)
 
     missing = [t for t, k in mapping.items() if not has_audio(k)]
     print("\nSummary: %d generated, %d already present, %d failed, %d in manifest"
