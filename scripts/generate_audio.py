@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate high-quality Cantonese MP3s for every phrase in data/lessons.js.
+"""Generate high-quality Cantonese MP3s for every phrase in data/lessons.js and data/stories.js.
 
 For each unique `hanzi` phrase, synthesize audio/<key>.mp3 with edge-tts
 (voice zh-HK-HiuMaanNeural) and write audio/manifest.js mapping phrase -> key.
@@ -20,7 +20,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from extract_phrases import extract_phrases, extract_from_texts, phrase_key
+from extract_phrases import extract_from_texts, phrase_key
 
 ROOT = os.path.dirname(HERE)
 DATA_FILES = [
@@ -35,7 +35,9 @@ RETRIES = 3
 
 def load_phrases():
     texts = []
-    for path in DATA_FILES:
+    with open(DATA_FILES[0], encoding="utf-8") as f:   # lessons.js — must exist
+        texts.append(f.read())
+    for path in DATA_FILES[1:]:                        # optional extra files
         if os.path.exists(path):
             with open(path, encoding="utf-8") as f:
                 texts.append(f.read())

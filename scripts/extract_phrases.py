@@ -40,6 +40,7 @@ def extract_from_texts(texts):
     known = set()
     for text in texts:
         for phrase in extract_phrases(text):
+            # No empty-string guard needed: extract_phrases never yields empty strings.
             if phrase not in known:
                 known.add(phrase)
                 result.append(phrase)
