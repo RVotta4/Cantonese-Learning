@@ -9,7 +9,7 @@ import re
 
 # Matches  hanzi: "..."  (the key is unquoted in data/lessons.js).
 # The body allows backslash escapes like \" so escaped quotes don't end it.
-_HANZI_RE = re.compile(r'hanzi\s*:\s*"((?:\\.|[^"\\])*)"')
+_HANZI_RE = re.compile(r'hanzi\s*:\s*"((?:\\.|[^"\\\n])*)"')
 
 # JS string escapes we might see in a captured value. Today's hanzi values
 # are plain text, but unescaping keeps the manifest key byte-identical to the
@@ -24,14 +24,14 @@ def _unescape(raw):
 
 def extract_phrases(js_text):
     """Return the unique hanzi phrases in first-seen order."""
-    seen = []
+    result = []
     known = set()
     for m in _HANZI_RE.finditer(js_text):
         phrase = _unescape(m.group(1))
         if phrase and phrase not in known:
             known.add(phrase)
-            seen.append(phrase)
-    return seen
+            result.append(phrase)
+    return result
 
 
 def phrase_key(text):

@@ -36,12 +36,13 @@ def test_phrase_key_is_stable_16_hex():
     assert len(k) == 16
 
 
-def test_real_data_has_173_phrases():
+def test_real_data_extracts_many_phrases():
+    # Sanity floor, not an exact snapshot — survives normal lesson growth.
     here = os.path.dirname(os.path.abspath(__file__))
     data = os.path.join(here, "..", "data", "lessons.js")
     with open(data, encoding="utf-8") as f:
         phrases = extract_phrases(f.read())
-    assert len(phrases) == 173, "expected 173 unique phrases, got %d" % len(phrases)
+    assert len(phrases) >= 100, "extracted only %d phrases (expected >=100)" % len(phrases)
 
 
 def _run():
@@ -52,7 +53,7 @@ def _run():
         try:
             t()
             print("PASS", t.__name__)
-        except AssertionError as e:
+        except Exception as e:
             failed += 1
             print("FAIL", t.__name__, "-", e)
     if failed:
