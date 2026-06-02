@@ -731,5 +731,252 @@ window.LESSONS = [
       { hanzi: "佢鍾意睇電視。", jyutping: "keoi5 zung1 ji3 tai2 din6 si6.", english: "He likes watching TV." },
       { hanzi: "我要瞓覺。", jyutping: "ngo5 jiu3 fan3 gaau3.", english: "I need to sleep." }
     ]
+  },
+  {
+    id: "common-adjectives",
+    level: 2,
+    levelName: "Beginner",
+    order: 15,
+    title: "Common Adjectives",
+    subtitle: "大 / 細 / 多 / 少 / 長 / 短 / 平 / 貴",
+    minutes: 5,
+    intro: "These adjectives let you describe size, quantity, length and price.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "大", jyutping: "daai6", english: "big" },
+      { hanzi: "細", jyutping: "sai3", english: "small" },
+      { hanzi: "多", jyutping: "do1", english: "many, much" },
+      { hanzi: "少", jyutping: "siu2", english: "few, little" },
+      { hanzi: "長", jyutping: "coeng4", english: "long" },
+      { hanzi: "短", jyutping: "dyun2", english: "short" },
+      { hanzi: "平", jyutping: "peng4", english: "cheap" },
+      { hanzi: "貴", jyutping: "gwai3", english: "expensive" }
+    ],
+    examples: [
+      { hanzi: "呢間屋好大。", jyutping: "ni1 gaan1 uk1 hou2 daai6.", english: "This house is very big." },
+      { hanzi: "件衫好平。", jyutping: "gin6 saam1 hou2 peng4.", english: "This shirt is very cheap." },
+      { hanzi: "我食得好少。", jyutping: "ngo5 sik6 dak1 hou2 siu2.", english: "I eat very little." }
+    ]
+  },
+  {
+    id: "clothing",
+    level: 2,
+    levelName: "Beginner",
+    order: 16,
+    title: "Clothing",
+    subtitle: "衫 / 褲 / 鞋 / 襪 / 裙 / 帽",
+    minutes: 5,
+    intro: "Learn the words for everyday clothes you wear.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "衫", jyutping: "saam1", english: "shirt, clothes" },
+      { hanzi: "褲", jyutping: "fu3", english: "trousers, pants" },
+      { hanzi: "鞋", jyutping: "haai4", english: "shoes" },
+      { hanzi: "襪", jyutping: "mat6", english: "socks" },
+      { hanzi: "裙", jyutping: "kwan4", english: "skirt, dress" },
+      { hanzi: "帽", jyutping: "mou2", english: "hat" }
+    ],
+    examples: [
+      { hanzi: "我鍾意呢件衫。", jyutping: "ngo5 zung1 ji3 ni1 gin6 saam1.", english: "I like this shirt." },
+      { hanzi: "呢對鞋幾錢呀？", jyutping: "ni1 deoi3 haai4 gei2 cin2 aa3?", english: "How much are these shoes?" },
+      { hanzi: "佢戴緊帽。", jyutping: "keoi5 daai3 gan2 mou2.", english: "He is wearing a hat." }
+    ]
+  },
+  {
+    id: "shopping",
+    level: 2,
+    levelName: "Beginner",
+    order: 17,
+    title: "Shopping & Bargaining",
+    subtitle: "買 / 賣 / 平啲 / 貴 / 打折 / 試",
+    minutes: 6,
+    intro: "Useful phrases for buying things and asking for a better price.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "買", jyutping: "maai5", english: "to buy" },
+      { hanzi: "賣", jyutping: "maai6", english: "to sell" },
+      { hanzi: "平啲", jyutping: "peng4 di1", english: "a bit cheaper" },
+      { hanzi: "貴", jyutping: "gwai3", english: "expensive" },
+      { hanzi: "打折", jyutping: "daa2 zit3", english: "to give a discount" },
+      { hanzi: "試", jyutping: "si3", english: "to try" },
+      { hanzi: "要", jyutping: "jiu3", english: "to want, to need" }
+    ],
+    examples: [
+      { hanzi: "我想買呢件衫。", jyutping: "ngo5 soeng2 maai5 ni1 gin6 saam1.", english: "I want to buy this shirt." },
+      { hanzi: "可唔可以平啲呀？", jyutping: "ho2 m4 ho2 ji5 peng4 di1 aa3?", english: "Can it be a bit cheaper?" },
+      { hanzi: "我可唔可以試吓呀？", jyutping: "ngo5 ho2 m4 ho2 ji5 si3 haa5 aa3?", english: "Can I try it on?" }
+    ]
+  },
+  {
+    id: "cafe-drinks",
+    level: 2,
+    levelName: "Beginner",
+    order: 18,
+    title: "Café & Drinks",
+    subtitle: "咖啡 / 奶茶 / 凍 / 熱 / 水 / 汽水",
+    minutes: 5,
+    intro: "Order drinks at a Hong Kong café and say if you want them hot or cold.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "咖啡", jyutping: "gaa3 fe1", english: "coffee" },
+      { hanzi: "奶茶", jyutping: "naai5 caa4", english: "milk tea" },
+      { hanzi: "凍", jyutping: "dung3", english: "cold (drink)" },
+      { hanzi: "熱", jyutping: "jit6", english: "hot" },
+      { hanzi: "水", jyutping: "seoi2", english: "water" },
+      { hanzi: "汽水", jyutping: "hei3 seoi2", english: "soft drink, soda" },
+      { hanzi: "凍檸茶", jyutping: "dung3 ning4 caa4", english: "iced lemon tea" }
+    ],
+    examples: [
+      { hanzi: "我要一杯熱咖啡。", jyutping: "ngo5 jiu3 jat1 bui1 jit6 gaa3 fe1.", english: "I want a hot coffee." },
+      { hanzi: "我鍾意飲奶茶。", jyutping: "ngo5 zung1 ji3 jam2 naai5 caa4.", english: "I like drinking milk tea." },
+      { hanzi: "唔該一杯凍檸茶。", jyutping: "m4 goi1 jat1 bui1 dung3 ning4 caa4.", english: "An iced lemon tea, please." }
+    ]
+  },
+  {
+    id: "fruit",
+    level: 2,
+    levelName: "Beginner",
+    order: 19,
+    title: "Fruit",
+    subtitle: "蘋果 / 橙 / 香蕉 / 西瓜 / 提子 / 士多啤梨",
+    minutes: 5,
+    intro: "Common fruits you can buy at the market.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "蘋果", jyutping: "ping4 gwo2", english: "apple" },
+      { hanzi: "橙", jyutping: "caang2", english: "orange" },
+      { hanzi: "香蕉", jyutping: "hoeng1 ziu1", english: "banana" },
+      { hanzi: "西瓜", jyutping: "sai1 gwaa1", english: "watermelon" },
+      { hanzi: "提子", jyutping: "tai4 zi2", english: "grapes" },
+      { hanzi: "士多啤梨", jyutping: "si6 do1 be1 lei2", english: "strawberry" }
+    ],
+    examples: [
+      { hanzi: "我鍾意食蘋果。", jyutping: "ngo5 zung1 ji3 sik6 ping4 gwo2.", english: "I like eating apples." },
+      { hanzi: "西瓜幾錢一個呀？", jyutping: "sai1 gwaa1 gei2 cin2 jat1 go3 aa3?", english: "How much is one watermelon?" },
+      { hanzi: "我要一斤提子。", jyutping: "ngo5 jiu3 jat1 gan1 tai4 zi2.", english: "I want one catty of grapes." }
+    ]
+  },
+  {
+    id: "vegetables",
+    level: 2,
+    levelName: "Beginner",
+    order: 20,
+    title: "Vegetables",
+    subtitle: "菜 / 白菜 / 番茄 / 薯仔 / 紅蘿蔔 / 洋蔥",
+    minutes: 5,
+    intro: "Names of vegetables you will see at the wet market.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "菜", jyutping: "coi3", english: "vegetables" },
+      { hanzi: "白菜", jyutping: "baak6 coi3", english: "bok choy" },
+      { hanzi: "番茄", jyutping: "faan1 ke2", english: "tomato" },
+      { hanzi: "薯仔", jyutping: "syu4 zai2", english: "potato" },
+      { hanzi: "紅蘿蔔", jyutping: "hung4 lo4 baak6", english: "carrot" },
+      { hanzi: "洋蔥", jyutping: "joeng4 cung1", english: "onion" }
+    ],
+    examples: [
+      { hanzi: "我鍾意食菜。", jyutping: "ngo5 zung1 ji3 sik6 coi3.", english: "I like eating vegetables." },
+      { hanzi: "我要兩個番茄。", jyutping: "ngo5 jiu3 loeng5 go3 faan1 ke2.", english: "I want two tomatoes." },
+      { hanzi: "薯仔平唔平呀？", jyutping: "syu4 zai2 peng4 m4 peng4 aa3?", english: "Are the potatoes cheap?" }
+    ]
+  },
+  {
+    id: "meat-seafood",
+    level: 2,
+    levelName: "Beginner",
+    order: 21,
+    title: "Meat & Seafood",
+    subtitle: "肉 / 雞 / 豬肉 / 牛肉 / 魚 / 蝦 / 蟹",
+    minutes: 5,
+    intro: "Words for meat and seafood when shopping or ordering food.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "肉", jyutping: "juk6", english: "meat" },
+      { hanzi: "雞", jyutping: "gai1", english: "chicken" },
+      { hanzi: "豬肉", jyutping: "zyu1 juk6", english: "pork" },
+      { hanzi: "牛肉", jyutping: "ngau4 juk6", english: "beef" },
+      { hanzi: "魚", jyutping: "jyu2", english: "fish" },
+      { hanzi: "蝦", jyutping: "haa1", english: "shrimp" },
+      { hanzi: "蟹", jyutping: "haai5", english: "crab" }
+    ],
+    examples: [
+      { hanzi: "我鍾意食牛肉。", jyutping: "ngo5 zung1 ji3 sik6 ngau4 juk6.", english: "I like eating beef." },
+      { hanzi: "我唔食豬肉。", jyutping: "ngo5 m4 sik6 zyu1 juk6.", english: "I don't eat pork." },
+      { hanzi: "啲魚好唔好食呀？", jyutping: "di1 jyu2 hou2 m4 hou2 sik6 aa3?", english: "Is the fish tasty?" }
+    ]
+  },
+  {
+    id: "kitchen",
+    level: 2,
+    levelName: "Beginner",
+    order: 22,
+    title: "In the Kitchen",
+    subtitle: "廚房 / 煮 / 煎 / 炒 / 碗 / 筷子 / 刀",
+    minutes: 5,
+    intro: "Cooking actions and utensils you use in the kitchen.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "廚房", jyutping: "cyu4 fong2", english: "kitchen" },
+      { hanzi: "煮", jyutping: "zyu2", english: "to cook" },
+      { hanzi: "煎", jyutping: "zin1", english: "to pan-fry" },
+      { hanzi: "炒", jyutping: "caau2", english: "to stir-fry" },
+      { hanzi: "碗", jyutping: "wun2", english: "bowl" },
+      { hanzi: "筷子", jyutping: "faai3 zi2", english: "chopsticks" },
+      { hanzi: "刀", jyutping: "dou1", english: "knife" }
+    ],
+    examples: [
+      { hanzi: "我鍾意煮飯。", jyutping: "ngo5 zung1 ji3 zyu2 faan6.", english: "I like cooking." },
+      { hanzi: "佢喺廚房炒菜。", jyutping: "keoi5 hai2 cyu4 fong2 caau2 coi3.", english: "She is stir-frying vegetables in the kitchen." },
+      { hanzi: "我要一對筷子。", jyutping: "ngo5 jiu3 jat1 deoi3 faai3 zi2.", english: "I want a pair of chopsticks." }
+    ]
+  },
+  {
+    id: "house-rooms",
+    level: 2,
+    levelName: "Beginner",
+    order: 23,
+    title: "House & Rooms",
+    subtitle: "屋企 / 房 / 廳 / 廚房 / 廁所 / 門 / 窗",
+    minutes: 5,
+    intro: "Talk about the different parts of your home.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "屋企", jyutping: "uk1 kei2", english: "home" },
+      { hanzi: "房", jyutping: "fong2", english: "room, bedroom" },
+      { hanzi: "廳", jyutping: "teng1", english: "living room" },
+      { hanzi: "廚房", jyutping: "cyu4 fong2", english: "kitchen" },
+      { hanzi: "廁所", jyutping: "ci3 so2", english: "toilet, bathroom" },
+      { hanzi: "門", jyutping: "mun4", english: "door" },
+      { hanzi: "窗", jyutping: "coeng1", english: "window" }
+    ],
+    examples: [
+      { hanzi: "我喺屋企。", jyutping: "ngo5 hai2 uk1 kei2.", english: "I am at home." },
+      { hanzi: "廁所喺邊度呀？", jyutping: "ci3 so2 hai2 bin1 dou6 aa3?", english: "Where is the toilet?" },
+      { hanzi: "呢間屋有兩間房。", jyutping: "ni1 gaan1 uk1 jau5 loeng5 gaan1 fong2.", english: "This flat has two bedrooms." }
+    ]
+  },
+  {
+    id: "furniture",
+    level: 2,
+    levelName: "Beginner",
+    order: 24,
+    title: "Furniture",
+    subtitle: "枱 / 櫈 / 床 / 櫃 / 沙發 / 燈",
+    minutes: 5,
+    intro: "Common pieces of furniture found around the home.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "枱", jyutping: "toi2", english: "table" },
+      { hanzi: "櫈", jyutping: "dang3", english: "chair, stool" },
+      { hanzi: "床", jyutping: "cong4", english: "bed" },
+      { hanzi: "櫃", jyutping: "gwai6", english: "cabinet, cupboard" },
+      { hanzi: "沙發", jyutping: "saa1 faat3", english: "sofa" },
+      { hanzi: "燈", jyutping: "dang1", english: "lamp, light" }
+    ],
+    examples: [
+      { hanzi: "張床好大。", jyutping: "zoeng1 cong4 hou2 daai6.", english: "The bed is very big." },
+      { hanzi: "我坐喺沙發度。", jyutping: "ngo5 co5 hai2 saa1 faat3 dou6.", english: "I am sitting on the sofa." },
+      { hanzi: "唔該開燈。", jyutping: "m4 goi1 hoi1 dang1.", english: "Please turn on the light." }
+    ]
   }
 ];
