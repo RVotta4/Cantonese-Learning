@@ -86,15 +86,38 @@
     return true;
   }
 
-  // Main entry point used by lesson/vocab/flashcard pages.
-  // Prefers a real local Cantonese voice (instant, offline); otherwise plays
-  // the online Cantonese voice.
-  window.speakCantonese = function (text) {
+  // Fallback chain (used when there's no pre-generated file): a real local
+  // Cantonese voice first (instant, offline), otherwise the online voice.
+  function fallbackSpeak(text) {
     refreshVoices();
     if (pickVoice().isCantonese) {
-      return speakLocal(text, false) ? "local" : speakOnline(text) && "online";
+      return speakLocal(text, false) ? "local" : (speakOnline(text) && "online");
     }
     return speakOnline(text) ? "online" : "unsupported";
+  }
+
+  // Play a pre-generated MP3 if one exists for this exact phrase. Returns true
+  // if a file was found and playback attempted; on load/play error it falls
+  // back to the live TTS chain.
+  function speakFile(text) {
+    var manifest = window.AUDIO_MANIFEST;
+    if (!manifest || !Object.prototype.hasOwnProperty.call(manifest, text)) {
+      return false;
+    }
+    if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+    var audio = new Audio("audio/" + manifest[text] + ".mp3");
+    currentAudio = audio;
+    var fellBack = false;
+    function fb() { if (!fellBack) { fellBack = true; fallbackSpeak(text); } }
+    audio.onerror = fb;
+    audio.play().catch(fb);
+    return true;
+  }
+
+  // Main entry point used by lesson/vocab/flashcard pages. Prefers a
+  // pre-generated MP3 (reliable, high quality); otherwise uses live TTS.
+  window.speakCantonese = function (text) {
+    return speakFile(text) ? "file" : fallbackSpeak(text);
   };
 
   // True only if a real local Cantonese voice is installed.
