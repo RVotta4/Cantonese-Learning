@@ -113,6 +113,9 @@
 
   function reset() { save({ srs: {} }); }
 
+  function getFcMode() { return load().fcMode || null; }
+  function setFcMode(m) { var d = load(); d.fcMode = m; save(d); }
+
   // ---------- Lesson completion ----------
   function markLessonComplete(id) {
     var d = load(); d.completed = d.completed || {}; d.completed[id] = true; save(d);
@@ -159,6 +162,8 @@
     newCards: newCards,
     knownCount: knownCount,
     reset: reset,
+    getFcMode: getFcMode,
+    setFcMode: setFcMode,
     markLessonComplete: markLessonComplete,
     unmarkLessonComplete: unmarkLessonComplete,
     isLessonComplete: isLessonComplete,

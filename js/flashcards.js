@@ -1,7 +1,11 @@
 /* ===========================================================
-   Cantonese Learning — flashcards (Phase 3)
-   Spaced-repetition review. Shows due cards plus a few new ones,
-   you flip and rate each, and progress saves to localStorage.
+   Cantonese Learning — flashcards
+   Spaced-repetition review with a choosable card direction:
+     recog  Jyutping + 漢字  → English   (default)
+     prod   English          → Jyutping + 漢字
+     mixed  random direction per card
+   Card identity is still the 漢字, so progress is shared
+   across directions. Progress saves to localStorage.
    =========================================================== */
 
 (function () {
@@ -13,10 +17,17 @@
   var NEW_PER_SESSION = 10;
   var all = window.Vocab.all();
 
-  var queue = [];      // cards remaining this session
-  var current = null;  // card being shown
+  var MODES = {
+    recog: "Jyutping + 漢字 → English",
+    prod: "English → Jyutping + 漢字",
+    mixed: "Mixed"
+  };
+
+  var queue = [];
+  var current = null;
   var flipped = false;
   var done = 0;
+  var mode = window.Store.getFcMode() || "recog";
 
   showStart();
 
@@ -33,6 +44,7 @@
           stat(Math.min(fresh.length, NEW_PER_SESSION), "New to learn") +
           stat(known, "Words learned") +
         '</div>' +
+        modeSelector() +
         (due.length || fresh.length
           ? '<button class="btn btn-primary fc-start-btn" id="fc-start">Start session →</button>'
           : '<p class="fc-caught-up">🎉 You\'re all caught up! Come back later for more reviews.</p>' +
@@ -41,6 +53,14 @@
         '<p class="muted fc-note">' + all.length + ' words available · progress is saved in this browser.</p>' +
         (known ? '<button class="fc-reset" id="fc-reset">Reset all progress</button>' : '') +
       '</div>';
+
+    mount.querySelectorAll("[data-mode]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        mode = b.getAttribute("data-mode");
+        window.Store.setFcMode(mode);
+        showStart();
+      });
+    });
 
     var startBtn = document.getElementById("fc-start");
     if (startBtn) startBtn.addEventListener("click", function () {
@@ -56,9 +76,21 @@
     });
   }
 
+  function modeSelector() {
+    var html = '<div class="fc-modes" role="group" aria-label="Card direction">';
+    Object.keys(MODES).forEach(function (key) {
+      html += '<button class="fc-mode' + (mode === key ? ' active' : '') +
+        '" data-mode="' + key + '">' + escapeHtml(MODES[key]) + '</button>';
+    });
+    return html + '</div>';
+  }
+
   function buildQueue(due, fresh) {
     queue = shuffle(due.slice());
     queue = queue.concat(fresh.slice(0, NEW_PER_SESSION));
+    queue.forEach(function (c) {
+      c._dir = (mode === "mixed") ? (Math.random() < 0.5 ? "recog" : "prod") : mode;
+    });
     done = 0;
   }
 
@@ -71,8 +103,8 @@
 
   function renderCard() {
     var total = done + queue.length + 1;
-    var state = window.Store.getState(current.id);
-    var isNew = !state;
+    var isNew = !window.Store.getState(current.id);
+    var dir = current._dir || "recog";
 
     mount.innerHTML =
       '<div class="fc-progressbar"><div class="fc-progress-fill" style="width:' +
@@ -80,33 +112,26 @@
       '<p class="fc-counter">' + (done + 1) + ' / ' + total +
         (isNew ? ' · <span class="fc-newtag">new</span>' : '') + '</p>' +
       '<div class="flashcard' + (flipped ? ' flipped' : '') + '" id="flashcard">' +
-        '<div class="fc-face fc-front">' +
-          '<span class="fc-hanzi" lang="yue">' + escapeHtml(current.hanzi) + '</span>' +
-          '<button class="audio-btn fc-audio" data-text="' + escapeAttr(current.hanzi) + '" aria-label="Play audio">🔊</button>' +
-          '<span class="fc-hint">Tap to reveal</span>' +
-        '</div>' +
-        '<div class="fc-face fc-back">' +
-          '<span class="fc-jyutping">' + escapeHtml(current.jyutping) + '</span>' +
-          '<span class="fc-english">' + escapeHtml(current.english) + '</span>' +
-          '<span class="fc-lesson muted">from “' + escapeHtml(current.lessonTitle) + '”</span>' +
-        '</div>' +
+        '<div class="fc-face fc-front">' + faceFront(dir) + '</div>' +
+        '<div class="fc-face fc-back">' + faceBack(dir) + '</div>' +
       '</div>' +
       (flipped ? ratingBar() : '<button class="btn btn-primary fc-flip" id="fc-flip">Show answer</button>');
 
     var card = document.getElementById("flashcard");
     card.addEventListener("click", function (e) {
-      if (e.target.closest(".audio-btn")) return; // don't flip on audio tap
+      if (e.target.closest(".audio-btn")) return;
       if (!flipped) flip();
     });
     var flipBtn = document.getElementById("fc-flip");
     if (flipBtn) flipBtn.addEventListener("click", flip);
 
-    var audioBtn = card.querySelector(".audio-btn");
-    if (audioBtn) audioBtn.addEventListener("click", function () {
-      if (window.speakCantonese) window.speakCantonese(current.hanzi);
+    mount.querySelectorAll(".audio-btn").forEach(function (b) {
+      b.addEventListener("click", function () {
+        if (window.speakCantonese) window.speakCantonese(current.hanzi);
+      });
     });
 
-    // Auto-play audio when answer is revealed.
+    // Auto-play the Cantonese when the answer is revealed.
     if (flipped && window.speakCantonese) window.speakCantonese(current.hanzi);
 
     mount.querySelectorAll("[data-rate]").forEach(function (b) {
@@ -114,12 +139,33 @@
     });
   }
 
+  // Cantonese side: jyutping (lead) + 漢字 (secondary) + audio.
+  function cantoneseBlock() {
+    return '<span class="fc-jyutping">' + escapeHtml(current.jyutping) + '</span>' +
+           '<span class="fc-hanzi-sub" lang="yue">' + escapeHtml(current.hanzi) + '</span>' +
+           '<button class="audio-btn fc-audio" aria-label="Play audio">🔊</button>';
+  }
+  function lessonTag() {
+    return '<span class="fc-lesson muted">from "' + escapeHtml(current.lessonTitle) + '"</span>';
+  }
+
+  function faceFront(dir) {
+    if (dir === "prod") {
+      return '<span class="fc-english fc-prompt">' + escapeHtml(current.english) + '</span>' +
+             '<span class="fc-hint">Tap to reveal</span>';
+    }
+    return cantoneseBlock() + '<span class="fc-hint">Tap to reveal</span>';
+  }
+  function faceBack(dir) {
+    if (dir === "prod") return cantoneseBlock() + lessonTag();
+    return '<span class="fc-english">' + escapeHtml(current.english) + '</span>' + lessonTag();
+  }
+
   function flip() { flipped = true; renderCard(); }
 
   function rateCurrent(rating) {
     window.Store.rate(current.id, rating);
     window.Store.recordActivity();
-    // "Again" puts the card back near the end of this session too.
     if (rating === "again") queue.push(current);
     done++;
     next();
@@ -163,5 +209,4 @@
       .replace(/&/g, "&amp;").replace(/</g, "&lt;")
       .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
-  function escapeAttr(s) { return escapeHtml(s).replace(/'/g, "&#39;"); }
 })();
