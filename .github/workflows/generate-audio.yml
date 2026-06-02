@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - data/lessons.js
+      - data/stories.js
 
 permissions:
   contents: write

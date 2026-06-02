@@ -7,7 +7,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from extract_phrases import extract_phrases, phrase_key
+from extract_phrases import extract_phrases, extract_from_texts, phrase_key
 
 
 def test_extracts_basic_hanzi():
@@ -34,6 +34,12 @@ def test_phrase_key_is_stable_16_hex():
     k = phrase_key("你好")
     assert k == "440ee0853ad1e99f", k   # sha1("你好")[:16]
     assert len(k) == 16
+
+
+def test_extract_from_texts_unions_and_dedupes():
+    a = '{hanzi:"你好"} {hanzi:"早晨"}'
+    b = '{hanzi:"早晨"} {hanzi:"多謝"}'
+    assert extract_from_texts([a, b]) == ["你好", "早晨", "多謝"]
 
 
 def test_real_data_extracts_many_phrases():

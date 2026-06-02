@@ -34,6 +34,18 @@ def extract_phrases(js_text):
     return result
 
 
+def extract_from_texts(texts):
+    """Unique phrases across several JS sources, in first-seen order."""
+    result = []
+    known = set()
+    for text in texts:
+        for phrase in extract_phrases(text):
+            if phrase not in known:
+                known.add(phrase)
+                result.append(phrase)
+    return result
+
+
 def phrase_key(text):
     """Stable audio filename stem: first 16 hex chars of SHA-1(UTF-8)."""
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]

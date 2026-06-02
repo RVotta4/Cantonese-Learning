@@ -20,10 +20,13 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from extract_phrases import extract_phrases, phrase_key
+from extract_phrases import extract_phrases, extract_from_texts, phrase_key
 
 ROOT = os.path.dirname(HERE)
-DATA = os.path.join(ROOT, "data", "lessons.js")
+DATA_FILES = [
+    os.path.join(ROOT, "data", "lessons.js"),
+    os.path.join(ROOT, "data", "stories.js"),
+]
 AUDIO_DIR = os.path.join(ROOT, "audio")
 MANIFEST = os.path.join(AUDIO_DIR, "manifest.js")
 VOICE = "zh-HK-HiuMaanNeural"
@@ -31,8 +34,12 @@ RETRIES = 3
 
 
 def load_phrases():
-    with open(DATA, encoding="utf-8") as f:
-        return extract_phrases(f.read())
+    texts = []
+    for path in DATA_FILES:
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                texts.append(f.read())
+    return extract_from_texts(texts)
 
 
 def mp3_path(key):
@@ -72,7 +79,7 @@ def write_manifest(mapping):
 
 async def run(dry_run):
     phrases = load_phrases()
-    print("Found %d unique phrases in data/lessons.js" % len(phrases))
+    print("Found %d unique phrases in lesson + story data" % len(phrases))
 
     if dry_run:
         for p in phrases[:5]:
