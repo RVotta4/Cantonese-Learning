@@ -111,7 +111,7 @@
     }, 0);
   }
 
-  function reset() { save({ srs: {} }); }
+  function reset() { save({ srs: {}, fcMode: load().fcMode }); }
 
   function getFcMode() { return load().fcMode || null; }
   function setFcMode(m) { var d = load(); d.fcMode = m; save(d); }

@@ -588,10 +588,8 @@ a:hover { text-decoration: underline; }
 .fc-back { display: none; }
 .flashcard.flipped .fc-front { display: none; }
 .flashcard.flipped .fc-back { display: flex; }
-.fc-hanzi { font-size: 4rem; font-weight: 700; color: var(--ink); line-height: 1.1; }
 .fc-audio { font-size: 1.1rem; }
 .fc-hint { color: var(--muted); font-size: .85rem; }
-.fc-jyutping { font-size: 1.8rem; color: var(--red); font-weight: 600; }
 .fc-english { font-size: 1.5rem; color: var(--ink); }
 .fc-lesson { font-size: .85rem; }
 
