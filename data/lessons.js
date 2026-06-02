@@ -1092,14 +1092,14 @@ window.LESSONS = [
       { hanzi: "學校", jyutping: "hok6 haau6", english: "school" },
       { hanzi: "讀書", jyutping: "duk6 syu1", english: "to study" },
       { hanzi: "功課", jyutping: "gung1 fo3", english: "homework" },
-      { hanzi: "考試", jyutping: "haau2 si5", english: "exam" },
+      { hanzi: "考試", jyutping: "haau2 si3", english: "exam" },
       { hanzi: "同學", jyutping: "tung4 hok6", english: "classmate" },
       { hanzi: "書", jyutping: "syu1", english: "book" }
     ],
     examples: [
       { hanzi: "我去學校讀書。", jyutping: "ngo5 heoi3 hok6 haau6 duk6 syu1.", english: "I go to school to study." },
       { hanzi: "今日有好多功課。", jyutping: "gam1 jat6 jau5 hou2 do1 gung1 fo3.", english: "There is a lot of homework today." },
-      { hanzi: "聽日考試。", jyutping: "ting1 jat6 haau2 si5.", english: "There's an exam tomorrow." }
+      { hanzi: "聽日考試。", jyutping: "ting1 jat6 haau2 si3.", english: "There's an exam tomorrow." }
     ]
   },
   {
