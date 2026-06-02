@@ -978,5 +978,250 @@ window.LESSONS = [
       { hanzi: "我坐喺沙發度。", jyutping: "ngo5 co5 hai2 saa1 faat3 dou6.", english: "I am sitting on the sofa." },
       { hanzi: "唔該開燈。", jyutping: "m4 goi1 hoi1 dang1.", english: "Please turn on the light." }
     ]
+  },
+  {
+    id: "transport-types",
+    level: 2,
+    levelName: "Beginner",
+    order: 25,
+    title: "Types of Transport",
+    subtitle: "巴士 / 小巴 / 的士 / 火車 / 船 / 飛機 / 單車",
+    minutes: 5,
+    intro: "Common ways to get around Hong Kong.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "巴士", jyutping: "baa1 si2", english: "bus" },
+      { hanzi: "小巴", jyutping: "siu2 baa1", english: "minibus" },
+      { hanzi: "的士", jyutping: "dik1 si2", english: "taxi" },
+      { hanzi: "火車", jyutping: "fo2 ce1", english: "train" },
+      { hanzi: "船", jyutping: "syun4", english: "boat, ferry" },
+      { hanzi: "飛機", jyutping: "fei1 gei1", english: "plane" },
+      { hanzi: "單車", jyutping: "daan1 ce1", english: "bicycle" }
+    ],
+    examples: [
+      { hanzi: "我搭巴士返工。", jyutping: "ngo5 daap3 baa1 si2 faan1 gung1.", english: "I take the bus to work." },
+      { hanzi: "搭的士好貴。", jyutping: "daap3 dik1 si2 hou2 gwai3.", english: "Taking a taxi is expensive." },
+      { hanzi: "我鍾意踩單車。", jyutping: "ngo5 zung1 ji3 caai2 daan1 ce1.", english: "I like riding a bicycle." }
+    ]
+  },
+  {
+    id: "asking-the-way",
+    level: 2,
+    levelName: "Beginner",
+    order: 26,
+    title: "Asking the Way",
+    subtitle: "點去 / 喺邊度 / 前面 / 後面 / 左 / 右 / 直行",
+    minutes: 5,
+    intro: "Useful phrases for asking and giving directions.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "點去", jyutping: "dim2 heoi3", english: "how to get to" },
+      { hanzi: "喺邊度", jyutping: "hai2 bin1 dou6", english: "where (is it)" },
+      { hanzi: "前面", jyutping: "cin4 min6", english: "in front, ahead" },
+      { hanzi: "後面", jyutping: "hau6 min6", english: "behind" },
+      { hanzi: "左", jyutping: "zo2", english: "left" },
+      { hanzi: "右", jyutping: "jau6", english: "right" },
+      { hanzi: "直行", jyutping: "zik6 haang4", english: "go straight" }
+    ],
+    examples: [
+      { hanzi: "請問點去地鐵站呀？", jyutping: "cing2 man6 dim2 heoi3 dei6 tit3 zaam6 aa3?", english: "Excuse me, how do I get to the MTR station?" },
+      { hanzi: "直行轉左。", jyutping: "zik6 haang4 zyun3 zo2.", english: "Go straight and turn left." },
+      { hanzi: "廁所喺前面。", jyutping: "ci3 so2 hai2 cin4 min6.", english: "The toilet is ahead." }
+    ]
+  },
+  {
+    id: "phone-messaging",
+    level: 2,
+    levelName: "Beginner",
+    order: 27,
+    title: "Phone & Messaging",
+    subtitle: "電話 / 打電話 / 手機 / 短訊 / WhatsApp / 聽電話",
+    minutes: 5,
+    intro: "Words for phones, calls and messages.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "電話", jyutping: "din6 waa2", english: "telephone" },
+      { hanzi: "打電話", jyutping: "daa2 din6 waa2", english: "to make a phone call" },
+      { hanzi: "手機", jyutping: "sau2 gei1", english: "mobile phone" },
+      { hanzi: "短訊", jyutping: "dyun2 seon3", english: "text message" },
+      { hanzi: "聽電話", jyutping: "teng1 din6 waa2", english: "to answer the phone" },
+      { hanzi: "號碼", jyutping: "hou6 maa5", english: "number" }
+    ],
+    examples: [
+      { hanzi: "我打電話畀你。", jyutping: "ngo5 daa2 din6 waa2 bei2 nei5.", english: "I'll give you a call." },
+      { hanzi: "你部手機幾錢呀？", jyutping: "nei5 bou6 sau2 gei1 gei2 cin2 aa3?", english: "How much is your mobile phone?" },
+      { hanzi: "請聽電話。", jyutping: "cing2 teng1 din6 waa2.", english: "Please answer the phone." }
+    ]
+  },
+  {
+    id: "occupations",
+    level: 2,
+    levelName: "Beginner",
+    order: 28,
+    title: "Jobs & Occupations",
+    subtitle: "老師 / 醫生 / 護士 / 司機 / 廚師 / 學生 / 做嘢",
+    minutes: 5,
+    intro: "Common jobs and how to talk about work.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "老師", jyutping: "lou5 si1", english: "teacher" },
+      { hanzi: "醫生", jyutping: "ji1 sang1", english: "doctor" },
+      { hanzi: "護士", jyutping: "wu6 si6", english: "nurse" },
+      { hanzi: "司機", jyutping: "si1 gei1", english: "driver" },
+      { hanzi: "廚師", jyutping: "cyu4 si1", english: "chef, cook" },
+      { hanzi: "學生", jyutping: "hok6 saang1", english: "student" },
+      { hanzi: "做嘢", jyutping: "zou6 je5", english: "to work, to do things" }
+    ],
+    examples: [
+      { hanzi: "我係老師。", jyutping: "ngo5 hai6 lou5 si1.", english: "I am a teacher." },
+      { hanzi: "佢做醫生。", jyutping: "keoi5 zou6 ji1 sang1.", english: "He works as a doctor." },
+      { hanzi: "你做唔做嘢呀？", jyutping: "nei5 zou6 m4 zou6 je5 aa3?", english: "Do you work?" }
+    ]
+  },
+  {
+    id: "school-study",
+    level: 2,
+    levelName: "Beginner",
+    order: 29,
+    title: "School & Study",
+    subtitle: "學校 / 讀書 / 功課 / 考試 / 老師 / 同學 / 書",
+    minutes: 5,
+    intro: "Vocabulary about school and studying.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "學校", jyutping: "hok6 haau6", english: "school" },
+      { hanzi: "讀書", jyutping: "duk6 syu1", english: "to study" },
+      { hanzi: "功課", jyutping: "gung1 fo3", english: "homework" },
+      { hanzi: "考試", jyutping: "haau2 si5", english: "exam" },
+      { hanzi: "同學", jyutping: "tung4 hok6", english: "classmate" },
+      { hanzi: "書", jyutping: "syu1", english: "book" }
+    ],
+    examples: [
+      { hanzi: "我去學校讀書。", jyutping: "ngo5 heoi3 hok6 haau6 duk6 syu1.", english: "I go to school to study." },
+      { hanzi: "今日有好多功課。", jyutping: "gam1 jat6 jau5 hou2 do1 gung1 fo3.", english: "There is a lot of homework today." },
+      { hanzi: "聽日考試。", jyutping: "ting1 jat6 haau2 si5.", english: "There's an exam tomorrow." }
+    ]
+  },
+  {
+    id: "sports",
+    level: 2,
+    levelName: "Beginner",
+    order: 30,
+    title: "Sports",
+    subtitle: "運動 / 踢波 / 打波 / 游水 / 跑步 / 行山",
+    minutes: 5,
+    intro: "Talk about sports and exercise.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "運動", jyutping: "wan6 dung6", english: "exercise, sport" },
+      { hanzi: "踢波", jyutping: "tek3 bo1", english: "to play football" },
+      { hanzi: "打波", jyutping: "daa2 bo1", english: "to play ball games" },
+      { hanzi: "游水", jyutping: "jau4 seoi2", english: "to swim" },
+      { hanzi: "跑步", jyutping: "paau2 bou6", english: "to run, jog" },
+      { hanzi: "行山", jyutping: "haang4 saan1", english: "to hike" }
+    ],
+    examples: [
+      { hanzi: "我鍾意踢波。", jyutping: "ngo5 zung1 ji3 tek3 bo1.", english: "I like playing football." },
+      { hanzi: "我哋去游水。", jyutping: "ngo5 dei6 heoi3 jau4 seoi2.", english: "We go swimming." },
+      { hanzi: "聽日去行山。", jyutping: "ting1 jat6 heoi3 haang4 saan1.", english: "We're going hiking tomorrow." }
+    ]
+  },
+  {
+    id: "music-tv",
+    level: 2,
+    levelName: "Beginner",
+    order: 31,
+    title: "Music & TV",
+    subtitle: "音樂 / 聽歌 / 睇電視 / 電影 / 唱歌 / 鋼琴",
+    minutes: 5,
+    intro: "Words about music, TV and entertainment.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "音樂", jyutping: "jam1 ngok6", english: "music" },
+      { hanzi: "聽歌", jyutping: "teng1 go1", english: "to listen to music" },
+      { hanzi: "睇電視", jyutping: "tai2 din6 si6", english: "to watch TV" },
+      { hanzi: "電影", jyutping: "din6 jing2", english: "movie" },
+      { hanzi: "唱歌", jyutping: "coeng3 go1", english: "to sing" },
+      { hanzi: "鋼琴", jyutping: "gong3 kam4", english: "piano" }
+    ],
+    examples: [
+      { hanzi: "我鍾意聽歌。", jyutping: "ngo5 zung1 ji3 teng1 go1.", english: "I like listening to music." },
+      { hanzi: "我哋去睇電影。", jyutping: "ngo5 dei6 heoi3 tai2 din6 jing2.", english: "We're going to watch a movie." },
+      { hanzi: "佢識彈鋼琴。", jyutping: "keoi5 sik1 taan4 gong3 kam4.", english: "She can play the piano." }
+    ]
+  },
+  {
+    id: "animals-pets",
+    level: 2,
+    levelName: "Beginner",
+    order: 32,
+    title: "Animals & Pets",
+    subtitle: "動物 / 狗 / 貓 / 雀仔 / 魚 / 養",
+    minutes: 5,
+    intro: "Common animals and keeping pets.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "動物", jyutping: "dung6 mat6", english: "animal" },
+      { hanzi: "狗", jyutping: "gau2", english: "dog" },
+      { hanzi: "貓", jyutping: "maau1", english: "cat" },
+      { hanzi: "雀仔", jyutping: "zoek3 zai2", english: "bird" },
+      { hanzi: "魚", jyutping: "jyu2", english: "fish" },
+      { hanzi: "養", jyutping: "joeng5", english: "to keep, raise (a pet)" }
+    ],
+    examples: [
+      { hanzi: "我養咗一隻狗。", jyutping: "ngo5 joeng5 zo2 jat1 zek3 gau2.", english: "I keep a dog." },
+      { hanzi: "我鍾意貓。", jyutping: "ngo5 zung1 ji3 maau1.", english: "I like cats." },
+      { hanzi: "呢隻雀仔好得意。", jyutping: "ni1 zek3 zoek3 zai2 hou2 dak1 ji3.", english: "This bird is very cute." }
+    ]
+  },
+  {
+    id: "daily-routine",
+    level: 2,
+    levelName: "Beginner",
+    order: 33,
+    title: "Daily Routine",
+    subtitle: "起身 / 刷牙 / 沖涼 / 食飯 / 返工 / 放工 / 瞓覺",
+    minutes: 5,
+    intro: "Describe the things you do every day.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "起身", jyutping: "hei2 san1", english: "to get up" },
+      { hanzi: "刷牙", jyutping: "caat3 ngaa4", english: "to brush teeth" },
+      { hanzi: "沖涼", jyutping: "cung1 loeng4", english: "to shower, bathe" },
+      { hanzi: "食飯", jyutping: "sik6 faan6", english: "to eat (a meal)" },
+      { hanzi: "返工", jyutping: "faan1 gung1", english: "to go to work" },
+      { hanzi: "放工", jyutping: "fong3 gung1", english: "to get off work" },
+      { hanzi: "瞓覺", jyutping: "fan3 gaau3", english: "to sleep" }
+    ],
+    examples: [
+      { hanzi: "我七點起身。", jyutping: "ngo5 cat1 dim2 hei2 san1.", english: "I get up at seven." },
+      { hanzi: "我返工之前食飯。", jyutping: "ngo5 faan1 gung1 zi1 cin4 sik6 faan6.", english: "I eat before going to work." },
+      { hanzi: "我十一點瞓覺。", jyutping: "ngo5 sap6 jat1 dim2 fan3 gaau3.", english: "I go to sleep at eleven." }
+    ]
+  },
+  {
+    id: "time-words",
+    level: 2,
+    levelName: "Beginner",
+    order: 34,
+    title: "Yesterday, Today, Tomorrow",
+    subtitle: "今日 / 聽日 / 琴日 / 而家 / 朝早 / 晏晝 / 夜晚",
+    minutes: 5,
+    intro: "Words for talking about days and times of day.",
+    dialogue: [],
+    vocab: [
+      { hanzi: "今日", jyutping: "gam1 jat6", english: "today" },
+      { hanzi: "聽日", jyutping: "ting1 jat6", english: "tomorrow" },
+      { hanzi: "琴日", jyutping: "kam4 jat6", english: "yesterday" },
+      { hanzi: "而家", jyutping: "ji4 gaa1", english: "now" },
+      { hanzi: "朝早", jyutping: "ziu1 zou2", english: "morning" },
+      { hanzi: "晏晝", jyutping: "aan3 zau3", english: "afternoon, noon" },
+      { hanzi: "夜晚", jyutping: "je6 maan5", english: "night, evening" }
+    ],
+    examples: [
+      { hanzi: "我今日好攰。", jyutping: "ngo5 gam1 jat6 hou2 gui6.", english: "I'm very tired today." },
+      { hanzi: "聽日朝早見。", jyutping: "ting1 jat6 ziu1 zou2 gin3.", english: "See you tomorrow morning." },
+      { hanzi: "我而家喺屋企。", jyutping: "ngo5 ji4 gaa1 hai2 uk1 kei2.", english: "I'm at home now." }
+    ]
   }
 ];
