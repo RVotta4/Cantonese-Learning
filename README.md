@@ -70,23 +70,34 @@ cantonese-learning/
 
 ---
 
-## 🔊 Getting the audio to work
+## 🔊 How the audio works
 
-The 🔊 buttons use your **browser's built-in text-to-speech**. They only produce
-real Cantonese audio if your device has a **Cantonese (zh-HK) voice** installed.
-No installs are needed if you use the right browser:
+Every Cantonese phrase has a **pre-generated MP3** committed under `audio/`, so
+playback is reliable and high quality on any device or browser — no system voice
+required. The 🔊 buttons play these files first and only fall back to your
+device's built-in text-to-speech (or an online voice) if a file is missing.
 
-- **Windows:** Use **Microsoft Edge** — it has built-in online Cantonese voices
-  (Microsoft HiuMaan / HiuGaai) that work automatically. Chrome on Windows often
-  has *no* Cantonese voice, so it stays silent.
-  - To add a system voice for Chrome too: **Settings → Time & language → Speech →
-    Manage voices → Add voices → Chinese (Traditional, Hong Kong SAR)**, then restart the browser.
-- **Mac / iPhone / iPad:** Cantonese is usually available. If silent, go to
-  **Settings → Accessibility → Spoken Content → Voices → Chinese → 粵語 (Cantonese)**
-  and download it.
-- **Android:** Install/enable a Cantonese voice in **Settings → Text-to-speech**.
+The MP3s are produced by **GitHub Actions** using Microsoft's `edge-tts`
+(voice *zh-HK-HiuMaanNeural*):
 
-If no Cantonese voice is found, a yellow tip appears on lesson pages explaining this.
+- **First time / on demand:** open the repo's **Actions** tab → **Generate
+  Cantonese audio** → **Run workflow**. It synthesizes the audio and commits it.
+- **Automatically:** whenever `data/lessons.js` changes on `main`, the workflow
+  regenerates any new phrases and commits them.
+
+Prefer to generate locally instead? Run:
+
+```bash
+pip install edge-tts
+python3 scripts/generate_audio.py
+```
+
+then commit the new files in `audio/`. (Use `--dry-run` to preview the phrase
+list without generating anything.)
+
+> Heads up: audio generation needs open internet access to Microsoft's TTS
+> servers, so it can't run inside restricted sandboxes — use GitHub Actions or
+> your own machine.
 
 ## ✏️ Making it yours
 
