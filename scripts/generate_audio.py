@@ -21,15 +21,18 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from extract_phrases import extract_from_texts, phrase_key
+from audio_text import spoken_text
 
 ROOT = os.path.dirname(HERE)
 DATA_FILES = [
     os.path.join(ROOT, "data", "lessons.js"),
     os.path.join(ROOT, "data", "stories.js"),
+    os.path.join(ROOT, "data", "wordbank.js"),
 ]
 AUDIO_DIR = os.path.join(ROOT, "audio")
 MANIFEST = os.path.join(AUDIO_DIR, "manifest.js")
 VOICE = "zh-HK-HiuMaanNeural"
+RATE = "-15%"   # slower for clarity (and gives tone-2's rise room)
 RETRIES = 3
 
 
@@ -59,7 +62,7 @@ async def synth(text, key):
     path = mp3_path(key)
     for attempt in range(1, RETRIES + 1):
         try:
-            await edge_tts.Communicate(text, VOICE).save(path)
+            await edge_tts.Communicate(spoken_text(text), VOICE, rate=RATE).save(path)
             if has_audio(key):
                 return True
             raise RuntimeError("empty file written")
@@ -79,7 +82,7 @@ def write_manifest(mapping):
         f.write("window.AUDIO_MANIFEST = " + body + ";\n")
 
 
-async def run(dry_run):
+async def run(dry_run, force=False):
     phrases = load_phrases()
     print("Found %d unique phrases in lesson + story data" % len(phrases))
 
@@ -94,7 +97,7 @@ async def run(dry_run):
     generated = skipped = failed = 0
     for text in phrases:
         key = phrase_key(text)
-        if has_audio(key):
+        if has_audio(key) and not force:
             mapping[text] = key
             skipped += 1
             continue
@@ -118,4 +121,5 @@ async def run(dry_run):
 
 
 if __name__ == "__main__":
-    sys.exit(asyncio.run(run("--dry-run" in sys.argv[1:])))
+    args = sys.argv[1:]
+    sys.exit(asyncio.run(run("--dry-run" in args, force="--force" in args)))

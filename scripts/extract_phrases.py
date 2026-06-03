@@ -7,9 +7,10 @@ can be unit-tested in isolation by scripts/test_extract.py.
 import hashlib
 import re
 
-# Matches  hanzi: "..."  (the key is unquoted in data/lessons.js).
+# Matches  hanzi: "..."  (unquoted key, data/lessons.js + data/stories.js style)
+# and      "hanzi": "..." (quoted key, strict-JSON style used by data/wordbank.js).
 # The body allows backslash escapes like \" so escaped quotes don't end it.
-_HANZI_RE = re.compile(r'hanzi\s*:\s*"((?:\\.|[^"\\\n])*)"')
+_HANZI_RE = re.compile(r'"?hanzi"?\s*:\s*"((?:\\.|[^"\\\n])*)"')
 
 # JS string escapes we might see in a captured value. Today's hanzi values
 # are plain text, but unescaping keeps the manifest key byte-identical to the
