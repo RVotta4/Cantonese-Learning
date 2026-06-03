@@ -2,11 +2,17 @@ name: Generate Cantonese audio
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Regenerate ALL audio (use after changing rate/overrides)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
       - data/lessons.js
       - data/stories.js
+      - data/wordbank.js
 
 permissions:
   contents: write
@@ -29,7 +35,7 @@ jobs:
         run: pip install edge-tts
 
       - name: Generate audio
-        run: python3 scripts/generate_audio.py
+        run: python3 scripts/generate_audio.py ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }}
 
       - name: Commit audio if changed
         run: |
