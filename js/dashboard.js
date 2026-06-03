@@ -10,14 +10,15 @@
   if (!window.Vocab || !window.Store || !window.LESSONS) return;
 
   var all = window.Vocab.all();
+  var deck = window.Store.deckList();
   var lessons = window.LESSONS.slice().sort(function (a, b) {
     return (a.level - b.level) || ((a.order || 0) - (b.order || 0));
   });
 
   // ---------- Stats row ----------
-  var due = window.Store.dueCards(all).length;
-  var fresh = window.Store.newCards(all).length;
-  var known = window.Store.knownCount(all);
+  var due = window.Store.dueCards(deck).length;
+  var fresh = window.Store.newCards(deck).length;
+  var known = window.Store.knownCount(deck);
   var doneLessons = window.Store.completedCount();
 
   set("cards-due", due > 0 ? due : (fresh > 0 ? fresh + " new" : "0"));
