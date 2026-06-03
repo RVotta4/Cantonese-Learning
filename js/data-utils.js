@@ -33,7 +33,17 @@
     return out;
   }
 
-  window.Vocab = { all: getAllVocab };
+  // Word-bank words (the user's saved CantoneseClass101 export), shaped like vocab.
+  function getWordbank() {
+    return (window.WORDBANK || []).map(function (v) {
+      return {
+        id: v.hanzi, hanzi: v.hanzi, jyutping: v.jyutping,
+        english: v.english, topic: v.topic || "General", source: "wordbank"
+      };
+    });
+  }
+
+  window.Vocab = { all: getAllVocab, wordbank: getWordbank };
 
   // ---------- Progress store (localStorage) ----------
   var KEY = "cantoLearning.v1";
