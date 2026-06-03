@@ -45,6 +45,7 @@
 
     html += '<div class="story-controls">';
     html += '<button class="btn btn-primary" id="play-all">▶ Play whole story</button>';
+    html += '<button class="btn btn-ghost-dark" id="play-podcast">🎧 Podcast breakdown</button>';
     html += '<button class="btn btn-ghost-dark" id="toggle-all">' +
             (showAll ? "Hide translations" : "Show all translations") + '</button>';
     html += '</div>';
@@ -94,6 +95,8 @@
       render();
     });
     document.getElementById("play-all").addEventListener("click", playAll);
+    var pod = document.getElementById("play-podcast");
+    if (pod) pod.addEventListener("click", playPodcast);
 
     mount.querySelectorAll(".story-line").forEach(function (el) {
       el.addEventListener("click", function (e) {
@@ -138,6 +141,52 @@
       setTimeout(advance, 12000);
     }
     step();
+  }
+
+  // Guided "podcast" breakdown: for each line, play the line → reveal English →
+  // play each target word in turn → replay the line, then advance.
+  function playPodcast() {
+    playToken++;
+    var token = playToken;
+    var i = 0;
+    // Play one phrase; call done() exactly once (whichever fires first: the
+    // audio's 'ended' callback or the safety-net timeout).
+    function speak(text, done) {
+      if (token !== playToken) return;
+      var fired = false;
+      function fire() { if (!fired && token === playToken) { fired = true; done(); } }
+      var res = window.speakCantonese ? window.speakCantonese(text, fire) : "unsupported";
+      if (res === "unsupported") { setTimeout(fire, 300); return; }
+      setTimeout(fire, 12000);
+    }
+    function wordsIn(sentence) {
+      return (story.words || []).filter(function (w) {
+        return w.hanzi && sentence.hanzi.indexOf(w.hanzi) > -1;
+      });
+    }
+    function stepSentence() {
+      if (token !== playToken || i >= story.sentences.length) return;
+      var idx = i++;
+      var s = story.sentences[idx];
+      mount.querySelectorAll(".story-line.playing").forEach(function (e) { e.classList.remove("playing"); });
+      var line = mount.querySelector('.story-line[data-i="' + idx + '"]');
+      if (line) {
+        line.classList.add("playing");
+        line.classList.add("revealed");
+        revealed[idx] = true;
+        line.scrollIntoView({ block: "center", behavior: "smooth" });
+      }
+      speak(s.hanzi, function () {                       // 1) full line
+        var ws = wordsIn(s), k = 0;
+        function nextWord() {
+          if (token !== playToken) return;
+          if (k >= ws.length) { speak(s.hanzi, stepSentence); return; }  // 3) replay line, advance
+          speak(ws[k++].hanzi, nextWord);                // 2) each target word
+        }
+        nextWord();
+      });
+    }
+    stepSentence();
   }
 
   // Wrap target words where they appear in the (escaped) 漢字 line.
