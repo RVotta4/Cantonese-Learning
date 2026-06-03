@@ -131,5 +131,125 @@ window.STORIES = [
       { hanzi: "我鍾意睇電視。", jyutping: "ngo5 zung1 ji3 tai2 din6 si6.", english: "I like to watch TV." },
       { hanzi: "我十一點瞓覺。", jyutping: "ngo5 sap6 jat1 dim2 fan3 gaau3.", english: "I go to sleep at eleven." }
     ]
+  },
+
+  /* ================= CUSTOM · from your word bank ================= */
+  {
+    id: "robbie-at-the-bank",
+    level: 2,
+    category: "custom",
+    title: "Robbie at the Bank",
+    titleJyutping: "ngo5 heoi3 ngan4 hong4",
+    blurb: "Robbie opens an account, saves some cash, and asks about interest.",
+    minutes: 2,
+    words: [
+      { hanzi: "銀行", jyutping: "ngan4 hong4", english: "bank" },
+      { hanzi: "開戶", jyutping: "hoi1 wu6", english: "to open an account" },
+      { hanzi: "存錢", jyutping: "cyun4 cin2", english: "to save money" },
+      { hanzi: "現金", jyutping: "jin6 gam1", english: "cash" },
+      { hanzi: "利息", jyutping: "lei6 sik1", english: "interest" }
+    ],
+    sentences: [
+      { hanzi: "今日我去銀行。", jyutping: "gam1 jat6 ngo5 heoi3 ngan4 hong4.", english: "Today I go to the bank." },
+      { hanzi: "我想開戶。", jyutping: "ngo5 soeng2 hoi1 wu6.", english: "I want to open an account." },
+      { hanzi: "我有好多現金。", jyutping: "ngo5 jau5 hou2 do1 jin6 gam1.", english: "I have a lot of cash." },
+      { hanzi: "我想存錢。", jyutping: "ngo5 soeng2 cyun4 cin2.", english: "I want to save money." },
+      { hanzi: "請問有冇利息呀？", jyutping: "cing2 man6 jau5 mou5 lei6 sik1 aa3?", english: "May I ask, is there interest?" },
+      { hanzi: "多謝，唔該晒！", jyutping: "do1 ze6, m4 goi1 saai3!", english: "Thanks, thank you very much!" }
+    ]
+  },
+  {
+    id: "robbie-checks-in",
+    level: 2,
+    category: "custom",
+    title: "Robbie Checks In",
+    titleJyutping: "zyu6 zau2 dim3",
+    blurb: "Robbie books a hotel room and asks a few questions at the front desk.",
+    minutes: 2,
+    words: [
+      { hanzi: "訂", jyutping: "deng6", english: "to book" },
+      { hanzi: "房", jyutping: "fong2", english: "room" },
+      { hanzi: "雙人房", jyutping: "soeng1 jan4 fong2", english: "double room" },
+      { hanzi: "標準房", jyutping: "biu1 zeon2 fong2", english: "standard room" },
+      { hanzi: "退房", jyutping: "teoi3 fong2", english: "to check out" }
+    ],
+    sentences: [
+      { hanzi: "我今日想訂房。", jyutping: "ngo5 gam1 jat6 soeng2 deng6 fong2.", english: "Today I want to book a room." },
+      { hanzi: "我想要一間雙人房。", jyutping: "ngo5 soeng2 jiu3 jat1 gaan1 soeng1 jan4 fong2.", english: "I'd like a double room." },
+      { hanzi: "呢間房幾大呀？", jyutping: "ni1 gaan1 fong2 gei2 daai6 aa3?", english: "How big is this room?" },
+      { hanzi: "呢間係標準房。", jyutping: "ni1 gaan1 hai6 biu1 zeon2 fong2.", english: "This is a standard room." },
+      { hanzi: "幾點退房呀？", jyutping: "gei2 dim2 teoi3 fong2 aa3?", english: "What time is checkout?" },
+      { hanzi: "好，唔該晒！", jyutping: "hou2, m4 goi1 saai3!", english: "Great, thank you very much!" }
+    ]
+  },
+  {
+    id: "robbie-pays-the-bill",
+    level: 2,
+    category: "custom",
+    title: "Dinner & the Bill",
+    titleJyutping: "maai4 daan1",
+    blurb: "Robbie and a friend enjoy dinner, then settle the bill.",
+    minutes: 2,
+    words: [
+      { hanzi: "餐廳", jyutping: "caan1 teng1", english: "restaurant" },
+      { hanzi: "好食", jyutping: "hou2 sik6", english: "delicious" },
+      { hanzi: "貴", jyutping: "gwai3", english: "expensive" },
+      { hanzi: "埋單", jyutping: "maai4 daan1", english: "to pay the bill" },
+      { hanzi: "我請", jyutping: "ngo5 ceng2", english: "my treat" }
+    ],
+    sentences: [
+      { hanzi: "今晚我哋去餐廳食飯。", jyutping: "gam1 maan1 ngo5 dei6 heoi3 caan1 teng1 sik6 faan6.", english: "Tonight we go to a restaurant for dinner." },
+      { hanzi: "啲嘢好好食。", jyutping: "di1 je5 hou2 hou2 sik6.", english: "The food is very delicious." },
+      { hanzi: "唔該，埋單。", jyutping: "m4 goi1, maai4 daan1.", english: "Excuse me, the bill please." },
+      { hanzi: "有啲貴。", jyutping: "jau5 di1 gwai3.", english: "It's a bit expensive." },
+      { hanzi: "唔緊要，我請！", jyutping: "m4 gan2 jiu3, ngo5 ceng2!", english: "Never mind, my treat!" },
+      { hanzi: "多謝晒！", jyutping: "do1 ze6 saai3!", english: "Thank you very much!" }
+    ]
+  },
+  {
+    id: "robbie-rainy-saturday",
+    level: 2,
+    category: "custom",
+    title: "A Rainy Saturday",
+    titleJyutping: "lok6 jyu5 ge3 sing1 kei4 luk6",
+    blurb: "It rains all day, so Robbie stays in and watches a movie.",
+    minutes: 2,
+    words: [
+      { hanzi: "今日", jyutping: "gam1 jat6", english: "today" },
+      { hanzi: "落雨", jyutping: "lok6 jyu5", english: "to rain" },
+      { hanzi: "焗", jyutping: "guk6", english: "humid / stuffy" },
+      { hanzi: "得閒", jyutping: "dak1 haan4", english: "free / available" },
+      { hanzi: "電影", jyutping: "din6 jing2", english: "movie" }
+    ],
+    sentences: [
+      { hanzi: "今日落雨。", jyutping: "gam1 jat6 lok6 jyu5.", english: "Today it's raining." },
+      { hanzi: "好焗呀！", jyutping: "hou2 guk6 aa3!", english: "It's so humid!" },
+      { hanzi: "今日我得閒。", jyutping: "gam1 jat6 ngo5 dak1 haan4.", english: "Today I'm free." },
+      { hanzi: "我喺屋企睇電影。", jyutping: "ngo5 hai2 uk1 kei2 tai2 din6 jing2.", english: "I watch a movie at home." },
+      { hanzi: "真係好好呀！", jyutping: "zan1 hai6 hou2 hou2 aa3!", english: "It's really great!" }
+    ]
+  },
+  {
+    id: "robbie-family-jobs",
+    level: 2,
+    category: "custom",
+    title: "My Family & Their Jobs",
+    titleJyutping: "ngo5 ge3 gaa1 jan4",
+    blurb: "Robbie introduces his family and what each of them does.",
+    minutes: 2,
+    words: [
+      { hanzi: "爸爸", jyutping: "baa4 baa1", english: "father" },
+      { hanzi: "媽媽", jyutping: "maa4 maa1", english: "mother" },
+      { hanzi: "老師", jyutping: "lou5 si1", english: "teacher" },
+      { hanzi: "醫生", jyutping: "ji1 sang1", english: "doctor" },
+      { hanzi: "律師", jyutping: "leot6 si1", english: "lawyer" }
+    ],
+    sentences: [
+      { hanzi: "呢個係我爸爸。", jyutping: "ni1 go3 hai6 ngo5 baa4 baa1.", english: "This is my dad." },
+      { hanzi: "佢係老師。", jyutping: "keoi5 hai6 lou5 si1.", english: "He is a teacher." },
+      { hanzi: "我媽媽係醫生。", jyutping: "ngo5 maa4 maa1 hai6 ji1 sang1.", english: "My mum is a doctor." },
+      { hanzi: "我大佬係律師。", jyutping: "ngo5 daai6 lou2 hai6 leot6 si1.", english: "My older brother is a lawyer." },
+      { hanzi: "我好愛我嘅家人。", jyutping: "ngo5 hou2 oi3 ngo5 ge3 gaa1 jan4.", english: "I love my family very much." }
+    ]
   }
 ];
