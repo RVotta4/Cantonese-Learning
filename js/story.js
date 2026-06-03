@@ -32,6 +32,7 @@
   var playToken = 0;
 
   render();
+  if (window.Deck) window.Deck.mount(mount);
 
   function render() {
     var html = "";
@@ -117,7 +118,6 @@
         if (window.speakCantonese) window.speakCantonese(b.getAttribute("data-word"));
       });
     });
-    if (window.Deck) window.Deck.mount(mount);
   }
 
   function playAll() {

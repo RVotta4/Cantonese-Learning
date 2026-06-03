@@ -136,6 +136,8 @@
       window.Deck.addAll((lesson.vocab || []).map(function (v) {
         return { hanzi: v.hanzi, jyutping: v.jyutping, english: v.english, source: "lesson", lessonId: lesson.id, lessonTitle: lesson.title };
       }), mount);
+      addAllBtn.textContent = "✓ All added to deck";
+      addAllBtn.disabled = true;
     });
   }
 

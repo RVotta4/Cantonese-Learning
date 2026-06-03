@@ -158,7 +158,10 @@
            '<button class="audio-btn fc-audio" aria-label="Play audio">🔊</button>';
   }
   function lessonTag() {
-    return '<span class="fc-lesson muted">from "' + escapeHtml(current.lessonTitle) + '"</span>';
+    var from = current.lessonTitle ? 'from "' + escapeHtml(current.lessonTitle) + '"'
+      : current.source === "wordbank" ? "from your Word Bank"
+      : current.source === "story" ? "from a story" : "";
+    return from ? '<span class="fc-lesson muted">' + from + '</span>' : "";
   }
 
   function faceFront(dir) {

@@ -43,7 +43,6 @@
       if (!btn) return;
       e.preventDefault();
       var w = wordFrom(btn);
-      if (btn.hasAttribute("data-deck-all")) return; // handled by addAll
       if (window.Store.inDeck(w.hanzi)) { window.Store.removeFromDeck(w.hanzi); paint(btn, false); }
       else { window.Store.addToDeck(w); window.Store.recordActivity(); paint(btn, true); }
     });
