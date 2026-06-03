@@ -15,7 +15,7 @@
   if (!mount || !window.Vocab || !window.Store) return;
 
   var NEW_PER_SESSION = 10;
-  var all = window.Vocab.all();
+  var all = window.Store.deckList();
 
   var MODES = {
     recog: "Jyutping + 漢字 → English",
@@ -33,6 +33,18 @@
 
   // ---------- Screens ----------
   function showStart() {
+    if (!all.length) {
+      mount.innerHTML =
+        '<div class="fc-start">' +
+          '<p class="fc-caught-up">🗂️ Your deck is empty.</p>' +
+          '<p class="muted">Add words from a lesson, the Word Bank, or Vocabulary, then come back to review them here.</p>' +
+          '<div class="hero-cta">' +
+            '<a class="btn btn-primary" href="wordbank.html">Open Word Bank</a> ' +
+            '<a class="btn btn-ghost-dark" href="lessons.html">Browse lessons</a>' +
+          '</div>' +
+        '</div>';
+      return;
+    }
     var due = window.Store.dueCards(all);
     var fresh = window.Store.newCards(all);
     var known = window.Store.knownCount(all);
