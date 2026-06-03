@@ -1,0 +1,1607 @@
+[
+  {
+    "hanzi": "現金",
+    "jyutping": "jin6 gam1",
+    "english": "cash"
+  },
+  {
+    "hanzi": "折",
+    "jyutping": "zit3",
+    "english": "discount"
+  },
+  {
+    "hanzi": "打折",
+    "jyutping": "daa2 zit3",
+    "english": "be on sale"
+  },
+  {
+    "hanzi": "商場",
+    "jyutping": "soeng1 coeng4",
+    "english": "shopping mall"
+  },
+  {
+    "hanzi": "貼士",
+    "jyutping": "tip1 si2",
+    "english": "tips"
+  },
+  {
+    "hanzi": "散紙",
+    "jyutping": "saan2 zi2",
+    "english": "change"
+  },
+  {
+    "hanzi": "碌爆咭",
+    "jyutping": "luk1 baau3 kaat1",
+    "english": "to not be able to use the card"
+  },
+  {
+    "hanzi": "碌咭",
+    "jyutping": "luk1 kaat1",
+    "english": "to swipe the card"
+  },
+  {
+    "hanzi": "信用卡",
+    "jyutping": "seon3 jung6 kaat1",
+    "english": "credit card"
+  },
+  {
+    "hanzi": "單",
+    "jyutping": "daan1",
+    "english": "bill; receipt; invoice"
+  },
+  {
+    "hanzi": "最",
+    "jyutping": "zeoi3",
+    "english": "the most"
+  },
+  {
+    "hanzi": "埋單",
+    "jyutping": "maai4 daan1",
+    "english": "to pay the bill"
+  },
+  {
+    "hanzi": "明",
+    "jyutping": "ming4",
+    "english": "to understand"
+  },
+  {
+    "hanzi": "唔緊要",
+    "jyutping": "m4 gan2 jiu3",
+    "english": "it's ok"
+  },
+  {
+    "hanzi": "真係",
+    "jyutping": "zan1 hai6",
+    "english": "really"
+  },
+  {
+    "hanzi": "瞓過籠",
+    "jyutping": "fan3 gwo3 lung4",
+    "english": "to oversleep"
+  },
+  {
+    "hanzi": "塞車",
+    "jyutping": "sak1 ce1",
+    "english": "traffic jam"
+  },
+  {
+    "hanzi": "早到",
+    "jyutping": "zou2 dou3",
+    "english": "to arrive early"
+  },
+  {
+    "hanzi": "遲到",
+    "jyutping": "ci4 dou3",
+    "english": "to arrive late"
+  },
+  {
+    "hanzi": "間",
+    "jyutping": "gaan1",
+    "english": "measure word for rooms"
+  },
+  {
+    "hanzi": "櫃枱",
+    "jyutping": "gwai6 toi2",
+    "english": "counter"
+  },
+  {
+    "hanzi": "交",
+    "jyutping": "gaau1",
+    "english": "to pay (utility bills) ; to hand in"
+  },
+  {
+    "hanzi": "電話費",
+    "jyutping": "din6 waa2 fai3",
+    "english": "phone bill"
+  },
+  {
+    "hanzi": "留言",
+    "jyutping": "lau4 jin4",
+    "english": "to leave message"
+  },
+  {
+    "hanzi": "短訊",
+    "jyutping": "dyun2 seon3",
+    "english": "text message"
+  },
+  {
+    "hanzi": "通",
+    "jyutping": "tung1",
+    "english": "to get through"
+  },
+  {
+    "hanzi": "打",
+    "jyutping": "daa2",
+    "english": "to dial"
+  },
+  {
+    "hanzi": "利息",
+    "jyutping": "lei6 sik1",
+    "english": "interest"
+  },
+  {
+    "hanzi": "攞錢",
+    "jyutping": "lo2 cin2",
+    "english": "to take out money"
+  },
+  {
+    "hanzi": "存錢",
+    "jyutping": "cyun4 cin2",
+    "english": "to save money"
+  },
+  {
+    "hanzi": "大堂",
+    "jyutping": "daai6 tong4",
+    "english": "lobby"
+  },
+  {
+    "hanzi": "銀行",
+    "jyutping": "ngan4 hong4",
+    "english": "bank"
+  },
+  {
+    "hanzi": "至少",
+    "jyutping": "zi3 siu2",
+    "english": "at least"
+  },
+  {
+    "hanzi": "點解",
+    "jyutping": "dim2 gaai2",
+    "english": "why"
+  },
+  {
+    "hanzi": "開戶",
+    "jyutping": "hoi1 wu6",
+    "english": "to open an account"
+  },
+  {
+    "hanzi": "貴",
+    "jyutping": "gwai3",
+    "english": "expensive"
+  },
+  {
+    "hanzi": "平",
+    "jyutping": "peng4",
+    "english": "cheap"
+  },
+  {
+    "hanzi": "咁",
+    "jyutping": "gam3",
+    "english": "so ⾼ gou1 high"
+  },
+  {
+    "hanzi": "低",
+    "jyutping": "dai1",
+    "english": "low"
+  },
+  {
+    "hanzi": "電視",
+    "jyutping": "din6 si6",
+    "english": "television"
+  },
+  {
+    "hanzi": "戲",
+    "jyutping": "hei3",
+    "english": "film"
+  },
+  {
+    "hanzi": "電影",
+    "jyutping": "din6 jing2",
+    "english": "movie"
+  },
+  {
+    "hanzi": "不如",
+    "jyutping": "bat1 jyu4",
+    "english": "how about/ let’s\u0000/ why don't we. . . ?"
+  },
+  {
+    "hanzi": "仲有呢?",
+    "jyutping": "zung6 jau5 ne1",
+    "english": "anything else？"
+  },
+  {
+    "hanzi": "廣告",
+    "jyutping": "gwong2 gou3",
+    "english": "advertisement/ commercial"
+  },
+  {
+    "hanzi": "電視節目",
+    "jyutping": "din6 si6 zit3 muk6",
+    "english": "TV show"
+  },
+  {
+    "hanzi": "電視劇",
+    "jyutping": "din6 si6 kek6",
+    "english": "TV series"
+  },
+  {
+    "hanzi": "電視機",
+    "jyutping": "din6 si6 gei1",
+    "english": "tv set"
+  },
+  {
+    "hanzi": "話劇",
+    "jyutping": "waa2 kek6",
+    "english": "play"
+  },
+  {
+    "hanzi": "藍色",
+    "jyutping": "laam4 sik1",
+    "english": "blue"
+  },
+  {
+    "hanzi": "綠色",
+    "jyutping": "luk6 sik1",
+    "english": "green ⽩⾊ baak6 sik1 white ⿈⾊ wong4 sik1 Yellow ⿊⾊ haak1 sik1 black"
+  },
+  {
+    "hanzi": "紅色",
+    "jyutping": "hung4 sik1",
+    "english": "red"
+  },
+  {
+    "hanzi": "顏色",
+    "jyutping": "ngaan4 sik1",
+    "english": "color"
+  },
+  {
+    "hanzi": "隻",
+    "jyutping": "zek3",
+    "english": "measure word for colors"
+  },
+  {
+    "hanzi": "邊",
+    "jyutping": "bin1",
+    "english": "which"
+  },
+  {
+    "hanzi": "想要",
+    "jyutping": "soeng2 jiu3",
+    "english": "to want"
+  },
+  {
+    "hanzi": "退房",
+    "jyutping": "teoi3 fong2",
+    "english": "to check out"
+  },
+  {
+    "hanzi": "總統套房",
+    "jyutping": "zung2 tung2 tou3 fong2",
+    "english": "presidential suite"
+  },
+  {
+    "hanzi": "單人房",
+    "jyutping": "daan1 jan4 fong2",
+    "english": "single room"
+  },
+  {
+    "hanzi": "雙人房",
+    "jyutping": "soeng1 jan4 fong2",
+    "english": "double room"
+  },
+  {
+    "hanzi": "標準房",
+    "jyutping": "biu1 zeon2 fong2",
+    "english": "standard room"
+  },
+  {
+    "hanzi": "訂",
+    "jyutping": "deng6",
+    "english": "to book"
+  },
+  {
+    "hanzi": "呎",
+    "jyutping": "cek3",
+    "english": "measure word (for square feet)"
+  },
+  {
+    "hanzi": "五百",
+    "jyutping": "ng5 baak3",
+    "english": ""
+  },
+  {
+    "hanzi": "幾大",
+    "jyutping": "gei2 daai6",
+    "english": "how big"
+  },
+  {
+    "hanzi": "可能",
+    "jyutping": "ho2 nang4",
+    "english": "perhaps"
+  },
+  {
+    "hanzi": "屋租",
+    "jyutping": "uk1 zou1",
+    "english": "rent"
+  },
+  {
+    "hanzi": "房",
+    "jyutping": "fong2",
+    "english": "room"
+  },
+  {
+    "hanzi": "屋",
+    "jyutping": "uk1",
+    "english": "apartment"
+  },
+  {
+    "hanzi": "合租",
+    "jyutping": "hap6 zou1",
+    "english": "to share (an apartment)"
+  },
+  {
+    "hanzi": "租",
+    "jyutping": "zou1",
+    "english": "to rent"
+  },
+  {
+    "hanzi": "定",
+    "jyutping": "ding6",
+    "english": "or"
+  },
+  {
+    "hanzi": "是但",
+    "jyutping": "si6 daan6",
+    "english": "whatever"
+  },
+  {
+    "hanzi": "演唱會",
+    "jyutping": "jin2 coeng3 wui5",
+    "english": "concert"
+  },
+  {
+    "hanzi": "音樂會",
+    "jyutping": "jam1 ngok6 wui5",
+    "english": "concert; symphony; recital"
+  },
+  {
+    "hanzi": "我",
+    "jyutping": "ngo5",
+    "english": "I"
+  },
+  {
+    "hanzi": "叫",
+    "jyutping": "giu3",
+    "english": "to be called; call"
+  },
+  {
+    "hanzi": "你",
+    "jyutping": "nei5",
+    "english": "you (singular)"
+  },
+  {
+    "hanzi": "係",
+    "jyutping": "hai6",
+    "english": "to be"
+  },
+  {
+    "hanzi": "好",
+    "jyutping": "hou2",
+    "english": "very/ quite"
+  },
+  {
+    "hanzi": "高興",
+    "jyutping": "gou1 hing3",
+    "english": "happy"
+  },
+  {
+    "hanzi": "認識",
+    "jyutping": "jing6 sik1",
+    "english": "to know/ to recognize"
+  },
+  {
+    "hanzi": "都",
+    "jyutping": "dou1",
+    "english": "also"
+  },
+  {
+    "hanzi": "你好",
+    "jyutping": "nei5 hou2",
+    "english": "hello"
+  },
+  {
+    "hanzi": "中國",
+    "jyutping": "zung1 gwok3",
+    "english": "China"
+  },
+  {
+    "hanzi": "美國",
+    "jyutping": "mei5 gwok3",
+    "english": "America ⼈ jan4 people; human"
+  },
+  {
+    "hanzi": "廣東話",
+    "jyutping": "gwong2 dung1 waa2",
+    "english": "Cantonese language"
+  },
+  {
+    "hanzi": "點講",
+    "jyutping": "dim2 gong2",
+    "english": "how to say"
+  },
+  {
+    "hanzi": "唔該",
+    "jyutping": "m4 goi1",
+    "english": "excuse me/ please/ thank you"
+  },
+  {
+    "hanzi": "慢",
+    "jyutping": "maan6",
+    "english": "slow"
+  },
+  {
+    "hanzi": "啲",
+    "jyutping": "di1",
+    "english": "-er"
+  },
+  {
+    "hanzi": "幫",
+    "jyutping": "bong1",
+    "english": "to help"
+  },
+  {
+    "hanzi": "寫低",
+    "jyutping": "se2 dai1",
+    "english": "to write down ⼀ jat1 one (1) ⼆ ji6 two (2)"
+  },
+  {
+    "hanzi": "三",
+    "jyutping": "saam1",
+    "english": "three (3)"
+  },
+  {
+    "hanzi": "四",
+    "jyutping": "sei3",
+    "english": "four (4)"
+  },
+  {
+    "hanzi": "五",
+    "jyutping": "ng5",
+    "english": "five (5)"
+  },
+  {
+    "hanzi": "六",
+    "jyutping": "luk6",
+    "english": "six (6)"
+  },
+  {
+    "hanzi": "七",
+    "jyutping": "cat1",
+    "english": "seven (7) ⼋ baat3 eight (8)"
+  },
+  {
+    "hanzi": "九",
+    "jyutping": "gau2",
+    "english": "nine (9) ⼗ sap6 ten (10) ⼆⼗ ji6 sap6 twenty (20)"
+  },
+  {
+    "hanzi": "四十",
+    "jyutping": "sei3 sap6",
+    "english": "forty (40)"
+  },
+  {
+    "hanzi": "五十",
+    "jyutping": "ng5 sap6",
+    "english": "fifty (50) ⼋⼗ baat3 sap6 eighty (80)"
+  },
+  {
+    "hanzi": "九十",
+    "jyutping": "gau2 sap6",
+    "english": "ninety (90)"
+  },
+  {
+    "hanzi": "三十",
+    "jyutping": "saam1 sap6",
+    "english": "thirty (30)"
+  },
+  {
+    "hanzi": "六十",
+    "jyutping": "luk6 sap6",
+    "english": "sixty (60)"
+  },
+  {
+    "hanzi": "七十",
+    "jyutping": "cat1 sap6",
+    "english": "seventy (70)"
+  },
+  {
+    "hanzi": "一百",
+    "jyutping": "jat1 baak3",
+    "english": "one hundred (100)"
+  },
+  {
+    "hanzi": "二百",
+    "jyutping": "ji6 baak3",
+    "english": "two hundred (200)"
+  },
+  {
+    "hanzi": "兩百",
+    "jyutping": "loeng5 baak3",
+    "english": "two hundred (200)"
+  },
+  {
+    "hanzi": "四百七十",
+    "jyutping": "sei3 baak3 cat1 sap6",
+    "english": ""
+  },
+  {
+    "hanzi": "六百七十一",
+    "jyutping": "luk6 baak3 cat1 sap6 jat1",
+    "english": ""
+  },
+  {
+    "hanzi": "一千",
+    "jyutping": "jat1 cin1",
+    "english": "one thousand (1/ 000)"
+  },
+  {
+    "hanzi": "三千五百九十",
+    "jyutping": "saam1 cin1 ng5 baak3",
+    "english": "gau2 sap6"
+  },
+  {
+    "hanzi": "七千八百八十",
+    "jyutping": "cat1 cin1 baat3 baak3",
+    "english": "baat3 sap6"
+  },
+  {
+    "hanzi": "一萬",
+    "jyutping": "jat1 maan6",
+    "english": "ten thousand (10/ 000)"
+  },
+  {
+    "hanzi": "你呢",
+    "jyutping": "nei5 ne1",
+    "english": "and you"
+  },
+  {
+    "hanzi": "偉仔",
+    "jyutping": "wai5 zai2",
+    "english": "Tony Leung"
+  },
+  {
+    "hanzi": "嘉玲",
+    "jyutping": "gaa1 ling4",
+    "english": "Carina Lau"
+  },
+  {
+    "hanzi": "幾好",
+    "jyutping": "gei2 hou2",
+    "english": "pretty good"
+  },
+  {
+    "hanzi": "點呀",
+    "jyutping": "dim2 aa3",
+    "english": "What's up?"
+  },
+  {
+    "hanzi": "好好",
+    "jyutping": "hou2 hou2",
+    "english": "very good"
+  },
+  {
+    "hanzi": "最近",
+    "jyutping": "zeoi3 gan6",
+    "english": "lately"
+  },
+  {
+    "hanzi": "唔係",
+    "jyutping": "m4",
+    "english": "hai6 to not be/ no"
+  },
+  {
+    "hanzi": "學",
+    "jyutping": "hok6",
+    "english": "to learn ⾷ sik6 to eat"
+  },
+  {
+    "hanzi": "做",
+    "jyutping": "zou6",
+    "english": "to do; to work"
+  },
+  {
+    "hanzi": "唔好意思",
+    "jyutping": "m4 hou2 ji3 si1",
+    "english": "sorry/ excuse me"
+  },
+  {
+    "hanzi": "個",
+    "jyutping": "go3",
+    "english": "(measure word)"
+  },
+  {
+    "hanzi": "小姐",
+    "jyutping": "siu2",
+    "english": "ze2 miss"
+  },
+  {
+    "hanzi": "要",
+    "jyutping": "jiu3",
+    "english": "to want/ to need ⼀ jat1 one ⽀ zi1 (measure word for bottle)"
+  },
+  {
+    "hanzi": "啤酒",
+    "jyutping": "be1 zau2",
+    "english": "beer"
+  },
+  {
+    "hanzi": "冇問題",
+    "jyutping": "mou5",
+    "english": "man6 tai4 no problem"
+  },
+  {
+    "hanzi": "兩",
+    "jyutping": "loeng5",
+    "english": "two (2)"
+  },
+  {
+    "hanzi": "先生",
+    "jyutping": "sin1",
+    "english": "saang1 sir/ mister"
+  },
+  {
+    "hanzi": "靚仔",
+    "jyutping": "leng3 zai2",
+    "english": "handsome boy"
+  },
+  {
+    "hanzi": "靚女",
+    "jyutping": "leng3 neoi5",
+    "english": "pretty girl"
+  },
+  {
+    "hanzi": "果汁",
+    "jyutping": "gwo2 zap1",
+    "english": "juice ⽔ seoi2 water"
+  },
+  {
+    "hanzi": "呢度",
+    "jyutping": "ni1 dou6",
+    "english": "here"
+  },
+  {
+    "hanzi": "有冇",
+    "jyutping": "jau5 mou5",
+    "english": "Do you have. . . ?/ is/ are there any"
+  },
+  {
+    "hanzi": "嚟",
+    "jyutping": "lai4",
+    "english": "come"
+  },
+  {
+    "hanzi": "上網",
+    "jyutping": "soeng5",
+    "english": "mong5 to get online"
+  },
+  {
+    "hanzi": "上",
+    "jyutping": "soeng5",
+    "english": "to get on"
+  },
+  {
+    "hanzi": "點",
+    "jyutping": "dim2",
+    "english": "how to/ to order"
+  },
+  {
+    "hanzi": "廁所",
+    "jyutping": "ci3 so2",
+    "english": "toilet"
+  },
+  {
+    "hanzi": "餐廳",
+    "jyutping": "caan1 teng1",
+    "english": "restaurant"
+  },
+  {
+    "hanzi": "互聯網",
+    "jyutping": "wu6 lyun4 mong5",
+    "english": "Internet"
+  },
+  {
+    "hanzi": "你嘅",
+    "jyutping": "nei5 ge3",
+    "english": "your/ yours"
+  },
+  {
+    "hanzi": "嘅",
+    "jyutping": "ge3",
+    "english": "possessive particle"
+  },
+  {
+    "hanzi": "唔使客氣",
+    "jyutping": "m4 sai2",
+    "english": "haak3 hei3 You're welcome."
+  },
+  {
+    "hanzi": "唔該晒",
+    "jyutping": "m4 goi1 saai3",
+    "english": "Thank you very much."
+  },
+  {
+    "hanzi": "佢",
+    "jyutping": "keoi5",
+    "english": "he/ she/ it"
+  },
+  {
+    "hanzi": "我哋",
+    "jyutping": "ngo5 dei6",
+    "english": "we"
+  },
+  {
+    "hanzi": "你哋",
+    "jyutping": "nei5 dei6",
+    "english": "you (plural)"
+  },
+  {
+    "hanzi": "佢哋",
+    "jyutping": "keoi5 dei6",
+    "english": "they"
+  },
+  {
+    "hanzi": "肚餓",
+    "jyutping": "tou5 ngo6",
+    "english": "hungry"
+  },
+  {
+    "hanzi": "口渴",
+    "jyutping": "hau2 hot3",
+    "english": "thirsty"
+  },
+  {
+    "hanzi": "攰",
+    "jyutping": "gui6",
+    "english": "tired"
+  },
+  {
+    "hanzi": "嘢",
+    "jyutping": "je5",
+    "english": "thing/ things"
+  },
+  {
+    "hanzi": "飲",
+    "jyutping": "jam2",
+    "english": "to drink"
+  },
+  {
+    "hanzi": "咩",
+    "jyutping": "me1",
+    "english": "what"
+  },
+  {
+    "hanzi": "可以",
+    "jyutping": "ho2",
+    "english": "ji5 can"
+  },
+  {
+    "hanzi": "有咩",
+    "jyutping": "jau5 me1",
+    "english": "Is there anything. . ."
+  },
+  {
+    "hanzi": "睇",
+    "jyutping": "tai2",
+    "english": "to watch"
+  },
+  {
+    "hanzi": "呢個",
+    "jyutping": "ni1 go3",
+    "english": "this one"
+  },
+  {
+    "hanzi": "嗰個",
+    "jyutping": "go2 go3",
+    "english": "that one"
+  },
+  {
+    "hanzi": "呢",
+    "jyutping": "ni1",
+    "english": "this"
+  },
+  {
+    "hanzi": "嗰",
+    "jyutping": "go2",
+    "english": "that"
+  },
+  {
+    "hanzi": "燒鵝",
+    "jyutping": "siu1 ngo2",
+    "english": "roast goose"
+  },
+  {
+    "hanzi": "好食",
+    "jyutping": "hou2 sik6",
+    "english": "delicious/ tasty"
+  },
+  {
+    "hanzi": "鍾意",
+    "jyutping": "zung1 ji3",
+    "english": "to like"
+  },
+  {
+    "hanzi": "出名",
+    "jyutping": "ceot1 meng2",
+    "english": "famous"
+  },
+  {
+    "hanzi": "搭",
+    "jyutping": "daap3",
+    "english": "to take (a transport)"
+  },
+  {
+    "hanzi": "的士",
+    "jyutping": "dik1 si2",
+    "english": "taxi ⾞ ce1 car"
+  },
+  {
+    "hanzi": "巴士",
+    "jyutping": "baa1 si2",
+    "english": "bus"
+  },
+  {
+    "hanzi": "地鐵",
+    "jyutping": "dei6 tit3",
+    "english": "subway"
+  },
+  {
+    "hanzi": "飛機",
+    "jyutping": "fei1 gei1",
+    "english": "airplane"
+  },
+  {
+    "hanzi": "都得",
+    "jyutping": "dou1 dak1",
+    "english": "They're both okay."
+  },
+  {
+    "hanzi": "下次",
+    "jyutping": "haa6 ci3",
+    "english": "next time"
+  },
+  {
+    "hanzi": "小巴",
+    "jyutping": "siu2 baa1",
+    "english": "minibus"
+  },
+  {
+    "hanzi": "驚",
+    "jyutping": "geng1",
+    "english": "to be scared of"
+  },
+  {
+    "hanzi": "冇晒",
+    "jyutping": "mou5 saai3",
+    "english": "to run out of"
+  },
+  {
+    "hanzi": "咩事",
+    "jyutping": "me1 si6",
+    "english": "What (thing happened) ?"
+  },
+  {
+    "hanzi": "擔心",
+    "jyutping": "daam1 sam1",
+    "english": "to worry"
+  },
+  {
+    "hanzi": "唔使驚",
+    "jyutping": "m4 sai2 geng1",
+    "english": "Don't worry."
+  },
+  {
+    "hanzi": "錢",
+    "jyutping": "cin2",
+    "english": "money"
+  },
+  {
+    "hanzi": "大把",
+    "jyutping": "daai6 baa2",
+    "english": "to have plenty (of) ; many"
+  },
+  {
+    "hanzi": "唔使",
+    "jyutping": "m4 sai2",
+    "english": "no need to"
+  },
+  {
+    "hanzi": "弊",
+    "jyutping": "bai6",
+    "english": "shoot!"
+  },
+  {
+    "hanzi": "幾時",
+    "jyutping": "gei2 si4",
+    "english": "when"
+  },
+  {
+    "hanzi": "得閒",
+    "jyutping": "dak1 haan4",
+    "english": "to be available/ to be free"
+  },
+  {
+    "hanzi": "下個",
+    "jyutping": "haa6 go3",
+    "english": "next (one)"
+  },
+  {
+    "hanzi": "上個",
+    "jyutping": "soeng6 go3",
+    "english": "last (one)"
+  },
+  {
+    "hanzi": "禮拜",
+    "jyutping": "lai5 baai3",
+    "english": "week"
+  },
+  {
+    "hanzi": "星期",
+    "jyutping": "sing1 kei4",
+    "english": "week"
+  },
+  {
+    "hanzi": "禮拜六",
+    "jyutping": "lai5 baai3 luk6",
+    "english": "Saturday"
+  },
+  {
+    "hanzi": "禮拜日",
+    "jyutping": "lai5 baai3 jat6",
+    "english": "Sunday ⼀ jat1 one (1) ⼆ ji6 two (2)"
+  },
+  {
+    "hanzi": "零",
+    "jyutping": "ling4",
+    "english": "zero (0)"
+  },
+  {
+    "hanzi": "電話",
+    "jyutping": "din6 waa2",
+    "english": "telephone"
+  },
+  {
+    "hanzi": "手機",
+    "jyutping": "sau2 gei1",
+    "english": "cell phone"
+  },
+  {
+    "hanzi": "號碼",
+    "jyutping": "hou6 maa5",
+    "english": "number"
+  },
+  {
+    "hanzi": "屋企",
+    "jyutping": "uk1 kei2",
+    "english": "home"
+  },
+  {
+    "hanzi": "幾多",
+    "jyutping": "gei2 do1",
+    "english": "How many? (literally)"
+  },
+  {
+    "hanzi": "想",
+    "jyutping": "soeng2",
+    "english": "to want"
+  },
+  {
+    "hanzi": "睇戲",
+    "jyutping": "tai2 hei3",
+    "english": "to watch a movie"
+  },
+  {
+    "hanzi": "行街",
+    "jyutping": "hang4 gaai1",
+    "english": "to walk in the street (literally)"
+  },
+  {
+    "hanzi": "食飯",
+    "jyutping": "sik6 faan6",
+    "english": "to have a meal"
+  },
+  {
+    "hanzi": "飲茶",
+    "jyutping": "jam2 caa4",
+    "english": "to have Cantonese brunch"
+  },
+  {
+    "hanzi": "飲嘢",
+    "jyutping": "jam2 je5",
+    "english": "to have a drink"
+  },
+  {
+    "hanzi": "買嘢",
+    "jyutping": "maai5 je5",
+    "english": "to go shopping"
+  },
+  {
+    "hanzi": "兜風",
+    "jyutping": "dau1 fung1",
+    "english": "to have a joyride"
+  },
+  {
+    "hanzi": "趕時間",
+    "jyutping": "gon2 si4 gaan3",
+    "english": "to be in a rush"
+  },
+  {
+    "hanzi": "食餐飯",
+    "jyutping": "sik6 caan1 faan6",
+    "english": "to have a meal"
+  },
+  {
+    "hanzi": "飲杯嘢",
+    "jyutping": "jam2 bui1 je5",
+    "english": "to have a drink"
+  },
+  {
+    "hanzi": "睇套戲",
+    "jyutping": "tai2 tou3 hei3",
+    "english": "to watch a movie"
+  },
+  {
+    "hanzi": "忙",
+    "jyutping": "mong4",
+    "english": "busy"
+  },
+  {
+    "hanzi": "有時間",
+    "jyutping": "jau5 si4 gaan3",
+    "english": "to have time"
+  },
+  {
+    "hanzi": "冇時間",
+    "jyutping": "mou5 si4 gaan3",
+    "english": "not to have time"
+  },
+  {
+    "hanzi": "咖啡",
+    "jyutping": "gaa3 fe1",
+    "english": "coffee"
+  },
+  {
+    "hanzi": "男朋友",
+    "jyutping": "naam4 pang4 jau5",
+    "english": "boyfriend"
+  },
+  {
+    "hanzi": "女朋友",
+    "jyutping": "neoi5 pang4 jau5",
+    "english": "girlfriend"
+  },
+  {
+    "hanzi": "茶",
+    "jyutping": "caa4",
+    "english": "tea"
+  },
+  {
+    "hanzi": "紅酒",
+    "jyutping": "hung4 zau2",
+    "english": "red wine"
+  },
+  {
+    "hanzi": "白酒",
+    "jyutping": "baak6 zau2",
+    "english": "white wine"
+  },
+  {
+    "hanzi": "去",
+    "jyutping": "heoi3",
+    "english": "to go"
+  },
+  {
+    "hanzi": "賣",
+    "jyutping": "maai6",
+    "english": "to sell"
+  },
+  {
+    "hanzi": "太",
+    "jyutping": "taai3",
+    "english": "too"
+  },
+  {
+    "hanzi": "買",
+    "jyutping": "maai5",
+    "english": "to buy"
+  },
+  {
+    "hanzi": "幾錢",
+    "jyutping": "gei2 cin2",
+    "english": "How much. . . ?"
+  },
+  {
+    "hanzi": "蚊",
+    "jyutping": "man1",
+    "english": "Hong Kong dollars"
+  },
+  {
+    "hanzi": "講價",
+    "jyutping": "gong2 gaa3",
+    "english": "to bargain"
+  },
+  {
+    "hanzi": "而家",
+    "jyutping": "ji4 gaa1",
+    "english": "now"
+  },
+  {
+    "hanzi": "幾點",
+    "jyutping": "gei2 dim2",
+    "english": "what time"
+  },
+  {
+    "hanzi": "半",
+    "jyutping": "bun3",
+    "english": "half"
+  },
+  {
+    "hanzi": "夠鐘",
+    "jyutping": "gau3 zung1",
+    "english": "it's time"
+  },
+  {
+    "hanzi": "收工",
+    "jyutping": "sau1 gung1",
+    "english": "to get off work"
+  },
+  {
+    "hanzi": "開工",
+    "jyutping": "hoi1 gung1",
+    "english": "to start work ⾛ zau2 to leave/ to walk ⼗⼀ sap6 jat1 eleven ⼗⼆ sap6 ji6 twelve"
+  },
+  {
+    "hanzi": "咗",
+    "jyutping": "zo2",
+    "english": "-ed (past tense suffix)"
+  },
+  {
+    "hanzi": "邊度",
+    "jyutping": "bin1 dou6",
+    "english": "where"
+  },
+  {
+    "hanzi": "嗰度",
+    "jyutping": "go2 dou6",
+    "english": "there"
+  },
+  {
+    "hanzi": "幾耐",
+    "jyutping": "gei2 noi6",
+    "english": "how long"
+  },
+  {
+    "hanzi": "鐘頭",
+    "jyutping": "zung1 tau4",
+    "english": "hour"
+  },
+  {
+    "hanzi": "講",
+    "jyutping": "gong2",
+    "english": "to speak"
+  },
+  {
+    "hanzi": "英文",
+    "jyutping": "jing1 man2",
+    "english": ""
+  },
+  {
+    "hanzi": "溫書",
+    "jyutping": "wan1 syu1",
+    "english": "to study"
+  },
+  {
+    "hanzi": "緊",
+    "jyutping": "gan2",
+    "english": "-ing"
+  },
+  {
+    "hanzi": "係咩",
+    "jyutping": "hai6 me1",
+    "english": "Really"
+  },
+  {
+    "hanzi": "國語",
+    "jyutping": "gwok3 jyu5",
+    "english": "Mandarin"
+  },
+  {
+    "hanzi": "傾",
+    "jyutping": "king1",
+    "english": "to talk"
+  },
+  {
+    "hanzi": "聽唔明",
+    "jyutping": "teng1 m4 ming4",
+    "english": "to not understand"
+  },
+  {
+    "hanzi": "快",
+    "jyutping": "faai3",
+    "english": "fast"
+  },
+  {
+    "hanzi": "勤力",
+    "jyutping": "kan4 lik6",
+    "english": "diligent"
+  },
+  {
+    "hanzi": "爸爸",
+    "jyutping": "baa4 baa1",
+    "english": "father"
+  },
+  {
+    "hanzi": "似",
+    "jyutping": "ci5",
+    "english": "to look like"
+  },
+  {
+    "hanzi": "邊個",
+    "jyutping": "bin1 go3",
+    "english": "who"
+  },
+  {
+    "hanzi": "邊個嚟㗎",
+    "jyutping": "bin1 go3 lai4 gaa3",
+    "english": "who"
+  },
+  {
+    "hanzi": "媽媽",
+    "jyutping": "maa4 maa1",
+    "english": "mother"
+  },
+  {
+    "hanzi": "大佬",
+    "jyutping": "daai6 lou2",
+    "english": "older brother"
+  },
+  {
+    "hanzi": "細佬",
+    "jyutping": "sai3 lou2",
+    "english": "younger brother"
+  },
+  {
+    "hanzi": "家姐",
+    "jyutping": "gaa1 ze1",
+    "english": "older sister"
+  },
+  {
+    "hanzi": "細妹",
+    "jyutping": "sai3 mui2",
+    "english": "younger sister"
+  },
+  {
+    "hanzi": "老婆",
+    "jyutping": "lou5 po4",
+    "english": "wife"
+  },
+  {
+    "hanzi": "老公",
+    "jyutping": "lou5 gung1",
+    "english": "husband"
+  },
+  {
+    "hanzi": "粥",
+    "jyutping": "zuk1",
+    "english": "porridge"
+  },
+  {
+    "hanzi": "餸",
+    "jyutping": "sung3",
+    "english": "food (dish)"
+  },
+  {
+    "hanzi": "湯",
+    "jyutping": "tong1",
+    "english": "soup"
+  },
+  {
+    "hanzi": "甜品",
+    "jyutping": "tim4 ban2",
+    "english": "dessert"
+  },
+  {
+    "hanzi": "糖水",
+    "jyutping": "tong4 seoi2",
+    "english": "Cantonese soup-like dessert ⼈ jan4 person/ people"
+  },
+  {
+    "hanzi": "正",
+    "jyutping": "zeng3",
+    "english": "awesome"
+  },
+  {
+    "hanzi": "靚",
+    "jyutping": "leng3",
+    "english": "beautiful/ good"
+  },
+  {
+    "hanzi": "仲",
+    "jyutping": "zung6",
+    "english": "even more"
+  },
+  {
+    "hanzi": "樣衰",
+    "jyutping": "joeng2 seoi1",
+    "english": "ugly"
+  },
+  {
+    "hanzi": "啱",
+    "jyutping": "ngaam1",
+    "english": "correct"
+  },
+  {
+    "hanzi": "瘦",
+    "jyutping": "sau3",
+    "english": "thin"
+  },
+  {
+    "hanzi": "肥",
+    "jyutping": "fei4",
+    "english": "fat"
+  },
+  {
+    "hanzi": "凍",
+    "jyutping": "dung3",
+    "english": "cold"
+  },
+  {
+    "hanzi": "熱",
+    "jyutping": "jit6",
+    "english": "hot ⾼ gou1 tall"
+  },
+  {
+    "hanzi": "矮",
+    "jyutping": "ngai2",
+    "english": "short"
+  },
+  {
+    "hanzi": "夜晚",
+    "jyutping": "je6 maan5",
+    "english": "night ⽩⽇ baak6 jat6 day"
+  },
+  {
+    "hanzi": "今晚",
+    "jyutping": "gam1 maan1",
+    "english": "tonight"
+  },
+  {
+    "hanzi": "聽晚",
+    "jyutping": "ting1 maan5",
+    "english": "tomorrow night"
+  },
+  {
+    "hanzi": "尋晚",
+    "jyutping": "cam4 maan5",
+    "english": "last night"
+  },
+  {
+    "hanzi": "今日",
+    "jyutping": "gam1 jat6",
+    "english": "today"
+  },
+  {
+    "hanzi": "聽日",
+    "jyutping": "ting1 jat6",
+    "english": "tomorrow"
+  },
+  {
+    "hanzi": "尋日",
+    "jyutping": "cam4 jat6",
+    "english": "yesterday"
+  },
+  {
+    "hanzi": "我請",
+    "jyutping": "ngo5 ceng2",
+    "english": "my treat"
+  },
+  {
+    "hanzi": "一定",
+    "jyutping": "jat1 ding6",
+    "english": "definitely"
+  },
+  {
+    "hanzi": "到",
+    "jyutping": "dou3",
+    "english": "to arrive"
+  },
+  {
+    "hanzi": "酒吧",
+    "jyutping": "zau2 baa1",
+    "english": "bar"
+  },
+  {
+    "hanzi": "一陣",
+    "jyutping": "jat1 zan6",
+    "english": "later"
+  },
+  {
+    "hanzi": "麥當勞",
+    "jyutping": "mak6 dong1 lou4",
+    "english": "McDonald's"
+  },
+  {
+    "hanzi": "食嘢",
+    "jyutping": "sik6 je5",
+    "english": "to eat something"
+  },
+  {
+    "hanzi": "做嘢",
+    "jyutping": "zou6 je5",
+    "english": "to work"
+  },
+  {
+    "hanzi": "講嘢",
+    "jyutping": "gong2 je5",
+    "english": "to say something"
+  },
+  {
+    "hanzi": "頭先",
+    "jyutping": "tau4 sin1",
+    "english": "just now"
+  },
+  {
+    "hanzi": "冇去邊",
+    "jyutping": "mou5 heoi3 bin1",
+    "english": "nowhere"
+  },
+  {
+    "hanzi": "食咗",
+    "jyutping": "sik6 zo2",
+    "english": "ate/ to have eaten"
+  },
+  {
+    "hanzi": "做咗",
+    "jyutping": "zou6 zo2",
+    "english": "to have worked"
+  },
+  {
+    "hanzi": "講咗",
+    "jyutping": "gong2 zo2",
+    "english": "spoke/ to have spoken"
+  },
+  {
+    "hanzi": "飲咗",
+    "jyutping": "jam2 zo2",
+    "english": "to have drank"
+  },
+  {
+    "hanzi": "使唔使",
+    "jyutping": "sai2 m4 sai2",
+    "english": "to do or not to do"
+  },
+  {
+    "hanzi": "上堂",
+    "jyutping": "soeng5 tong4",
+    "english": "to have class"
+  },
+  {
+    "hanzi": "禮拜一",
+    "jyutping": "lai5 baai3 jat1",
+    "english": "Monday"
+  },
+  {
+    "hanzi": "禮拜二",
+    "jyutping": "lai5 baai3 ji6",
+    "english": "Tuesday"
+  },
+  {
+    "hanzi": "少少",
+    "jyutping": "siu2 siu2",
+    "english": "a little"
+  },
+  {
+    "hanzi": "啫",
+    "jyutping": "ze1",
+    "english": "just (placed after an adjective)"
+  },
+  {
+    "hanzi": "朝早",
+    "jyutping": "ziu1 zou2",
+    "english": "morning"
+  },
+  {
+    "hanzi": "中午",
+    "jyutping": "zung1 ng5",
+    "english": "noon"
+  },
+  {
+    "hanzi": "下晝",
+    "jyutping": "haa6 zau3",
+    "english": "afternoon"
+  },
+  {
+    "hanzi": "日頭",
+    "jyutping": "jat6 tau2",
+    "english": "daytime"
+  },
+  {
+    "hanzi": "今朝",
+    "jyutping": "gam1 ziu1",
+    "english": "this morning"
+  },
+  {
+    "hanzi": "做咩",
+    "jyutping": "zou6 me1",
+    "english": "what (to do)"
+  },
+  {
+    "hanzi": "老師",
+    "jyutping": "lou5 si1",
+    "english": "teacher"
+  },
+  {
+    "hanzi": "學生",
+    "jyutping": "hok6 sang1",
+    "english": "student"
+  },
+  {
+    "hanzi": "醫生",
+    "jyutping": "ji1 sang1",
+    "english": "doctor"
+  },
+  {
+    "hanzi": "律師",
+    "jyutping": "leot6 si1",
+    "english": "lawyer"
+  },
+  {
+    "hanzi": "工程師",
+    "jyutping": "gung1 cing4 si1",
+    "english": "engineer"
+  },
+  {
+    "hanzi": "演員",
+    "jyutping": "jin2 jyun4",
+    "english": "actor"
+  },
+  {
+    "hanzi": "導演",
+    "jyutping": "dou6 jin2",
+    "english": "(movie) director"
+  },
+  {
+    "hanzi": "焗",
+    "jyutping": "guk6",
+    "english": "humid; stuffy; muggy"
+  },
+  {
+    "hanzi": "潮濕",
+    "jyutping": "ciu4 sap1",
+    "english": "humid"
+  },
+  {
+    "hanzi": "曬",
+    "jyutping": "saai3",
+    "english": "excessively sunny"
+  },
+  {
+    "hanzi": "落雨",
+    "jyutping": "lok6 jyu5",
+    "english": "to rain"
+  },
+  {
+    "hanzi": "覺",
+    "jyutping": "gok3",
+    "english": "to feel"
+  }
+]
