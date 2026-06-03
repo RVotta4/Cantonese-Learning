@@ -121,7 +121,7 @@
     }, 0);
   }
 
-  function reset() { save({ srs: {}, fcMode: load().fcMode }); }
+  function reset() { var d = load(); save({ srs: {}, fcMode: d.fcMode, deck: d.deck }); }
 
   function getFcMode() { return load().fcMode || null; }
   function setFcMode(m) { var d = load(); d.fcMode = m; save(d); }
@@ -165,6 +165,22 @@
     return 0;
   }
 
+  // ---------- Flashcard deck (words the user chose to review) ----------
+  function addToDeck(word) {
+    if (!word || !word.hanzi) return;
+    var d = load(); d.deck = d.deck || {};
+    d.deck[word.hanzi] = {
+      hanzi: word.hanzi, jyutping: word.jyutping, english: word.english,
+      source: word.source || "lesson",
+      lessonId: word.lessonId, lessonTitle: word.lessonTitle
+    };
+    save(d);
+  }
+  function removeFromDeck(id) { var d = load(); if (d.deck) { delete d.deck[id]; save(d); } }
+  function inDeck(id) { return !!(load().deck || {})[id]; }
+  function deckList() { var deck = load().deck || {}; return Object.keys(deck).map(function (k) { return deck[k]; }); }
+  function deckCount() { return Object.keys(load().deck || {}).length; }
+
   window.Store = {
     getState: getState,
     rate: rate,
@@ -182,6 +198,11 @@
     getLastLesson: getLastLesson,
     recordActivity: recordActivity,
     getStreak: getStreak,
-    DAY: DAY
+    DAY: DAY,
+    addToDeck: addToDeck,
+    removeFromDeck: removeFromDeck,
+    inDeck: inDeck,
+    deckList: deckList,
+    deckCount: deckCount
   };
 })();
