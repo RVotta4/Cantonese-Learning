@@ -47,13 +47,13 @@ window.WORDBANK = [
     "hanzi": "碌爆咭",
     "jyutping": "luk1 baau3 kaat1",
     "english": "to not be able to use the card",
-    "topic": "Transport & travel"
+    "topic": "Money & banking"
   },
   {
     "hanzi": "碌咭",
     "jyutping": "luk1 kaat1",
     "english": "to swipe the card",
-    "topic": "Transport & travel"
+    "topic": "Money & banking"
   },
   {
     "hanzi": "信用卡",
@@ -125,7 +125,7 @@ window.WORDBANK = [
     "hanzi": "間",
     "jyutping": "gaan1",
     "english": "measure word for rooms",
-    "topic": "Home & hotel"
+    "topic": "General"
   },
   {
     "hanzi": "櫃枱",
@@ -329,7 +329,7 @@ window.WORDBANK = [
     "hanzi": "隻",
     "jyutping": "zek3",
     "english": "measure word for colors",
-    "topic": "Colours"
+    "topic": "General"
   },
   {
     "hanzi": "邊",
@@ -497,7 +497,7 @@ window.WORDBANK = [
     "hanzi": "認識",
     "jyutping": "jing6 sik1",
     "english": "to know / to recognize",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "都",
@@ -527,7 +527,7 @@ window.WORDBANK = [
     "hanzi": "廣東話",
     "jyutping": "gwong2 dung1 waa2",
     "english": "Cantonese language",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "點講",
@@ -641,19 +641,19 @@ window.WORDBANK = [
     "hanzi": "一百",
     "jyutping": "jat1 baak3",
     "english": "one hundred (100)",
-    "topic": "Colours"
+    "topic": "Numbers & time"
   },
   {
     "hanzi": "二百",
     "jyutping": "ji6 baak3",
     "english": "two hundred (200)",
-    "topic": "Colours"
+    "topic": "Numbers & time"
   },
   {
     "hanzi": "兩百",
     "jyutping": "loeng5 baak3",
     "english": "two hundred (200)",
-    "topic": "Colours"
+    "topic": "Numbers & time"
   },
   {
     "hanzi": "四百七十",
@@ -675,14 +675,14 @@ window.WORDBANK = [
   },
   {
     "hanzi": "三千五百九十",
-    "jyutping": "saam1 cin1 ng5 baak3 gau2",
-    "english": "sap6",
+    "jyutping": "saam1 cin1 ng5 baak3 gau2 sap6",
+    "english": "3590",
     "topic": "General"
   },
   {
     "hanzi": "七千八百八十",
-    "jyutping": "cat1 cin1 baat3 baak3 baat3",
-    "english": "sap6",
+    "jyutping": "cat1 cin1 baat3 baak3 baat3 sap6",
+    "english": "7880",
     "topic": "General"
   },
   {
@@ -707,7 +707,7 @@ window.WORDBANK = [
     "hanzi": "嘉玲",
     "jyutping": "gaa1 ling4",
     "english": "Carina Lau",
-    "topic": "Transport & travel"
+    "topic": "General"
   },
   {
     "hanzi": "幾好",
@@ -731,7 +731,7 @@ window.WORDBANK = [
     "hanzi": "最近",
     "jyutping": "zeoi3 gan6",
     "english": "lately",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "唔係",
@@ -935,7 +935,7 @@ window.WORDBANK = [
     "hanzi": "攰",
     "jyutping": "gui6",
     "english": "tired",
-    "topic": "Colours"
+    "topic": "General"
   },
   {
     "hanzi": "嘢",
@@ -1073,7 +1073,7 @@ window.WORDBANK = [
     "hanzi": "驚",
     "jyutping": "geng1",
     "english": "to be scared of",
-    "topic": "Transport & travel"
+    "topic": "General"
   },
   {
     "hanzi": "冇晒",
@@ -1181,7 +1181,7 @@ window.WORDBANK = [
     "hanzi": "電話",
     "jyutping": "din6 waa2",
     "english": "telephone",
-    "topic": "Communication"
+    "topic": "General"
   },
   {
     "hanzi": "手機",
@@ -1235,7 +1235,7 @@ window.WORDBANK = [
     "hanzi": "飲茶",
     "jyutping": "jam2 caa4",
     "english": "to have Cantonese brunch",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "飲嘢",
@@ -1283,7 +1283,7 @@ window.WORDBANK = [
     "hanzi": "忙",
     "jyutping": "mong4",
     "english": "busy",
-    "topic": "Transport & travel"
+    "topic": "General"
   },
   {
     "hanzi": "有時間",
@@ -1367,7 +1367,7 @@ window.WORDBANK = [
     "hanzi": "蚊",
     "jyutping": "man1",
     "english": "Hong Kong dollars",
-    "topic": "Money & banking"
+    "topic": "General"
   },
   {
     "hanzi": "講價",
@@ -1415,7 +1415,7 @@ window.WORDBANK = [
     "hanzi": "咗",
     "jyutping": "zo2",
     "english": "-ed (past tense suffix)",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "邊度",
@@ -1667,7 +1667,7 @@ window.WORDBANK = [
     "hanzi": "今晚",
     "jyutping": "gam1 maan1",
     "english": "tonight",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "聽晚",
@@ -1727,7 +1727,7 @@ window.WORDBANK = [
     "hanzi": "一陣",
     "jyutping": "jat1 zan6",
     "english": "later",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "麥當勞",
@@ -1763,19 +1763,19 @@ window.WORDBANK = [
     "hanzi": "冇去邊",
     "jyutping": "mou5 heoi3 bin1",
     "english": "nowhere",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "食咗",
     "jyutping": "sik6 zo2",
     "english": "ate / to have eaten",
-    "topic": "Food & dining"
+    "topic": "General"
   },
   {
     "hanzi": "做咗",
     "jyutping": "zou6 zo2",
     "english": "to have worked",
-    "topic": "Jobs"
+    "topic": "General"
   },
   {
     "hanzi": "講咗",
@@ -1847,7 +1847,7 @@ window.WORDBANK = [
     "hanzi": "日頭",
     "jyutping": "jat6 tau2",
     "english": "daytime",
-    "topic": "Numbers & time"
+    "topic": "General"
   },
   {
     "hanzi": "今朝",
@@ -1865,7 +1865,7 @@ window.WORDBANK = [
     "hanzi": "老師",
     "jyutping": "lou5 si1",
     "english": "teacher",
-    "topic": "Food & dining"
+    "topic": "Jobs"
   },
   {
     "hanzi": "學生",

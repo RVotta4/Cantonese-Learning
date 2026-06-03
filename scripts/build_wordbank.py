@@ -16,14 +16,14 @@ ROOT = os.path.dirname(HERE)
 SRC = os.path.join(ROOT, "docs", "superpowers", "specs", "2026-06-03-wordbank-source.json")
 OUT = os.path.join(ROOT, "data", "wordbank.js")
 
-_JYUT_TOKEN = re.compile(r"^((?:[a-z]+[1-6]\s+)+)", re.IGNORECASE)
+_JYUT_TOKEN = re.compile(r"^((?:[a-z]+[1-6](?:\s+|$))+)", re.IGNORECASE)
 _CJK = re.compile(r"[一-鿿⺀-⿿]")
 
 # Topics: first matching keyword (substring, case-insensitive) wins; else General.
 TOPICS = [
     ("Money & banking", ["bank", "money", "cash", "account", "interest", "bill",
         "credit", "discount", "sale", "dollar", "pay", "save", "expensive",
-        "cheap", "change", "counter", "receipt", "invoice"]),
+        "cheap", "change", "counter", "receipt", "invoice", "card"]),
     ("Food & dining", ["eat", "drink", "tea", "coffee", "beer", "wine", "juice",
         "water", "restaurant", "meal", "delicious", "tasty", "dessert", "soup",
         "food", "dish", "porridge", "goose", "treat", "hungry", "thirsty"]),
@@ -51,6 +51,12 @@ TOPICS = [
         "afternoon", "week", "monday", "tuesday", "saturday", "sunday", "hour",
         "when", "now", "late", "early", "time"]),
 ]
+
+# Rows whose English was lost during PDF decoding; supply it explicitly.
+CORRECTIONS = {
+    "三千五百九十": {"jyutping": "saam1 cin1 ng5 baak3 gau2 sap6", "english": "3590"},
+    "七千八百八十": {"jyutping": "cat1 cin1 baat3 baak3 baat3 sap6", "english": "7880"},
+}
 
 # High-value words absorbed into Pattern-B rows, re-added as their own entries.
 EXTRA_WORDS = [
@@ -93,7 +99,7 @@ def fix_row(row):
 def topic_for(english):
     low = english.lower()
     for name, keys in TOPICS:
-        if any(k in low for k in keys):
+        if any(re.search(r"\b" + re.escape(k) + r"\b", low) for k in keys):
             return name
     return "General"
 
@@ -105,13 +111,16 @@ def build(rows):
         if not r["hanzi"] or r["hanzi"] in seen:
             continue
         seen.add(r["hanzi"])
+        if r["hanzi"] in CORRECTIONS:
+            r.update(CORRECTIONS[r["hanzi"]])
         r["topic"] = topic_for(r["english"])
         out.append(r)
     return out
 
 
 def main():
-    rows = json.load(open(SRC, encoding="utf-8"))
+    with open(SRC, encoding="utf-8") as f:
+        rows = json.load(f)
     words = build(rows)
     body = json.dumps(words, ensure_ascii=False, indent=2)
     with open(OUT, "w", encoding="utf-8") as f:

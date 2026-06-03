@@ -42,8 +42,18 @@ def test_build_dedupes_and_has_no_cjk_in_english():
     out = build(rows)
     hanzis = [w["hanzi"] for w in out]
     assert hanzis.count("熱") == 1, hanzis
-    assert all(not any("一" <= c <= "鿿" for c in w["english"]) for w in out)
+    assert all(not any("一" <= c <= "鿿" or "⺀" <= c <= "⿿" for c in w["english"]) for w in out)
     assert all("topic" in w for w in out)
+
+
+def test_pattern_a_final_token_no_space():
+    r = fix_row({"hanzi": "x", "jyutping": "saam1 cin1 ng5 baak3", "english": "gau2 sap6"})
+    assert r["jyutping"] == "saam1 cin1 ng5 baak3 gau2 sap6", r
+    assert r["english"] == "", r
+
+
+def test_card_topic_not_transport():
+    assert topic_for("to swipe the card") != "Transport & travel"
 
 
 def _run():
