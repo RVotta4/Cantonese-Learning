@@ -78,6 +78,7 @@
             '</div>' +
             '<span class="jyutping">' + escapeHtml(w.jyutping) + '</span>' +
             '<span class="english">' + escapeHtml(w.english) + '</span>' +
+            (window.Deck ? window.Deck.button({ hanzi: w.hanzi, jyutping: w.jyutping, english: w.english, source: "story" }) : "") +
           '</div>';
       });
       html += '</div></section>';
@@ -113,6 +114,7 @@
         if (window.speakCantonese) window.speakCantonese(b.getAttribute("data-word"));
       });
     });
+    if (window.Deck) window.Deck.mount(mount);
   }
 
   function playAll() {

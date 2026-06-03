@@ -71,6 +71,7 @@
   if (lesson.vocab && lesson.vocab.length) {
     html += '<section class="lesson-section">';
     html += '<h2 class="lesson-section-title">Vocabulary</h2>';
+    html += '<button type="button" class="btn btn-ghost-dark deck-add-all" id="deck-add-all">+ Add all to deck</button>';
     html += '<div class="vocab-grid">';
     lesson.vocab.forEach(function (v) {
       html +=
@@ -81,6 +82,7 @@
           '</div>' +
           '<span class="jyutping">' + escapeHtml(v.jyutping) + '</span>' +
           '<span class="english">' + escapeHtml(v.english) + '</span>' +
+          (window.Deck ? window.Deck.button({ hanzi: v.hanzi, jyutping: v.jyutping, english: v.english, source: "lesson", lessonId: lesson.id, lessonTitle: lesson.title }) : "") +
         '</div>';
     });
     html += '</div></section>';
@@ -126,6 +128,16 @@
   html += buildPrevNext(lesson);
 
   mount.innerHTML = html;
+
+  if (window.Deck) {
+    window.Deck.mount(mount);
+    var addAllBtn = document.getElementById("deck-add-all");
+    if (addAllBtn) addAllBtn.addEventListener("click", function () {
+      window.Deck.addAll((lesson.vocab || []).map(function (v) {
+        return { hanzi: v.hanzi, jyutping: v.jyutping, english: v.english, source: "lesson", lessonId: lesson.id, lessonTitle: lesson.title };
+      }), mount);
+    });
+  }
 
   // Wire the mark-complete toggle.
   var completeBar = document.getElementById("complete-bar");

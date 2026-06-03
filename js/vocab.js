@@ -68,6 +68,7 @@
         '<span class="jyutping">' + escapeHtml(v.jyutping) + '</span>' +
         '<span class="english">' + escapeHtml(v.english) + '</span>' +
         '<a class="vocab-lesson" href="lesson.html?id=' + encodeURIComponent(v.lessonId) + '">' + escapeHtml(v.lessonTitle) + '</a>' +
+        (window.Deck ? window.Deck.button({ hanzi: v.hanzi, jyutping: v.jyutping, english: v.english, source: "lesson", lessonId: v.lessonId, lessonTitle: v.lessonTitle }) : "") +
       '</div>';
     }).join("");
   }
@@ -81,6 +82,7 @@
   });
 
   render();
+  if (window.Deck) window.Deck.mount(resultsEl);
 
   function escapeHtml(s) {
     return String(s == null ? "" : s)
