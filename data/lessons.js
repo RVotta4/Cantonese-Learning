@@ -1504,7 +1504,12 @@ window.LESSONS = [
     subtitle: "老師 / 醫生 / 護士 / 司機 / 廚師 / 學生 / 做嘢",
     minutes: 5,
     intro: "Common jobs and how to talk about work.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你做咩工㗎？", jyutping: "nei5 zou6 me1 gung1 gaa3?", english: "What do you do for work?" },
+      { speaker: "B", hanzi: "我係護士，喺醫院做嘢。你呢？", jyutping: "ngo5 hai6 wu6 si6, hai2 ji1 jyun2 zou6 je5. nei5 ne1?", english: "I'm a nurse, I work at a hospital. You?" },
+      { speaker: "A", hanzi: "我係老師，喺中學教書。", jyutping: "ngo5 hai6 lou5 si1, hai2 zung1 hok6 gaau3 syu1.", english: "I'm a teacher, I teach at a secondary school." },
+      { speaker: "B", hanzi: "好叻喎！我細佬都想做醫生。", jyutping: "hou2 lek1 wo3! ngo5 sai3 lou2 dou1 soeng2 zou6 ji1 sang1.", english: "Impressive! My little brother wants to be a doctor too." }
+    ],
     vocab: [
       { hanzi: "老師", jyutping: "lou5 si1", english: "teacher" },
       { hanzi: "醫生", jyutping: "ji1 sang1", english: "doctor" },
@@ -1518,6 +1523,20 @@ window.LESSONS = [
       { hanzi: "我係老師。", jyutping: "ngo5 hai6 lou5 si1.", english: "I am a teacher." },
       { hanzi: "佢做醫生。", jyutping: "keoi5 zou6 ji1 sang1.", english: "He works as a doctor." },
       { hanzi: "你做唔做嘢呀？", jyutping: "nei5 zou6 m4 zou6 je5 aa3?", english: "Do you work?" }
+    ],
+    notes: [
+      {
+        title: "Say your job with 係",
+        body: "State an occupation with 我係 + job: 我係老師 (I'm a teacher), 我係學生 (I'm a student). There's no \"a / an\" to add."
+      },
+      {
+        title: "師 (si1) ends many professions",
+        body: "Several job words end in 師: 老師 (teacher), 廚師 (chef), 工程師 (engineer). 醫生 and 護士 are the odd ones out here."
+      },
+      {
+        title: "做嘢 = to work",
+        body: "做嘢 (literally \"do things\") is the everyday word for working: 你喺邊度做嘢呀？ = \"Where do you work?\" To head to work is 返工."
+      }
     ]
   },
   {
@@ -1529,7 +1548,12 @@ window.LESSONS = [
     subtitle: "學校 / 讀書 / 功課 / 考試 / 老師 / 同學 / 書",
     minutes: 5,
     intro: "Vocabulary about school and studying.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "聽日考試，你溫咗書未呀？", jyutping: "ting1 jat6 haau2 si3, nei5 wan1 zo2 syu1 mei6 aa3?", english: "There's an exam tomorrow — have you studied yet?" },
+      { speaker: "B", hanzi: "仲未。我仲有好多功課未做。", jyutping: "zung6 mei6. ngo5 zung6 jau5 hou2 do1 gung1 fo3 mei6 zou6.", english: "Not yet. I still have lots of homework to do." },
+      { speaker: "A", hanzi: "不如一齊喺學校溫啦。", jyutping: "bat1 jyu4 jat1 cai4 hai2 hok6 haau6 wan1 laa1.", english: "Let's study together at school." },
+      { speaker: "B", hanzi: "好呀！問下其他同學一齊。", jyutping: "hou2 aa3! man6 haa5 kei4 taa1 tung4 hok6 jat1 cai4.", english: "Sure! Let's ask the other classmates to join." }
+    ],
     vocab: [
       { hanzi: "學校", jyutping: "hok6 haau6", english: "school" },
       { hanzi: "讀書", jyutping: "duk6 syu1", english: "to study" },
@@ -1542,6 +1566,20 @@ window.LESSONS = [
       { hanzi: "我去學校讀書。", jyutping: "ngo5 heoi3 hok6 haau6 duk6 syu1.", english: "I go to school to study." },
       { hanzi: "今日有好多功課。", jyutping: "gam1 jat6 jau5 hou2 do1 gung1 fo3.", english: "There is a lot of homework today." },
       { hanzi: "聽日考試。", jyutping: "ting1 jat6 haau2 si3.", english: "There's an exam tomorrow." }
+    ],
+    notes: [
+      {
+        title: "讀書 vs 溫書",
+        body: "讀書 (duk6 syu1) means \"to study / go to school\" in general; 溫書 (wan1 syu1) is specifically revising for an exam. 溫 on its own = revise."
+      },
+      {
+        title: "…咗…未呀？ = have you …yet?",
+        body: "Frame \"have you done X yet?\" with 咗…未: 你溫咗書未呀？ Answer 溫咗 (done) or 仲未 (not yet)."
+      },
+      {
+        title: "做功課, 考試",
+        body: "Homework is something you 做 (do): 做功課. An exam is something you 考: 考試. 聽日考試 = \"there's an exam tomorrow.\""
+      }
     ]
   },
   {
@@ -1553,7 +1591,12 @@ window.LESSONS = [
     subtitle: "運動 / 踢波 / 打波 / 游水 / 跑步 / 行山",
     minutes: 5,
     intro: "Talk about sports and exercise.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你週末鍾意做咩運動呀？", jyutping: "nei5 zau1 mut6 zung1 ji3 zou6 me1 wan6 dung6 aa3?", english: "What sport do you like doing on weekends?" },
+      { speaker: "B", hanzi: "我鍾意踢波同游水。你呢？", jyutping: "ngo5 zung1 ji3 tek3 bo1 tung4 jau4 seoi2. nei5 ne1?", english: "I like football and swimming. You?" },
+      { speaker: "A", hanzi: "我鍾意跑步。聽日一齊去行山好唔好？", jyutping: "ngo5 zung1 ji3 paau2 bou6. ting1 jat6 jat1 cai4 heoi3 haang4 saan1 hou2 m4 hou2?", english: "I like jogging. Want to go hiking together tomorrow?" },
+      { speaker: "B", hanzi: "好呀！行完去游水。", jyutping: "hou2 aa3! haang4 jyun4 heoi3 jau4 seoi2.", english: "Sure! After the hike let's go swimming." }
+    ],
     vocab: [
       { hanzi: "運動", jyutping: "wan6 dung6", english: "exercise, sport" },
       { hanzi: "踢波", jyutping: "tek3 bo1", english: "to play football" },
@@ -1566,6 +1609,20 @@ window.LESSONS = [
       { hanzi: "我鍾意踢波。", jyutping: "ngo5 zung1 ji3 tek3 bo1.", english: "I like playing football." },
       { hanzi: "我哋去游水。", jyutping: "ngo5 dei6 heoi3 jau4 seoi2.", english: "We go swimming." },
       { hanzi: "聽日去行山。", jyutping: "ting1 jat6 heoi3 haang4 saan1.", english: "We're going hiking tomorrow." }
+    ],
+    notes: [
+      {
+        title: "波 (bo1) = ball — 踢波 vs 打波",
+        body: "波 is a loanword for \"ball\". You 踢 (kick) it for football — 踢波 — and 打 (hit) it for basketball or tennis — 打波."
+      },
+      {
+        title: "做運動 = to exercise",
+        body: "Exercising in general is 做運動 (\"do sport\"). Specific activities keep their own verbs: 游水 (swim), 跑步 (jog), 行山 (hike)."
+      },
+      {
+        title: "Culture — 行山, the weekend escape",
+        body: "Despite the skyscrapers, about 40% of Hong Kong is country park. 行山 (hiking) is a hugely popular way to escape the crowded city on weekends."
+      }
     ]
   },
   {
@@ -1577,7 +1634,12 @@ window.LESSONS = [
     subtitle: "音樂 / 聽歌 / 睇電視 / 電影 / 唱歌 / 鋼琴",
     minutes: 5,
     intro: "Words about music, TV and entertainment.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你得閒嗰陣鍾意做咩呀？", jyutping: "nei5 dak1 haan4 go2 zan6 zung1 ji3 zou6 me1 aa3?", english: "What do you like to do in your free time?" },
+      { speaker: "B", hanzi: "我鍾意聽歌同睇電影。", jyutping: "ngo5 zung1 ji3 teng1 go1 tung4 tai2 din6 jing2.", english: "I like listening to music and watching movies." },
+      { speaker: "A", hanzi: "我都係！你識唔識彈鋼琴？", jyutping: "ngo5 dou1 hai6! nei5 sik1 m4 sik1 taan4 gong3 kam4?", english: "Me too! Can you play the piano?" },
+      { speaker: "B", hanzi: "唔識，但係我好鍾意唱歌。", jyutping: "m4 sik1, daan6 hai6 ngo5 hou2 zung1 ji3 coeng3 go1.", english: "No, but I really love singing." }
+    ],
     vocab: [
       { hanzi: "音樂", jyutping: "jam1 ngok6", english: "music" },
       { hanzi: "聽歌", jyutping: "teng1 go1", english: "to listen to music" },
@@ -1590,6 +1652,20 @@ window.LESSONS = [
       { hanzi: "我鍾意聽歌。", jyutping: "ngo5 zung1 ji3 teng1 go1.", english: "I like listening to music." },
       { hanzi: "我哋去睇電影。", jyutping: "ngo5 dei6 heoi3 tai2 din6 jing2.", english: "We're going to watch a movie." },
       { hanzi: "佢識彈鋼琴。", jyutping: "keoi5 sik1 taan4 gong3 kam4.", english: "She can play the piano." }
+    ],
+    notes: [
+      {
+        title: "識 (sik1) = know how to",
+        body: "Put 識 before a skill verb for \"can / know how to\": 識彈鋼琴 (can play piano), 識唱歌 (can sing), 識游水 (can swim). Ask 識唔識…？"
+      },
+      {
+        title: "睇 for screens, 聽 for sound",
+        body: "睇電視 / 睇電影 (watch TV / a film) but 聽歌 / 聽音樂 (listen to songs / music). Match the verb to the sense."
+      },
+      {
+        title: "Culture — Canto-pop & 唱K",
+        body: "Cantonese pop is central to HK culture, and 唱K (karaoke, from 卡拉OK) is a favourite night out — groups rent a room and sing for hours."
+      }
     ]
   },
   {
@@ -1601,7 +1677,12 @@ window.LESSONS = [
     subtitle: "動物 / 狗 / 貓 / 雀仔 / 魚 / 養",
     minutes: 5,
     intro: "Common animals and keeping pets.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你屋企有冇養寵物呀？", jyutping: "nei5 uk1 kei2 jau5 mou5 joeng5 cung2 mat6 aa3?", english: "Do you keep any pets at home?" },
+      { speaker: "B", hanzi: "有呀，我養咗隻狗同兩條魚。", jyutping: "jau5 aa3, ngo5 joeng5 zo2 zek3 gau2 tung4 loeng5 tiu4 jyu2.", english: "Yes, I have a dog and two fish." },
+      { speaker: "A", hanzi: "好得意喎！我屋企養貓。", jyutping: "hou2 dak1 ji3 wo3! ngo5 uk1 kei2 joeng5 maau1.", english: "So cute! We have a cat at home." },
+      { speaker: "B", hanzi: "貓同狗夾唔夾呀？", jyutping: "maau1 tung4 gau2 gaap3 m4 gaap3 aa3?", english: "Do cats and dogs get along?" }
+    ],
     vocab: [
       { hanzi: "動物", jyutping: "dung6 mat6", english: "animal" },
       { hanzi: "狗", jyutping: "gau2", english: "dog" },
@@ -1614,6 +1695,20 @@ window.LESSONS = [
       { hanzi: "我養咗一隻狗。", jyutping: "ngo5 joeng5 zo2 jat1 zek3 gau2.", english: "I keep a dog." },
       { hanzi: "我鍾意貓。", jyutping: "ngo5 zung1 ji3 maau1.", english: "I like cats." },
       { hanzi: "呢隻雀仔好得意。", jyutping: "ni1 zek3 zoek3 zai2 hou2 dak1 ji3.", english: "This bird is very cute." }
+    ],
+    notes: [
+      {
+        title: "Animal classifiers: 隻 and 條",
+        body: "Most animals take 隻: 隻狗, 隻貓, 隻雀仔. Long, thin ones take 條: 條魚, 條蛇."
+      },
+      {
+        title: "養 (joeng5) = keep / raise",
+        body: "Use 養 for keeping pets or raising animals: 養狗 (have a dog), 養貓. 你養唔養寵物呀？ = \"Do you keep pets?\""
+      },
+      {
+        title: "得意 (dak1 ji3) = cute",
+        body: "In Cantonese 得意 means \"cute / adorable\", not \"pleased with oneself\" as it does in Mandarin. 隻貓好得意 = \"the cat is so cute.\""
+      }
     ]
   },
   {
@@ -1625,7 +1720,12 @@ window.LESSONS = [
     subtitle: "起身 / 刷牙 / 沖涼 / 食飯 / 返工 / 放工 / 瞓覺",
     minutes: 5,
     intro: "Describe the things you do every day.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你朝早幾點起身㗎？", jyutping: "nei5 ziu1 zou2 gei2 dim2 hei2 san1 gaa3?", english: "What time do you get up in the morning?" },
+      { speaker: "B", hanzi: "七點。起身之後沖涼、食早餐。", jyutping: "cat1 dim2. hei2 san1 zi1 hau6 cung1 loeng4, sik6 zou2 caan1.", english: "Seven. After I get up, I shower and have breakfast." },
+      { speaker: "A", hanzi: "咁你幾點返工？", jyutping: "gam2 nei5 gei2 dim2 faan1 gung1?", english: "And what time do you go to work?" },
+      { speaker: "B", hanzi: "九點返工，六點放工。返到屋企就食飯。", jyutping: "gau2 dim2 faan1 gung1, luk6 dim2 fong3 gung1. faan1 dou3 uk1 kei2 zau6 sik6 faan6.", english: "Work at nine, off at six. When I get home I have dinner." }
+    ],
     vocab: [
       { hanzi: "起身", jyutping: "hei2 san1", english: "to get up" },
       { hanzi: "刷牙", jyutping: "caat3 ngaa4", english: "to brush teeth" },
@@ -1639,6 +1739,20 @@ window.LESSONS = [
       { hanzi: "我七點起身。", jyutping: "ngo5 cat1 dim2 hei2 san1.", english: "I get up at seven." },
       { hanzi: "我返工之前食飯。", jyutping: "ngo5 faan1 gung1 zi1 cin4 sik6 faan6.", english: "I eat before going to work." },
       { hanzi: "我十一點瞓覺。", jyutping: "ngo5 sap6 jat1 dim2 fan3 gaau3.", english: "I go to sleep at eleven." }
+    ],
+    notes: [
+      {
+        title: "Telling time with 點 (dim2)",
+        body: "Give the hour with number + 點: 七點 (7 o'clock), 九點 (9). Ask 幾點呀？ = \"what time?\" (點 also means \"how\" elsewhere — context decides)."
+      },
+      {
+        title: "返 / 放 — on and off work",
+        body: "返工 (faan1 gung1) = go to work, 放工 (fong3 gung1) = finish work. 返 also gives 返學 (go to school) and 返屋企 (go home)."
+      },
+      {
+        title: "Sequencing with 之後 and 就",
+        body: "Show order with 之後 (after) and 就 (then): 起身之後沖涼 (after getting up, shower), 返到屋企就食飯 (get home, then eat)."
+      }
     ]
   },
   {
