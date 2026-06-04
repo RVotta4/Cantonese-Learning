@@ -17,18 +17,18 @@ approved pilot style, then turn on the validator's Part B coverage gate.
 - Keep validator green at **every** commit (Part A always; Part B added last).
 
 ## Batches (commit per batch; keep `node scripts/test_lessons_content.js` green)
-- [ ] **Batch 1 — L1 foundations (3):** question-words, to-have, this-that
-- [ ] **Batch 2 — time + descriptors (6):** months-dates, time-words, body-parts, feelings, common-verbs, common-adjectives
-- [ ] **Batch 3 — clothing/shopping/food (6):** clothing, shopping, cafe-drinks, fruit, vegetables, meat-seafood
-- [ ] **Batch 4 — home + getting around (6):** kitchen, house-rooms, furniture, transport-types, asking-the-way, phone-messaging
-- [ ] **Batch 5 — work/study/leisure (6):** occupations, school-study, sports, music-tv, animals-pets, daily-routine
-- [ ] **Batch 6 — plans/health/services (6):** making-plans, at-the-doctor, pharmacy, bank-post, hotel, airport-travel
-- [ ] **Batch 7 — people + misc (5):** describing-people, personality, measure-words, festivals-cny, emergencies
+- [x] **Batch 1 — L1 foundations (3):** question-words, to-have, this-that
+- [x] **Batch 2 — time + descriptors (6):** months-dates, time-words, body-parts, feelings, common-verbs, common-adjectives
+- [x] **Batch 3 — clothing/shopping/food (6):** clothing, shopping, cafe-drinks, fruit, vegetables, meat-seafood
+- [x] **Batch 4 — home + getting around (6):** kitchen, house-rooms, furniture, transport-types, asking-the-way, phone-messaging
+- [x] **Batch 5 — work/study/leisure (6):** occupations, school-study, sports, music-tv, animals-pets, daily-routine
+- [x] **Batch 6 — plans/health/services (6):** making-plans, at-the-doctor, pharmacy, bank-post, hotel, airport-travel
+- [x] **Batch 7 — people + misc (5):** describing-people, personality, measure-words, festivals-cny, emergencies
 
 ## Completion
-- [ ] **Coverage gate:** add Part B to `scripts/test_lessons_content.js` — every lesson except `["tones-jyutping"]` has `dialogue.length ≥ 3`; every lesson has `notes.length ≥ 1`.
-- [ ] Full suite green: content (A+B), deck, practice, practice-store, build_wordbank, audio_text, `node --check data/lessons.js`.
-- [ ] Push `main` once → single audio-gen + Pages deploy. Present to user for live review.
+- [x] **Coverage gate:** add Part B to `scripts/test_lessons_content.js` — every lesson except `["tones-jyutping"]` has `dialogue.length ≥ 3`; every lesson has `notes.length ≥ 1`.
+- [x] Full suite green: content (A+B), deck, practice, practice-store, build_wordbank, audio_text, `node --check data/lessons.js`.
+- [x] Push `main` once → single audio-gen + Pages deploy. Present to user for live review.
 
 ## Notes
 - `tones-jyutping` is intentionally **dialogue-free** and already has notes → only entry on the exclusion list; needs no further work.

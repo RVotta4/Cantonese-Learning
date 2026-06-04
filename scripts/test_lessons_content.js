@@ -2,11 +2,12 @@
    Node content validator for data/lessons.js.
    Run: node scripts/test_lessons_content.js
 
-   Part A — well-formedness. Runs on whatever dialogue / notes
-   content exists, so it stays green as lessons are enriched.
-   Part B (coverage: every non-excluded lesson actually has a
-   dialogue + notes) is added in the bulk-authoring plan, once
-   the content exists to satisfy it.
+   Part A — well-formedness (always enforced): structure, jyutping
+   format, Mandarin-slip lint, and vocab grounding on whatever
+   dialogue / notes content exists.
+   Part B — coverage (completion gate): every non-excluded lesson
+   has a dialogue (>= 3 lines) and >= 1 note. Exclusion list:
+   ["tones-jyutping"] (the pronunciation-foundation lesson).
    =========================================================== */
 var fs = require("fs");
 global.window = {};
@@ -84,7 +85,20 @@ if (!Array.isArray(LESSONS)) {
     });
   });
 
-  if (!failed) console.log("PASS all " + LESSONS.length + " lessons well-formed (Part A)");
+  // ---- Part B — coverage (completion gate) ----
+  // Every non-excluded lesson has a real dialogue (>= 3 lines); every lesson
+  // has at least one note. tones-jyutping is the pronunciation-foundation
+  // lesson and stays intentionally dialogue-free.
+  var EXCLUDE_DIALOGUE = ["tones-jyutping"];
+  LESSONS.forEach(function (l) {
+    var id = l && l.id ? l.id : "(no id)";
+    if (EXCLUDE_DIALOGUE.indexOf(id) === -1 && (!Array.isArray(l.dialogue) || l.dialogue.length < 3))
+      fail(id + ": coverage — expected dialogue.length >= 3");
+    if (!Array.isArray(l.notes) || l.notes.length < 1)
+      fail(id + ": coverage — expected notes.length >= 1");
+  });
+
+  if (!failed) console.log("PASS all " + LESSONS.length + " lessons well-formed (A) + complete (B)");
 }
 
 console.log(failed ? ("\n" + failed + " failed") : "\nAll passed");
