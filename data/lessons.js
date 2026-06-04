@@ -1242,7 +1242,12 @@ window.LESSONS = [
     subtitle: "廚房 / 煮 / 煎 / 炒 / 碗 / 筷子 / 刀",
     minutes: 5,
     intro: "Cooking actions and utensils you use in the kitchen.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你喺廚房煮緊咩呀？", jyutping: "nei5 hai2 cyu4 fong2 zyu2 gan2 me1 aa3?", english: "What are you cooking in the kitchen?" },
+      { speaker: "B", hanzi: "炒緊菜。你幫我攞個碗，好嗎？", jyutping: "caau2 gan2 coi3. nei5 bong1 ngo5 lo2 go3 wun2, hou2 maa3?", english: "Stir-frying veg. Can you grab me a bowl?" },
+      { speaker: "A", hanzi: "好。要唔要拎埋筷子？", jyutping: "hou2. jiu3 m4 jiu3 ling1 maai4 faai3 zi2?", english: "Sure. Want chopsticks too?" },
+      { speaker: "B", hanzi: "要。仲要煎多隻蛋。", jyutping: "jiu3. zung6 jiu3 zin1 do1 zek3 daan2.", english: "Yes. And pan-fry one more egg." }
+    ],
     vocab: [
       { hanzi: "廚房", jyutping: "cyu4 fong2", english: "kitchen" },
       { hanzi: "煮", jyutping: "zyu2", english: "to cook" },
@@ -1256,6 +1261,20 @@ window.LESSONS = [
       { hanzi: "我鍾意煮飯。", jyutping: "ngo5 zung1 ji3 zyu2 faan6.", english: "I like cooking." },
       { hanzi: "佢喺廚房炒菜。", jyutping: "keoi5 hai2 cyu4 fong2 caau2 coi3.", english: "She is stir-frying vegetables in the kitchen." },
       { hanzi: "我要一對筷子。", jyutping: "ngo5 jiu3 jat1 deoi3 faai3 zi2.", english: "I want a pair of chopsticks." }
+    ],
+    notes: [
+      {
+        title: "Three ways to cook",
+        body: "Cantonese names the cooking method: 煮 (boil / cook generally), 煎 (pan-fry), 炒 (stir-fry in a wok). So 炒菜 (stir-fried veg), 煎蛋 (fried egg)."
+      },
+      {
+        title: "埋 (maai4) = …as well (on a verb)",
+        body: "Tacks \"as well\" onto an action: 拎埋筷子 (bring the chopsticks too), 食埋佢 (finish it off too). It attaches to the verb, unlike 都, which goes with the subject."
+      },
+      {
+        title: "Culture — chopstick etiquette",
+        body: "Chopsticks come as 一對 (a pair). Never stand them upright in a bowl of rice — that resembles incense at a funeral and is considered bad luck."
+      }
     ]
   },
   {
@@ -1267,7 +1286,12 @@ window.LESSONS = [
     subtitle: "屋企 / 房 / 廳 / 廚房 / 廁所 / 門 / 窗",
     minutes: 5,
     intro: "Talk about the different parts of your home.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你新屋企大唔大呀？", jyutping: "nei5 san1 uk1 kei2 daai6 m4 daai6 aa3?", english: "Is your new place big?" },
+      { speaker: "B", hanzi: "唔算大，有兩間房同一個廳。", jyutping: "m4 syun3 daai6, jau5 loeng5 gaan1 fong2 tung4 jat1 go3 teng1.", english: "Not that big — two bedrooms and a living room." },
+      { speaker: "A", hanzi: "廚房同廁所喺邊度呀？", jyutping: "cyu4 fong2 tung4 ci3 so2 hai2 bin1 dou6 aa3?", english: "Where are the kitchen and bathroom?" },
+      { speaker: "B", hanzi: "入門口右手邊。個廳好光，有個大窗。", jyutping: "jap6 mun4 hau2 jau6 sau2 bin1. go3 teng1 hou2 gwong1, jau5 go3 daai6 coeng1.", english: "Right of the entrance. The living room is bright, with a big window." }
+    ],
     vocab: [
       { hanzi: "屋企", jyutping: "uk1 kei2", english: "home" },
       { hanzi: "房", jyutping: "fong2", english: "room, bedroom" },
@@ -1281,6 +1305,20 @@ window.LESSONS = [
       { hanzi: "我喺屋企。", jyutping: "ngo5 hai2 uk1 kei2.", english: "I am at home." },
       { hanzi: "廁所喺邊度呀？", jyutping: "ci3 so2 hai2 bin1 dou6 aa3?", english: "Where is the toilet?" },
       { hanzi: "呢間屋有兩間房。", jyutping: "ni1 gaan1 uk1 jau5 loeng5 gaan1 fong2.", english: "This flat has two bedrooms." }
+    ],
+    notes: [
+      {
+        title: "間 (gaan1) is the room classifier",
+        body: "Count rooms and flats with 間: 一間房 (a room), 兩間房 (two rooms), 一間屋 (a flat / house)."
+      },
+      {
+        title: "屋企 = home, not the building",
+        body: "屋企 (uk1 kei2) means \"home\" — where you live, even a flat. The building itself is 屋 (uk1). 返屋企 = \"go home.\""
+      },
+      {
+        title: "Culture — flats, not houses",
+        body: "In dense Hong Kong almost everyone lives in a high-rise flat (單位, daan1 wai2), so 屋企 nearly always means an apartment. Space is tight and prized."
+      }
     ]
   },
   {
@@ -1292,7 +1330,12 @@ window.LESSONS = [
     subtitle: "枱 / 櫈 / 床 / 櫃 / 沙發 / 燈",
     minutes: 5,
     intro: "Common pieces of furniture found around the home.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "張床擺喺邊度好呢？", jyutping: "zoeng1 cong4 baai2 hai2 bin1 dou6 hou2 ne1?", english: "Where should we put the bed?" },
+      { speaker: "B", hanzi: "擺埋窗口邊啦。張枱就放喺度。", jyutping: "baai2 maai4 coeng1 hau2 bin1 laa1. zoeng1 toi2 zau6 fong3 hai2 dou6.", english: "Put it by the window. The table goes here." },
+      { speaker: "A", hanzi: "好。沙發同櫃就擺喺廳。", jyutping: "hou2. saa1 faat3 tung4 gwai6 zau6 baai2 hai2 teng1.", english: "OK. The sofa and cabinet go in the living room." },
+      { speaker: "B", hanzi: "好暗呀，唔該開埋盞燈。", jyutping: "hou2 am3 aa3, m4 goi1 hoi1 maai4 zaan2 dang1.", english: "It's dark — please switch the lamp on too." }
+    ],
     vocab: [
       { hanzi: "枱", jyutping: "toi2", english: "table" },
       { hanzi: "櫈", jyutping: "dang3", english: "chair, stool" },
@@ -1305,6 +1348,20 @@ window.LESSONS = [
       { hanzi: "張床好大。", jyutping: "zoeng1 cong4 hou2 daai6.", english: "The bed is very big." },
       { hanzi: "我坐喺沙發度。", jyutping: "ngo5 co5 hai2 saa1 faat3 dou6.", english: "I am sitting on the sofa." },
       { hanzi: "唔該開燈。", jyutping: "m4 goi1 hoi1 dang1.", english: "Please turn on the light." }
+    ],
+    notes: [
+      {
+        title: "張 for flat, surface-like things",
+        body: "Furniture with a flat surface takes 張 (zoeng1): 張床 (bed), 張枱 (table), 張櫈 (chair). A lamp, though, takes 盞: 一盞燈."
+      },
+      {
+        title: "開 / 熄 — switching on and off",
+        body: "開 (hoi1) turns something on, 熄 (sik1) turns it off: 開燈 / 熄燈 (lights), 開電視 / 熄電視 (TV)."
+      },
+      {
+        title: "擺 vs 放 — putting things down",
+        body: "Both mean \"put / place\": 擺 (baai2) leans toward arranging or displaying, 放 (fong3) toward setting down. In everyday speech they overlap."
+      }
     ]
   },
   {
@@ -1316,7 +1373,12 @@ window.LESSONS = [
     subtitle: "巴士 / 小巴 / 的士 / 火車 / 船 / 飛機 / 單車",
     minutes: 5,
     intro: "Common ways to get around Hong Kong.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "去尖沙咀坐咩車好呀？", jyutping: "heoi3 zim1 saa1 zeoi2 co5 me1 ce1 hou2 aa3?", english: "What's the best way to get to Tsim Sha Tsui?" },
+      { speaker: "B", hanzi: "搭巴士啦，又平又有位坐。", jyutping: "daap3 baa1 si2 laa1, jau6 peng4 jau6 jau5 wai2 co5.", english: "Take the bus — cheap, and you get a seat." },
+      { speaker: "A", hanzi: "趕時間呀，不如搭的士？", jyutping: "gon2 si4 gaan3 aa3, bat1 jyu4 daap3 dik1 si2?", english: "I'm in a hurry — how about a taxi?" },
+      { speaker: "B", hanzi: "咁不如搭船，仲快過塞車。", jyutping: "gam2 bat1 jyu4 daap3 syun4, zung6 faai3 gwo3 sak1 ce1.", english: "Then take the ferry — faster than sitting in traffic." }
+    ],
     vocab: [
       { hanzi: "巴士", jyutping: "baa1 si2", english: "bus" },
       { hanzi: "小巴", jyutping: "siu2 baa1", english: "minibus" },
@@ -1330,6 +1392,20 @@ window.LESSONS = [
       { hanzi: "我搭巴士返工。", jyutping: "ngo5 daap3 baa1 si2 faan1 gung1.", english: "I take the bus to work." },
       { hanzi: "搭的士好貴。", jyutping: "daap3 dik1 si2 hou2 gwai3.", english: "Taking a taxi is expensive." },
       { hanzi: "我鍾意踩單車。", jyutping: "ngo5 zung1 ji3 caai2 daan1 ce1.", english: "I like riding a bicycle." }
+    ],
+    notes: [
+      {
+        title: "搭 / 坐 + transport",
+        body: "Use 搭 (daap3) or 坐 (co5) for taking public transport: 搭巴士 (take the bus), 搭的士 (take a taxi), 搭船 (take the ferry). A bike, though, you 踩 (踩單車)."
+      },
+      {
+        title: "Comparisons with 過 (gwo3)",
+        body: "Put 過 after the adjective to compare: 快過 (faster than), 平過 (cheaper than). 搭船快過搭巴士 = \"the ferry is faster than the bus.\""
+      },
+      {
+        title: "Culture — the red and green 小巴",
+        body: "的士 (taxi) and 巴士 (bus) are borrowed from English. The 小巴 (minibus) is a HK institution — to get off you call out 有落！ (jau5 lok6, \"stop, I'm getting off!\")."
+      }
     ]
   },
   {
@@ -1341,7 +1417,12 @@ window.LESSONS = [
     subtitle: "點去 / 喺邊度 / 前面 / 後面 / 左 / 右 / 直行",
     minutes: 5,
     intro: "Useful phrases for asking and giving directions.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "唔該，請問港鐵站點去呀？", jyutping: "m4 goi1, cing2 man6 gong2 tit3 zaam6 dim2 heoi3 aa3?", english: "Excuse me, how do I get to the MTR station?" },
+      { speaker: "B", hanzi: "直行，然後轉左。", jyutping: "zik6 haang4, jin4 hau6 zyun3 zo2.", english: "Go straight, then turn left." },
+      { speaker: "A", hanzi: "遠唔遠呀？", jyutping: "jyun5 m4 jyun5 aa3?", english: "Is it far?" },
+      { speaker: "B", hanzi: "唔遠。轉左之後，就喺右手邊。", jyutping: "m4 jyun5. zyun3 zo2 zi1 hau6, zau6 hai2 jau6 sau2 bin1.", english: "Not far. After you turn left, it's on your right." }
+    ],
     vocab: [
       { hanzi: "點去", jyutping: "dim2 heoi3", english: "how to get to" },
       { hanzi: "喺邊度", jyutping: "hai2 bin1 dou6", english: "where (is it)" },
@@ -1355,6 +1436,20 @@ window.LESSONS = [
       { hanzi: "請問點去地鐵站呀？", jyutping: "cing2 man6 dim2 heoi3 dei6 tit3 zaam6 aa3?", english: "Excuse me, how do I get to the MTR station?" },
       { hanzi: "直行轉左。", jyutping: "zik6 haang4 zyun3 zo2.", english: "Go straight and turn left." },
       { hanzi: "廁所喺前面。", jyutping: "ci3 so2 hai2 cin4 min6.", english: "The toilet is ahead." }
+    ],
+    notes: [
+      {
+        title: "點去 + place = how do I get to…?",
+        body: "點去 (dim2 heoi3) literally means \"how go\": 點去港鐵站呀？ (How do I get to the MTR?). Add 呀 to keep it friendly."
+      },
+      {
+        title: "轉左 / 轉右 / 直行",
+        body: "The three core directions: 轉左 (turn left), 轉右 (turn right), 直行 (go straight). \"On the left/right side\" is 左手邊 / 右手邊."
+      },
+      {
+        title: "Open politely with 請問",
+        body: "Before stopping a stranger, say 唔該 (excuse me) or 請問 (may I ask): 唔該，請問…？ It softens the question and is expected."
+      }
     ]
   },
   {
@@ -1366,7 +1461,12 @@ window.LESSONS = [
     subtitle: "電話 / 打電話 / 手機 / 短訊 / WhatsApp / 聽電話",
     minutes: 5,
     intro: "Words for phones, calls and messages.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "我頭先打電話畀你，你冇聽電話。", jyutping: "ngo5 tau4 sin1 daa2 din6 waa2 bei2 nei5, nei5 mou5 teng1 din6 waa2.", english: "I called you just now, but you didn't answer." },
+      { speaker: "B", hanzi: "唔好意思，我冇帶手機。", jyutping: "m4 hou2 ji3 si1, ngo5 mou5 daai3 sau2 gei1.", english: "Sorry, I didn't have my mobile with me." },
+      { speaker: "A", hanzi: "唔緊要。我留咗個短訊畀你。", jyutping: "m4 gan2 jiu3. ngo5 lau4 zo2 go3 dyun2 seon3 bei2 nei5.", english: "Never mind. I left you a text." },
+      { speaker: "B", hanzi: "收到喇！唔該晒。記住我新號碼呀。", jyutping: "sau1 dou2 laa3! m4 goi1 saai3. gei3 zyu6 ngo5 san1 hou6 maa5 aa3.", english: "Got it! Thanks. Remember my new number." }
+    ],
     vocab: [
       { hanzi: "電話", jyutping: "din6 waa2", english: "telephone" },
       { hanzi: "打電話", jyutping: "daa2 din6 waa2", english: "to make a phone call" },
@@ -1379,6 +1479,20 @@ window.LESSONS = [
       { hanzi: "我打電話畀你。", jyutping: "ngo5 daa2 din6 waa2 bei2 nei5.", english: "I'll give you a call." },
       { hanzi: "你部手機幾錢呀？", jyutping: "nei5 bou6 sau2 gei1 gei2 cin2 aa3?", english: "How much is your mobile phone?" },
       { hanzi: "請聽電話。", jyutping: "cing2 teng1 din6 waa2.", english: "Please answer the phone." }
+    ],
+    notes: [
+      {
+        title: "打 / 聽 / 覆 a call",
+        body: "打電話 (make a call), 聽電話 (answer it), 覆電話 (return a call). 打 literally means \"hit\" — it's the standard verb for placing a call."
+      },
+      {
+        title: "畀 (bei2) = to / give",
+        body: "Marks the recipient: 打電話畀你 (call you), 留個短訊畀佢 (leave him a text). 畀 on its own means \"give\": 畀錢 (pay)."
+      },
+      {
+        title: "Culture — everyone's on WhatsApp",
+        body: "Hongkongers mostly message on WhatsApp, so you'll hear English verbs slipped in — 我WhatsApp你 — alongside the textbook 短訊 (text message)."
+      }
     ]
   },
   {
