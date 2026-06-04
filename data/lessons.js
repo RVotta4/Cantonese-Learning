@@ -497,7 +497,12 @@ window.LESSONS = [
     subtitle: "我 / 你 / 佢 and their plurals with 哋",
     minutes: 5,
     intro: "Master these six pronouns and you can talk about anyone — add 哋 to make any of them plural.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "佢係邊個呀？", jyutping: "keoi5 hai6 bin1 go3 aa3?", english: "Who's that?" },
+      { speaker: "B", hanzi: "佢係我朋友。", jyutping: "keoi5 hai6 ngo5 pang4 jau5.", english: "He's my friend." },
+      { speaker: "A", hanzi: "你哋係唔係學生呀？", jyutping: "nei5 dei6 hai6 m4 hai6 hok6 saang1 aa3?", english: "Are you two students?" },
+      { speaker: "B", hanzi: "係，我哋都係學生。", jyutping: "hai6, ngo5 dei6 dou1 hai6 hok6 saang1.", english: "Yes, we're both students." }
+    ],
     vocab: [
       { hanzi: "我", jyutping: "ngo5", english: "I, me" },
       { hanzi: "你", jyutping: "nei5", english: "you (singular)" },
@@ -510,6 +515,20 @@ window.LESSONS = [
       { hanzi: "我係學生。", jyutping: "ngo5 hai6 hok6 saang1.", english: "I am a student." },
       { hanzi: "佢係香港人。", jyutping: "keoi5 hai6 hoeng1 gong2 jan4.", english: "He is from Hong Kong." },
       { hanzi: "我哋鍾意飲茶。", jyutping: "ngo5 dei6 zung1 ji3 jam2 caa4.", english: "We like going for dim sum." }
+    ],
+    notes: [
+      {
+        title: "Plurals with 哋 (dei6)",
+        body: "Add 哋 after a pronoun to make it plural: 我 (I) becomes 我哋 (we), 你 (you) becomes 你哋, and 佢 (he/she) becomes 佢哋 (they). The pronoun itself never changes — you just add 哋."
+      },
+      {
+        title: "Yes/no questions with 係唔係",
+        body: "To ask a yes/no question, say the verb in its positive-negative form: 你係唔係學生呀？ is literally \"you are-not-are student?\" Answer 係 (yes) or 唔係 (no)."
+      },
+      {
+        title: "Culture — one word for he, she and it",
+        body: "Spoken Cantonese doesn't mark gender on pronouns: 佢 (keoi5) covers he, she and it. Listeners rely on context, so you never have to choose a gender as you speak."
+      }
     ]
   },
   {
@@ -593,7 +612,12 @@ window.LESSONS = [
     subtitle: "Name the basic colours",
     minutes: 5,
     intro: "Colours come up everywhere — clothes, food, directions. Here are the everyday ones.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你鍾意咩顏色呀？", jyutping: "nei5 zung1 ji3 me1 ngaan4 sik1 aa3?", english: "What colour do you like?" },
+      { speaker: "B", hanzi: "我鍾意藍色同綠色。你呢？", jyutping: "ngo5 zung1 ji3 laam4 sik1 tung4 luk6 sik1. nei5 ne1?", english: "I like blue and green. And you?" },
+      { speaker: "A", hanzi: "我最鍾意紅色。", jyutping: "ngo5 zeoi3 zung1 ji3 hung4 sik1.", english: "I like red the most." },
+      { speaker: "B", hanzi: "紅色好靚呀！", jyutping: "hung4 sik1 hou2 leng3 aa3!", english: "Red is really pretty!" }
+    ],
     vocab: [
       { hanzi: "顏色", jyutping: "ngaan4 sik1", english: "colour" },
       { hanzi: "紅色", jyutping: "hung4 sik1", english: "red" },
@@ -607,6 +631,20 @@ window.LESSONS = [
       { hanzi: "我鍾意紅色。", jyutping: "ngo5 zung1 ji3 hung4 sik1.", english: "I like red." },
       { hanzi: "呢件衫係咩顏色呀？", jyutping: "ni1 gin6 saam1 hai6 me1 ngaan4 sik1 aa3?", english: "What colour is this shirt?" },
       { hanzi: "天係藍色。", jyutping: "tin1 hai6 laam4 sik1.", english: "The sky is blue." }
+    ],
+    notes: [
+      {
+        title: "Colour = base word + 色 (sik1)",
+        body: "Most colour names are a base word plus 色 (sik1, \"colour\"): 紅 (red) → 紅色, 藍 (blue) → 藍色, 黑 (black) → 黑色. Using the full …色 form is always safe."
+      },
+      {
+        title: "同 (tung4) — \"and\"",
+        body: "Join two things with 同 (tung4): 藍色同綠色 = \"blue and green\". 同 links nouns; it isn't used to join whole sentences."
+      },
+      {
+        title: "Culture — red for luck, white for mourning",
+        body: "In Cantonese culture 紅色 (red) means luck and joy — it's the colour of lai-see (lucky money) packets and weddings. 白色 (white) is linked to funerals, so it's avoided for gifts and celebrations."
+      }
     ]
   },
   {
@@ -642,7 +680,12 @@ window.LESSONS = [
     subtitle: "天氣 / 熱 / 凍 / 落雨 / 天晴",
     minutes: 5,
     intro: "Hong Kong weather swings from hot to rainy — here are the words to describe it.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "今日天氣點呀？", jyutping: "gam1 jat6 tin1 hei3 dim2 aa3?", english: "How's the weather today?" },
+      { speaker: "B", hanzi: "好熱！不過出面落雨。", jyutping: "hou2 jit6! bat1 gwo3 ceot1 min6 lok6 jyu5.", english: "Very hot! But it's raining outside." },
+      { speaker: "A", hanzi: "咁聽日呢？", jyutping: "gam2 ting1 jat6 ne1?", english: "Then what about tomorrow?" },
+      { speaker: "B", hanzi: "聽日天晴，冇咁熱。", jyutping: "ting1 jat6 tin1 cing4, mou5 gam3 jit6.", english: "Tomorrow it's sunny, not as hot." }
+    ],
     vocab: [
       { hanzi: "天氣", jyutping: "tin1 hei3", english: "weather" },
       { hanzi: "熱", jyutping: "jit6", english: "hot" },
@@ -655,6 +698,20 @@ window.LESSONS = [
       { hanzi: "今日好熱。", jyutping: "gam1 jat6 hou2 jit6.", english: "It's very hot today." },
       { hanzi: "出面落雨。", jyutping: "ceot1 min6 lok6 jyu5.", english: "It's raining outside." },
       { hanzi: "今日天氣好好。", jyutping: "gam1 jat6 tin1 hei3 hou2 hou2.", english: "The weather is very good today." }
+    ],
+    notes: [
+      {
+        title: "好 (hou2) = \"very\"",
+        body: "Before an adjective, 好 means \"very\", not \"good\": 好熱 = \"very hot\", 好凍 = \"very cold\". So 今日好熱 is \"it's very hot today\"."
+      },
+      {
+        title: "冇咁 (mou5 gam3) — \"not as…\"",
+        body: "冇咁 + adjective means \"not as / not so …\": 冇咁熱 = \"not as hot\", 冇咁凍 = \"not as cold\". 冇 (mou5) is the everyday Cantonese word for \"not have / there isn't\"."
+      },
+      {
+        title: "Culture — typhoons and the T8 signal",
+        body: "Hong Kong summers bring typhoons. When the Observatory hoists the T8 signal (八號風球, baat3 hou6 fung1 kau4), schools and offices close — locals call an unexpected day off a \"typhoon holiday\"."
+      }
     ]
   },
   {
