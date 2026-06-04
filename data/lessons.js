@@ -680,7 +680,12 @@ window.LESSONS = [
     subtitle: "天氣 / 熱 / 凍 / 落雨 / 天晴",
     minutes: 5,
     intro: "Hong Kong weather swings from hot to rainy — here are the words to describe it.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "今日天氣點呀？", jyutping: "gam1 jat6 tin1 hei3 dim2 aa3?", english: "How's the weather today?" },
+      { speaker: "B", hanzi: "好熱！不過出面落雨。", jyutping: "hou2 jit6! bat1 gwo3 ceot1 min6 lok6 jyu5.", english: "Very hot! But it's raining outside." },
+      { speaker: "A", hanzi: "咁聽日呢？", jyutping: "gam2 ting1 jat6 ne1?", english: "Then what about tomorrow?" },
+      { speaker: "B", hanzi: "聽日天晴，冇咁熱。", jyutping: "ting1 jat6 tin1 cing4, mou5 gam3 jit6.", english: "Tomorrow it's sunny, not as hot." }
+    ],
     vocab: [
       { hanzi: "天氣", jyutping: "tin1 hei3", english: "weather" },
       { hanzi: "熱", jyutping: "jit6", english: "hot" },
@@ -693,6 +698,20 @@ window.LESSONS = [
       { hanzi: "今日好熱。", jyutping: "gam1 jat6 hou2 jit6.", english: "It's very hot today." },
       { hanzi: "出面落雨。", jyutping: "ceot1 min6 lok6 jyu5.", english: "It's raining outside." },
       { hanzi: "今日天氣好好。", jyutping: "gam1 jat6 tin1 hei3 hou2 hou2.", english: "The weather is very good today." }
+    ],
+    notes: [
+      {
+        title: "好 (hou2) = \"very\"",
+        body: "Before an adjective, 好 means \"very\", not \"good\": 好熱 = \"very hot\", 好凍 = \"very cold\". So 今日好熱 is \"it's very hot today\"."
+      },
+      {
+        title: "冇咁 (mou5 gam3) — \"not as…\"",
+        body: "冇咁 + adjective means \"not as / not so …\": 冇咁熱 = \"not as hot\", 冇咁凍 = \"not as cold\". 冇 (mou5) is the everyday Cantonese word for \"not have / there isn't\"."
+      },
+      {
+        title: "Culture — typhoons and the T8 signal",
+        body: "Hong Kong summers bring typhoons. When the Observatory hoists the T8 signal (八號風球, baat3 hou6 fung1 kau4), schools and offices close — locals call an unexpected day off a \"typhoon holiday\"."
+      }
     ]
   },
   {
