@@ -979,7 +979,12 @@ window.LESSONS = [
     subtitle: "衫 / 褲 / 鞋 / 襪 / 裙 / 帽",
     minutes: 5,
     intro: "Learn the words for everyday clothes you wear.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你件衫好靚呀！喺邊度買㗎？", jyutping: "nei5 gin6 saam1 hou2 leng3 aa3! hai2 bin1 dou6 maai5 gaa3?", english: "Your shirt is so nice! Where'd you buy it?" },
+      { speaker: "B", hanzi: "喺旺角買嘅。對鞋都係嗰度買。", jyutping: "hai2 wong6 gok3 maai5 ge3. deoi3 haai4 dou1 hai6 go2 dou6 maai5.", english: "Bought it in Mong Kok. These shoes too." },
+      { speaker: "A", hanzi: "我都想買條裙同埋一頂帽。", jyutping: "ngo5 dou1 soeng2 maai5 tiu4 kwan4 tung4 maai4 jat1 deng2 mou2.", english: "I want to buy a skirt and a hat too." },
+      { speaker: "B", hanzi: "咁聽日一齊去行街啦！", jyutping: "gam2 ting1 jat6 jat1 cai4 heoi3 haang4 gaai1 laa1!", english: "Then let's go shopping together tomorrow!" }
+    ],
     vocab: [
       { hanzi: "衫", jyutping: "saam1", english: "shirt, clothes" },
       { hanzi: "褲", jyutping: "fu3", english: "trousers, pants" },
@@ -992,6 +997,20 @@ window.LESSONS = [
       { hanzi: "我鍾意呢件衫。", jyutping: "ngo5 zung1 ji3 ni1 gin6 saam1.", english: "I like this shirt." },
       { hanzi: "呢對鞋幾錢呀？", jyutping: "ni1 deoi3 haai4 gei2 cin2 aa3?", english: "How much are these shoes?" },
       { hanzi: "佢戴緊帽。", jyutping: "keoi5 daai3 gan2 mou2.", english: "He is wearing a hat." }
+    ],
+    notes: [
+      {
+        title: "Each garment has its own classifier",
+        body: "Learn the classifier with the word: 件衫 (shirt), 條褲 / 條裙 (trousers / skirt), 對鞋 / 對襪 (shoes / socks, in pairs), 頂帽 (hat)."
+      },
+      {
+        title: "緊 (gan2) = action in progress",
+        body: "Add 緊 after a verb for something happening now: 戴緊帽 (wearing a hat), 著緊衫 (getting dressed). It works like English \"-ing\"."
+      },
+      {
+        title: "著 vs 戴 — two words for \"wear\"",
+        body: "Cantonese splits \"wear\" by item: 著 (zoek3) for clothes and shoes (著衫, 著鞋), 戴 (daai3) for accessories (戴帽, 戴眼鏡, 戴錶)."
+      }
     ]
   },
   {
@@ -1003,7 +1022,13 @@ window.LESSONS = [
     subtitle: "買 / 賣 / 平啲 / 貴 / 打折 / 試",
     minutes: 6,
     intro: "Useful phrases for buying things and asking for a better price.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "老闆，呢件幾錢呀？", jyutping: "lou5 baan2, ni1 gin6 gei2 cin2 aa3?", english: "Boss, how much is this one?" },
+      { speaker: "B", hanzi: "兩百蚊。", jyutping: "loeng5 baak3 man1.", english: "Two hundred dollars." },
+      { speaker: "A", hanzi: "太貴啦！平啲得唔得呀？", jyutping: "taai3 gwai3 laa1! peng4 di1 dak1 m4 dak1 aa3?", english: "Too expensive! Can you go a bit cheaper?" },
+      { speaker: "B", hanzi: "好啦，打九折，一百八。", jyutping: "hou2 laa1, daa2 gau2 zit3, jat1 baak3 baat3.", english: "Alright, 10% off — a hundred and eighty." },
+      { speaker: "A", hanzi: "唔該。我可唔可以試吓先呀？", jyutping: "m4 goi1. ngo5 ho2 m4 ho2 ji5 si3 haa5 sin1 aa3?", english: "Thanks. Can I try it first?" }
+    ],
     vocab: [
       { hanzi: "買", jyutping: "maai5", english: "to buy" },
       { hanzi: "賣", jyutping: "maai6", english: "to sell" },
@@ -1017,6 +1042,20 @@ window.LESSONS = [
       { hanzi: "我想買呢件衫。", jyutping: "ngo5 soeng2 maai5 ni1 gin6 saam1.", english: "I want to buy this shirt." },
       { hanzi: "可唔可以平啲呀？", jyutping: "ho2 m4 ho2 ji5 peng4 di1 aa3?", english: "Can it be a bit cheaper?" },
       { hanzi: "我可唔可以試吓呀？", jyutping: "ngo5 ho2 m4 ho2 ji5 si3 haa5 aa3?", english: "Can I try it on?" }
+    ],
+    notes: [
+      {
+        title: "Culture — 打折 tells you what you pay",
+        body: "A Cantonese discount names the fraction you pay, not the amount off: 打九折 = pay 90% (10% off), 打八折 = pay 80%, 打半價 = half price. Counterintuitive for English speakers!"
+      },
+      {
+        title: "Bargain with 平啲",
+        body: "平啲 (peng4 di1), literally \"a bit cheaper\", is the standard polite way to ask for a lower price at a market: 平啲得唔得呀？"
+      },
+      {
+        title: "可唔可以…？ = may I…?",
+        body: "Ask permission with 可唔可以 + verb: 可唔可以試吓呀？ (Can I try?). Answer 可以 (yes) or 唔得 (no)."
+      }
     ]
   },
   {
@@ -1028,7 +1067,12 @@ window.LESSONS = [
     subtitle: "咖啡 / 奶茶 / 凍 / 熱 / 水 / 汽水",
     minutes: 5,
     intro: "Order drinks at a Hong Kong café and say if you want them hot or cold.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "唔該，一杯熱奶茶。你呢？", jyutping: "m4 goi1, jat1 bui1 jit6 naai5 caa4. nei5 ne1?", english: "One hot milk tea please. You?" },
+      { speaker: "B", hanzi: "我要凍檸茶。今日好熱。", jyutping: "ngo5 jiu3 dung3 ning4 caa4. gam1 jat6 hou2 jit6.", english: "I'll have iced lemon tea. It's hot today." },
+      { speaker: "A", hanzi: "好。伙計，仲要一杯凍檸茶同杯水！", jyutping: "hou2. fo2 gei3, zung6 jiu3 jat1 bui1 dung3 ning4 caa4 tung4 bui1 seoi2!", english: "OK. Waiter, one more iced lemon tea and a water!" },
+      { speaker: "B", hanzi: "唔該晒！", jyutping: "m4 goi1 saai3!", english: "Thanks a lot!" }
+    ],
     vocab: [
       { hanzi: "咖啡", jyutping: "gaa3 fe1", english: "coffee" },
       { hanzi: "奶茶", jyutping: "naai5 caa4", english: "milk tea" },
@@ -1042,6 +1086,20 @@ window.LESSONS = [
       { hanzi: "我要一杯熱咖啡。", jyutping: "ngo5 jiu3 jat1 bui1 jit6 gaa3 fe1.", english: "I want a hot coffee." },
       { hanzi: "我鍾意飲奶茶。", jyutping: "ngo5 zung1 ji3 jam2 naai5 caa4.", english: "I like drinking milk tea." },
       { hanzi: "唔該一杯凍檸茶。", jyutping: "m4 goi1 jat1 bui1 dung3 ning4 caa4.", english: "An iced lemon tea, please." }
+    ],
+    notes: [
+      {
+        title: "凍 / 熱 go before the drink",
+        body: "State the temperature first: 凍奶茶 (iced milk tea), 熱咖啡 (hot coffee). The server may ask 凍定熱呀？ — \"cold or hot?\" (定 = \"or\")."
+      },
+      {
+        title: "Culture — 凍檸茶, the café classic",
+        body: "Iced lemon tea is the default order at a 茶餐廳 (cha chaan teng). Locals often shorten it to 凍檸; hot lemon tea with honey is 熱檸蜜."
+      },
+      {
+        title: "Order politely with 唔該",
+        body: "Open an order with 唔該 (excuse me / please) and close with 唔該晒 (thanks a lot). 唔該 is also how you call the waiter over."
+      }
     ]
   },
   {
@@ -1053,7 +1111,12 @@ window.LESSONS = [
     subtitle: "蘋果 / 橙 / 香蕉 / 西瓜 / 提子 / 士多啤梨",
     minutes: 5,
     intro: "Common fruits you can buy at the market.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "老闆，啲西瓜甜唔甜呀？", jyutping: "lou5 baan2, di1 sai1 gwaa1 tim4 m4 tim4 aa3?", english: "Boss, are the watermelons sweet?" },
+      { speaker: "B", hanzi: "好甜呀！今日啲蘋果都好新鮮。", jyutping: "hou2 tim4 aa3! gam1 jat6 di1 ping4 gwo2 dou1 hou2 san1 sin1.", english: "Very sweet! The apples are fresh today too." },
+      { speaker: "A", hanzi: "咁我要一個西瓜同一斤提子。", jyutping: "gam2 ngo5 jiu3 jat1 go3 sai1 gwaa1 tung4 jat1 gan1 tai4 zi2.", english: "Then I'll take a watermelon and a catty of grapes." },
+      { speaker: "B", hanzi: "好！夠唔夠？要唔要橙呀？", jyutping: "hou2! gau3 m4 gau3? jiu3 m4 jiu3 caang2 aa3?", english: "Sure! Is that enough? Want some oranges?" }
+    ],
     vocab: [
       { hanzi: "蘋果", jyutping: "ping4 gwo2", english: "apple" },
       { hanzi: "橙", jyutping: "caang2", english: "orange" },
@@ -1066,6 +1129,20 @@ window.LESSONS = [
       { hanzi: "我鍾意食蘋果。", jyutping: "ngo5 zung1 ji3 sik6 ping4 gwo2.", english: "I like eating apples." },
       { hanzi: "西瓜幾錢一個呀？", jyutping: "sai1 gwaa1 gei2 cin2 jat1 go3 aa3?", english: "How much is one watermelon?" },
       { hanzi: "我要一斤提子。", jyutping: "ngo5 jiu3 jat1 gan1 tai4 zi2.", english: "I want one catty of grapes." }
+    ],
+    notes: [
+      {
+        title: "Culture — 斤 (gan1), the catty",
+        body: "Markets sell produce by the 斤 (catty, about 600g), not the kilo: 一斤提子 (a catty of grapes). Prices are quoted per 斤."
+      },
+      {
+        title: "Ask about a quality by doubling the adjective",
+        body: "甜唔甜呀？ (sweet?), 新唔新鮮呀？ (fresh?). The A-not-A yes/no pattern works for adjectives just as it does for verbs."
+      },
+      {
+        title: "士多啤梨 — a tasty loanword",
+        body: "士多啤梨 (si6 do1 be1 lei2) is \"strawberry\" borrowed straight from English. Many imported fruits use these sound-based names."
+      }
     ]
   },
   {
@@ -1077,7 +1154,12 @@ window.LESSONS = [
     subtitle: "菜 / 白菜 / 番茄 / 薯仔 / 紅蘿蔔 / 洋蔥",
     minutes: 5,
     intro: "Names of vegetables you will see at the wet market.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "唔該，我要兩斤白菜。", jyutping: "m4 goi1, ngo5 jiu3 loeng5 gan1 baak6 coi3.", english: "Excuse me, I'd like two catties of bok choy." },
+      { speaker: "B", hanzi: "好。仲要啲咩菜呀？", jyutping: "hou2. zung6 jiu3 di1 me1 coi3 aa3?", english: "Sure. What other veg would you like?" },
+      { speaker: "A", hanzi: "番茄同薯仔。薯仔平唔平呀？", jyutping: "faan1 ke2 tung4 syu4 zai2. syu4 zai2 peng4 m4 peng4 aa3?", english: "Tomatoes and potatoes. Are the potatoes cheap?" },
+      { speaker: "B", hanzi: "好平！三蚊一斤。", jyutping: "hou2 peng4! saam1 man1 jat1 gan1.", english: "Very cheap! Three dollars a catty." }
+    ],
     vocab: [
       { hanzi: "菜", jyutping: "coi3", english: "vegetables" },
       { hanzi: "白菜", jyutping: "baak6 coi3", english: "bok choy" },
@@ -1090,6 +1172,20 @@ window.LESSONS = [
       { hanzi: "我鍾意食菜。", jyutping: "ngo5 zung1 ji3 sik6 coi3.", english: "I like eating vegetables." },
       { hanzi: "我要兩個番茄。", jyutping: "ngo5 jiu3 loeng5 go3 faan1 ke2.", english: "I want two tomatoes." },
       { hanzi: "薯仔平唔平呀？", jyutping: "syu4 zai2 peng4 m4 peng4 aa3?", english: "Are the potatoes cheap?" }
+    ],
+    notes: [
+      {
+        title: "Culture — the 街市 (wet market)",
+        body: "Most Hongkongers buy fresh veg, meat and fish at the 街市 (gaai1 si5, wet market) rather than a supermarket — stalls are cheaper and you can bargain."
+      },
+      {
+        title: "仔 (zai2) makes things small and familiar",
+        body: "The suffix 仔 adds a small, casual feel: 薯仔 (potato, lit. \"little spud\"), 耳仔 (ear), 男仔 (boy). It's everywhere in Cantonese."
+      },
+      {
+        title: "菜 means veg — and \"a dish\"",
+        body: "菜 (coi3) is vegetables, but also a cooked dish: 我哋叫幾個菜 = \"let's order a few dishes.\" Context tells you which."
+      }
     ]
   },
   {
@@ -1101,7 +1197,13 @@ window.LESSONS = [
     subtitle: "肉 / 雞 / 豬肉 / 牛肉 / 魚 / 蝦 / 蟹",
     minutes: 5,
     intro: "Words for meat and seafood when shopping or ordering food.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "今晚煮咩餸好呢？", jyutping: "gam1 maan5 zyu2 me1 sung3 hou2 ne1?", english: "What dish should we cook tonight?" },
+      { speaker: "B", hanzi: "買條魚啦，蒸魚最簡單。", jyutping: "maai5 tiu4 jyu2 laa1, zing1 jyu2 zeoi3 gaan2 daan1.", english: "Let's buy a fish — steamed fish is easiest." },
+      { speaker: "A", hanzi: "好。再買啲蝦同少少牛肉。", jyutping: "hou2. zoi3 maai5 di1 haa1 tung4 siu2 siu2 ngau4 juk6.", english: "OK. And some shrimp and a little beef too." },
+      { speaker: "B", hanzi: "啲魚好唔好食㗎？", jyutping: "di1 jyu2 hou2 m4 hou2 sik6 gaa3?", english: "Is the fish any good?" },
+      { speaker: "A", hanzi: "好新鮮，今朝先到。", jyutping: "hou2 san1 sin1, gam1 ziu1 sin1 dou3.", english: "Very fresh — just came in this morning." }
+    ],
     vocab: [
       { hanzi: "肉", jyutping: "juk6", english: "meat" },
       { hanzi: "雞", jyutping: "gai1", english: "chicken" },
@@ -1115,6 +1217,20 @@ window.LESSONS = [
       { hanzi: "我鍾意食牛肉。", jyutping: "ngo5 zung1 ji3 sik6 ngau4 juk6.", english: "I like eating beef." },
       { hanzi: "我唔食豬肉。", jyutping: "ngo5 m4 sik6 zyu1 juk6.", english: "I don't eat pork." },
       { hanzi: "啲魚好唔好食呀？", jyutping: "di1 jyu2 hou2 m4 hou2 sik6 aa3?", english: "Is the fish tasty?" }
+    ],
+    notes: [
+      {
+        title: "Culture — 餸 (sung3), the dish with rice",
+        body: "A uniquely Cantonese word for the meat and veg dishes eaten with rice. 今晚有咩餸呀？ = \"what's for dinner (to go with rice) tonight?\""
+      },
+      {
+        title: "肉 (juk6) names the meat",
+        body: "Add 肉 to the animal: 豬肉 (pork, from 豬 pig), 牛肉 (beef, from 牛 cow), 雞肉 (chicken meat). Seafood — 魚 / 蝦 / 蟹 — stands alone."
+      },
+      {
+        title: "Culture — 蒸魚, the Cantonese way",
+        body: "Steaming (蒸) a whole fresh fish with ginger and spring onion is the classic home dish. Freshness matters far more than sauce."
+      }
     ]
   },
   {
