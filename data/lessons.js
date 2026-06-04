@@ -1808,7 +1808,12 @@ window.LESSONS = [
     subtitle: "一齊 / 去 / 聽日 / 有冇空 / 好呀 / 約",
     minutes: 5,
     intro: "How to invite a friend and arrange to do something together.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你聽日有冇空呀？", jyutping: "nei5 ting1 jat6 jau5 mou5 hung1 aa3?", english: "Are you free tomorrow?" },
+      { speaker: "B", hanzi: "得閒呀，做咩呀？", jyutping: "dak1 haan4 aa3, zou6 me1 aa3?", english: "I'm free, what's up?" },
+      { speaker: "A", hanzi: "不如一齊去睇戲？", jyutping: "bat1 jyu4 jat1 cai4 heoi3 tai2 hei3?", english: "How about we go see a movie together?" },
+      { speaker: "B", hanzi: "好呀！咁就約你聽日七點。", jyutping: "hou2 aa3! gam2 zau6 joek3 nei5 ting1 jat6 cat1 dim2.", english: "Sure! Then let's meet tomorrow at seven." }
+    ],
     vocab: [
       { hanzi: "一齊", jyutping: "jat1 cai4", english: "together" },
       { hanzi: "去", jyutping: "heoi3", english: "to go" },
@@ -1822,6 +1827,20 @@ window.LESSONS = [
       { hanzi: "你聽日有冇空？", jyutping: "nei5 ting1 jat6 jau5 mou5 hung1?", english: "Are you free tomorrow?" },
       { hanzi: "我哋一齊去食飯啦。", jyutping: "ngo5 dei6 jat1 cai4 heoi3 sik6 faan6 laa1.", english: "Let's go eat together." },
       { hanzi: "好呀，約你聽日。", jyutping: "hou2 aa3, joek3 nei5 ting1 jat6.", english: "Sure, let's arrange for tomorrow." }
+    ],
+    notes: [
+      {
+        title: "有冇空 / 得閒 — are you free?",
+        body: "Two ways to ask if someone's available: 你有冇空呀？ and 你得唔得閒呀？ Both mean \"are you free?\""
+      },
+      {
+        title: "不如…？ = how about…?",
+        body: "Suggest something with 不如 (bat1 jyu4) + the plan: 不如一齊去睇戲？ (How about we go to a movie?). A friendly, low-pressure way to propose."
+      },
+      {
+        title: "約 (joek3) = arrange to meet",
+        body: "約 means to set up a plan or date with someone: 約你聽日 (arrange to meet you tomorrow), 約咗朋友 (have plans with a friend)."
+      }
     ]
   },
   {
@@ -1833,7 +1852,12 @@ window.LESSONS = [
     subtitle: "醫生 / 睇醫生 / 唔舒服 / 發燒 / 頭痛 / 咳",
     minutes: 5,
     intro: "Telling a doctor how you feel when you are sick.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "醫生", hanzi: "你邊度唔舒服呀？", jyutping: "nei5 bin1 dou6 m4 syu1 fuk6 aa3?", english: "Where are you feeling unwell?" },
+      { speaker: "B", hanzi: "我發燒，仲有啲頭痛同咳。", jyutping: "ngo5 faat3 siu1, zung6 jau5 di1 tau4 tung3 tung4 kat1.", english: "I have a fever, and a bit of a headache and a cough." },
+      { speaker: "醫生", hanzi: "咳咗幾耐呀？", jyutping: "kat1 zo2 gei2 noi6 aa3?", english: "How long have you been coughing?" },
+      { speaker: "B", hanzi: "咳咗三日喇。要唔要食藥呀？", jyutping: "kat1 zo2 saam1 jat6 laa3. jiu3 m4 jiu3 sik6 joek6 aa3?", english: "Three days now. Do I need to take medicine?" }
+    ],
     vocab: [
       { hanzi: "醫生", jyutping: "ji1 sang1", english: "doctor" },
       { hanzi: "睇醫生", jyutping: "tai2 ji1 sang1", english: "to see a doctor" },
@@ -1847,6 +1871,20 @@ window.LESSONS = [
       { hanzi: "我唔舒服，想睇醫生。", jyutping: "ngo5 m4 syu1 fuk6, soeng2 tai2 ji1 sang1.", english: "I'm unwell, I want to see a doctor." },
       { hanzi: "我發燒同頭痛。", jyutping: "ngo5 faat3 siu1 tung4 tau4 tung3.", english: "I have a fever and a headache." },
       { hanzi: "我咳咗幾日。", jyutping: "ngo5 kat1 zo2 gei2 jat6.", english: "I've been coughing for a few days." }
+    ],
+    notes: [
+      {
+        title: "X痛 = an X-ache",
+        body: "Stick 痛 (tung3) after a body part for the ache: 頭痛 (headache), 肚痛 (stomachache), 牙痛 (toothache). Same pattern every time."
+      },
+      {
+        title: "幾耐 = how long",
+        body: "Ask duration with 幾耐 (gei2 noi6): 咳咗幾耐呀？ (How long have you been coughing?). Answer with the time + 喇: 三日喇 (three days now)."
+      },
+      {
+        title: "睇醫生 = see a doctor",
+        body: "Cantonese uses 睇 (look) for visiting a doctor: 睇醫生. Feeling ill is 唔舒服, literally \"not comfortable\"."
+      }
     ]
   },
   {
@@ -1858,7 +1896,12 @@ window.LESSONS = [
     subtitle: "藥房 / 藥 / 感冒 / 止痛藥 / 一日食幾次",
     minutes: 5,
     intro: "Buying medicine and asking how to take it.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "唔該，我感冒，有冇藥介紹呀？", jyutping: "m4 goi1, ngo5 gam2 mou6, jau5 mou5 joek6 gaai3 siu6 aa3?", english: "Excuse me, I've got a cold — any medicine you'd recommend?" },
+      { speaker: "B", hanzi: "有。呢隻止痛藥可以退燒。", jyutping: "jau5. ni1 zek3 zi2 tung3 joek6 ho2 ji5 teoi3 siu1.", english: "Yes. This painkiller can also bring down a fever." },
+      { speaker: "A", hanzi: "一日食幾次呀？", jyutping: "jat1 jat6 sik6 gei2 ci3 aa3?", english: "How many times a day do I take it?" },
+      { speaker: "B", hanzi: "一日三次，食完飯食。", jyutping: "jat1 jat6 saam1 ci3, sik6 jyun4 faan6 sik6.", english: "Three times a day, after meals." }
+    ],
     vocab: [
       { hanzi: "藥房", jyutping: "joek6 fong2", english: "pharmacy" },
       { hanzi: "藥", jyutping: "joek6", english: "medicine" },
@@ -1872,6 +1915,20 @@ window.LESSONS = [
       { hanzi: "我感冒，想買藥。", jyutping: "ngo5 gam2 mou6, soeng2 maai5 joek6.", english: "I have a cold, I want to buy medicine." },
       { hanzi: "有冇止痛藥？", jyutping: "jau5 mou5 zi2 tung3 joek6?", english: "Do you have any painkillers?" },
       { hanzi: "呢隻藥一日食幾次？", jyutping: "ni1 zek3 joek6 jat1 jat6 sik6 gei2 ci3?", english: "How many times a day do I take this medicine?" }
+    ],
+    notes: [
+      {
+        title: "食藥 — you \"eat\" medicine",
+        body: "Cantonese takes medicine by 食 (eating it): 食藥 (take medicine), 食止痛藥. The same 食 as for food."
+      },
+      {
+        title: "一日…次 — times per day",
+        body: "Frequency is 一日 + number + 次: 一日三次 (three times a day), 一日兩次 (twice a day). Ask 一日幾次呀？"
+      },
+      {
+        title: "Culture — 藥房 sells more than medicine",
+        body: "HK 藥房 stock medicine but also milk powder, cosmetics and toiletries, often cheaper than the supermarket — a go-to for everyday goods."
+      }
     ]
   },
   {
@@ -1883,7 +1940,12 @@ window.LESSONS = [
     subtitle: "銀行 / 郵局 / 錢 / 換錢 / 寄信 / 郵票",
     minutes: 5,
     intro: "Simple errands at the bank and the post office.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你去邊呀？", jyutping: "nei5 heoi3 bin1 aa3?", english: "Where are you off to?" },
+      { speaker: "B", hanzi: "我去銀行換錢，跟住去郵局。", jyutping: "ngo5 heoi3 ngan4 hong4 wun6 cin2, gan1 zyu6 heoi3 jau4 guk2.", english: "To the bank to change money, then the post office." },
+      { speaker: "A", hanzi: "郵局？我都想寄封信。", jyutping: "jau4 guk2? ngo5 dou1 soeng2 gei3 fung1 seon3.", english: "The post office? I want to mail a letter too." },
+      { speaker: "B", hanzi: "咁一齊去啦，順便買郵票。", jyutping: "gam2 jat1 cai4 heoi3 laa1, seon6 bin2 maai5 jau4 piu3.", english: "Let's go together then, and grab stamps while we're at it." }
+    ],
     vocab: [
       { hanzi: "銀行", jyutping: "ngan4 hong4", english: "bank" },
       { hanzi: "郵局", jyutping: "jau4 guk2", english: "post office" },
@@ -1896,6 +1958,20 @@ window.LESSONS = [
       { hanzi: "銀行喺邊度？", jyutping: "ngan4 hong4 hai2 bin1 dou6?", english: "Where is the bank?" },
       { hanzi: "我想換錢。", jyutping: "ngo5 soeng2 wun6 cin2.", english: "I want to change money." },
       { hanzi: "我想喺郵局寄信，要郵票。", jyutping: "ngo5 soeng2 hai2 jau4 guk2 gei3 seon3, jiu3 jau4 piu3.", english: "I want to mail a letter at the post office, I need a stamp." }
+    ],
+    notes: [
+      {
+        title: "封 (fung1) — classifier for letters",
+        body: "A letter takes 封: 一封信 (a letter), 寄封信 (mail a letter). An email is 一封電郵."
+      },
+      {
+        title: "跟住 / 順便 — then & while at it",
+        body: "跟住 (gan1 zyu6) sequences errands — \"then / next\"; 順便 (seon6 bin2) means \"while I'm at it\": 順便買郵票."
+      },
+      {
+        title: "換錢 = change money",
+        body: "換 (wun6) means \"exchange\": 換錢 (change currency), 換領 (redeem). Both banks and 找換店 (money changers) do it."
+      }
     ]
   },
   {
@@ -1907,7 +1983,12 @@ window.LESSONS = [
     subtitle: "酒店 / 房 / 訂房 / 鎖匙 / 幾多錢一晚 / 入住",
     minutes: 5,
     intro: "Checking in and asking about a hotel room.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你好，我訂咗房，想入住。", jyutping: "nei5 hou2, ngo5 deng6 zo2 fong2, soeng2 jap6 zyu6.", english: "Hello, I booked a room and would like to check in." },
+      { speaker: "B", hanzi: "好，請問訂咗幾晚呀？", jyutping: "hou2, cing2 man6 deng6 zo2 gei2 maan5 aa3?", english: "Sure — how many nights did you book?" },
+      { speaker: "A", hanzi: "三晚。", jyutping: "saam1 maan5.", english: "Three nights." },
+      { speaker: "B", hanzi: "冇問題。呢條係你嘅鎖匙，房喺三樓。", jyutping: "mou5 man6 tai4. ni1 tiu4 hai6 nei5 ge3 so2 si4, fong2 hai2 saam1 lau2.", english: "No problem. Here's your key — the room's on the third floor." }
+    ],
     vocab: [
       { hanzi: "酒店", jyutping: "zau2 dim3", english: "hotel" },
       { hanzi: "房", jyutping: "fong2", english: "room" },
@@ -1920,6 +2001,20 @@ window.LESSONS = [
       { hanzi: "我想訂房。", jyutping: "ngo5 soeng2 deng6 fong2.", english: "I want to book a room." },
       { hanzi: "幾多錢一晚？", jyutping: "gei2 do1 cin2 jat1 maan5?", english: "How much per night?" },
       { hanzi: "我想入住，呢個係鎖匙。", jyutping: "ngo5 soeng2 jap6 zyu6, ni1 go3 hai6 so2 si4.", english: "I'd like to check in; this is the key." }
+    ],
+    notes: [
+      {
+        title: "訂 (deng6) = book / reserve",
+        body: "Reserve things with 訂: 訂房 (book a room), 訂枱 (book a table), 訂飛 (book tickets). 訂咗 = \"have booked\"."
+      },
+      {
+        title: "Counting nights with 晚",
+        body: "Stays are counted in 晚 (nights): 一晚 (one night), 三晚 (three nights). 訂咗幾晚呀？ = \"how many nights booked?\""
+      },
+      {
+        title: "鎖匙 (so2 si4) = key",
+        body: "A key takes the classifier 條: 一條鎖匙. The verb 鎖 (so2) means to lock; 開鎖 is to unlock."
+      }
     ]
   },
   {
@@ -1931,7 +2026,12 @@ window.LESSONS = [
     subtitle: "機場 / 飛機 / 護照 / 行李 / 登機 / 去旅行",
     minutes: 5,
     intro: "Key words for the airport and for going on a trip.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你聽日去邊度旅行呀？", jyutping: "nei5 ting1 jat6 heoi3 bin1 dou6 leoi5 hang4 aa3?", english: "Where are you travelling to tomorrow?" },
+      { speaker: "B", hanzi: "去日本。我而家去緊機場。", jyutping: "heoi3 jat6 bun2. ngo5 ji4 gaa1 heoi3 gan2 gei1 coeng4.", english: "To Japan. I'm heading to the airport now." },
+      { speaker: "A", hanzi: "護照同行李帶齊未呀？", jyutping: "wu6 ziu3 tung4 hang4 lei5 daai3 cai4 mei6 aa3?", english: "Have you got your passport and luggage ready?" },
+      { speaker: "B", hanzi: "帶齊喇！幾點登機？", jyutping: "daai3 cai4 laa3! gei2 dim2 dang1 gei1?", english: "All set! What time do I board?" }
+    ],
     vocab: [
       { hanzi: "機場", jyutping: "gei1 coeng4", english: "airport" },
       { hanzi: "飛機", jyutping: "fei1 gei1", english: "airplane" },
@@ -1944,6 +2044,20 @@ window.LESSONS = [
       { hanzi: "我去機場搭飛機。", jyutping: "ngo5 heoi3 gei1 coeng4 daap3 fei1 gei1.", english: "I'm going to the airport to take a plane." },
       { hanzi: "唔該俾我睇你嘅護照。", jyutping: "m4 goi1 bei2 ngo5 tai2 nei5 ge3 wu6 ziu3.", english: "Please show me your passport." },
       { hanzi: "我聽日去旅行。", jyutping: "ngo5 ting1 jat6 heoi3 leoi5 hang4.", english: "I'm going travelling tomorrow." }
+    ],
+    notes: [
+      {
+        title: "去旅行 = go travelling",
+        body: "去旅行 (heoi3 leoi5 hang4) means \"take a trip / go on holiday\": 去日本旅行 (travel to Japan). 旅行 on its own = \"trip / travel\"."
+      },
+      {
+        title: "V + 緊 = in progress",
+        body: "去緊機場 (on the way to the airport), 等緊登機 (waiting to board). 緊 marks an action happening right now."
+      },
+      {
+        title: "齊 (cai4) = all there / complete",
+        body: "帶齊 (brought everything), 到齊 (everyone's arrived), 買齊 (bought it all). A handy word for \"all present and accounted for\"."
+      }
     ]
   },
   {
