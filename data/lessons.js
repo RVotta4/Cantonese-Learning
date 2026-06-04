@@ -2069,7 +2069,12 @@ window.LESSONS = [
     subtitle: "高 / 矮 / 肥 / 瘦 / 靚 / 後生 / 老",
     minutes: 5,
     intro: "Adjectives for describing how someone looks.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "邊個係你哥哥呀？", jyutping: "bin1 go3 hai6 nei5 go4 go1 aa3?", english: "Which one is your brother?" },
+      { speaker: "B", hanzi: "高高瘦瘦嗰個。", jyutping: "gou1 gou1 sau3 sau3 go2 go3.", english: "The tall, slim one." },
+      { speaker: "A", hanzi: "著藍色衫，好靚仔嗰個？", jyutping: "zoek3 laam4 sik1 saam1, hou2 leng3 zai2 go2 go3?", english: "The good-looking one in blue?" },
+      { speaker: "B", hanzi: "係呀！佢仲後生過我。", jyutping: "hai6 aa3! keoi5 zung6 hau6 saang1 gwo3 ngo5.", english: "Yes! He's even younger than me." }
+    ],
     vocab: [
       { hanzi: "高", jyutping: "gou1", english: "tall" },
       { hanzi: "矮", jyutping: "ai2", english: "short (in height)" },
@@ -2083,6 +2088,20 @@ window.LESSONS = [
       { hanzi: "佢好高。", jyutping: "keoi5 hou2 gou1.", english: "He/she is very tall." },
       { hanzi: "佢個女好靚。", jyutping: "keoi5 go3 neoi2 hou2 leng3.", english: "Her daughter is very pretty." },
       { hanzi: "我嫲嫲好老。", jyutping: "ngo5 maa4 maa4 hou2 lou5.", english: "My grandma is very old." }
+    ],
+    notes: [
+      {
+        title: "Doubling an adjective softens it",
+        body: "Repeating an adjective gives a casual, descriptive feel: 高高瘦瘦 (tallish and slim), 肥肥白白 (plump and fair). Common when describing looks."
+      },
+      {
+        title: "Comparisons with 過",
+        body: "Put 過 after the adjective: 後生過 (younger than), 高過 (taller than). 佢高過我 = \"he's taller than me.\""
+      },
+      {
+        title: "靚 / 靚仔 / 靚女",
+        body: "靚 (leng3) = good-looking. 靚仔 (handsome guy) and 靚女 (pretty girl) also work as friendly ways to address a young man or woman — even a waiter."
+      }
     ]
   },
   {
@@ -2094,7 +2113,12 @@ window.LESSONS = [
     subtitle: "好人 / 惡 / 善良 / 聰明 / 勤力 / 懶",
     minutes: 5,
     intro: "Words to describe what someone is like.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你哋個新老師點㗎？", jyutping: "nei5 dei6 go3 san1 lou5 si1 dim2 gaa3?", english: "What's your new teacher like?" },
+      { speaker: "B", hanzi: "佢好好人，又善良。", jyutping: "keoi5 hou2 hou2 jan4, jau6 sin6 loeng4.", english: "She's really nice, and kind too." },
+      { speaker: "A", hanzi: "惡唔惡㗎？", jyutping: "ok3 m4 ok3 gaa3?", english: "Is she strict?" },
+      { speaker: "B", hanzi: "唔惡，不過要我哋勤力啲。", jyutping: "m4 ok3, bat1 gwo3 jiu3 ngo5 dei6 kan4 lik6 di1.", english: "Not strict, but she wants us to work a bit harder." }
+    ],
     vocab: [
       { hanzi: "好人", jyutping: "hou2 jan4", english: "good person, kind person" },
       { hanzi: "惡", jyutping: "ok3", english: "fierce, strict" },
@@ -2107,6 +2131,20 @@ window.LESSONS = [
       { hanzi: "佢係好人。", jyutping: "keoi5 hai6 hou2 jan4.", english: "He/she is a good person." },
       { hanzi: "我老師好惡。", jyutping: "ngo5 lou5 si1 hou2 ok3.", english: "My teacher is very strict." },
       { hanzi: "佢好聰明又勤力。", jyutping: "keoi5 hou2 cung1 ming4 jau6 kan4 lik6.", english: "He/she is smart and hardworking." }
+    ],
+    notes: [
+      {
+        title: "好人 = a good, kind person",
+        body: "好人 (hou2 jan4), literally \"good person\", describes someone decent and kind: 佢係好人. Note 好 doubles up in 好好人 = \"really nice\"."
+      },
+      {
+        title: "惡 (ok3) = fierce / strict",
+        body: "Describes a stern teacher, boss or even a dog: 個老師好惡 (the teacher is strict). The opposite is 好相處 (easy to get along with)."
+      },
+      {
+        title: "又…又… = both…and…",
+        body: "Stack qualities with 又…又…: 又聰明又勤力 (both smart and hardworking), 又靚又善良 (both pretty and kind)."
+      }
     ]
   },
   {
@@ -2118,7 +2156,12 @@ window.LESSONS = [
     subtitle: "個 / 隻 / 張 / 條 / 本 / 杯 / 件",
     minutes: 6,
     intro: "Classifiers go between a number and a noun in Cantonese.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "唔該，我要一杯咖啡同一件蛋糕。", jyutping: "m4 goi1, ngo5 jiu3 jat1 bui1 gaa3 fe1 tung4 jat1 gin6 daan6 gou1.", english: "Excuse me, a coffee and a slice of cake please." },
+      { speaker: "B", hanzi: "好。仲要唔要嘢呀？", jyutping: "hou2. zung6 jiu3 m4 jiu3 je5 aa3?", english: "Sure. Anything else?" },
+      { speaker: "A", hanzi: "唔該畀本餐牌我睇睇。", jyutping: "m4 goi1 bei2 bun2 caan1 paai2 ngo5 tai2 tai2.", english: "Could you pass me the menu to have a look." },
+      { speaker: "B", hanzi: "好。張枱嗰邊有位，請坐。", jyutping: "hou2. zoeng1 toi2 go2 bin1 jau5 wai2, cing2 co5.", english: "Sure. There's a seat by that table, please sit." }
+    ],
     vocab: [
       { hanzi: "個", jyutping: "go3", english: "general classifier (people, things)" },
       { hanzi: "隻", jyutping: "zek3", english: "classifier for animals, one of a pair" },
@@ -2132,6 +2175,20 @@ window.LESSONS = [
       { hanzi: "一個人。", jyutping: "jat1 go3 jan4.", english: "one person." },
       { hanzi: "三本書。", jyutping: "saam1 bun2 syu1.", english: "three books." },
       { hanzi: "我要一杯水。", jyutping: "ngo5 jiu3 jat1 bui1 seoi2.", english: "I want a glass of water." }
+    ],
+    notes: [
+      {
+        title: "number + classifier + noun",
+        body: "Cantonese needs a classifier between a number and a noun: 一杯水 (a cup of water), 兩本書 (two books), 三件衫 (three shirts). You can't drop it."
+      },
+      {
+        title: "Match the classifier to the shape",
+        body: "Pick by form: 張 for flat things (張枱, 張紙), 條 for long thin ones (條魚, 條路), 本 for books, 杯 for drinks. When unsure, 個 is the safe default."
+      },
+      {
+        title: "Classifier can stand in for \"the\"",
+        body: "With 呢 / 嗰 it points: 呢本書 (this book), 嗰張枱 (that table). The classifier alone can also mean \"the\": 本書喺度 (the book is here)."
+      }
     ]
   },
   {
@@ -2143,7 +2200,12 @@ window.LESSONS = [
     subtitle: "農曆新年 / 恭喜發財 / 利是 / 拜年 / 團年飯 / 煙花",
     minutes: 5,
     intro: "Words and greetings for Lunar New Year in Hong Kong.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "恭喜發財！新年快樂！", jyutping: "gung1 hei2 faat3 coi4! san1 nin4 faai3 lok6!", english: "Happy New Year! Wishing you prosperity!" },
+      { speaker: "B", hanzi: "恭喜恭喜！嚟，派利是畀你。", jyutping: "gung1 hei2 gung1 hei2! lai4, paai3 lai6 si6 bei2 nei5.", english: "Happy New Year! Here, a red packet for you." },
+      { speaker: "A", hanzi: "唔該晒！你哋今晚食唔食團年飯呀？", jyutping: "m4 goi1 saai3! nei5 dei6 gam1 maan5 sik6 m4 sik6 tyun4 nin4 faan6 aa3?", english: "Thank you! Are you having reunion dinner tonight?" },
+      { speaker: "B", hanzi: "食！食完去睇煙花。", jyutping: "sik6! sik6 jyun4 heoi3 tai2 jin1 faa1.", english: "Yes! After dinner we'll go watch the fireworks." }
+    ],
     vocab: [
       { hanzi: "農曆新年", jyutping: "nung4 lik6 san1 nin4", english: "Lunar New Year" },
       { hanzi: "恭喜發財", jyutping: "gung1 hei2 faat3 coi4", english: "wishing you prosperity (New Year greeting)" },
@@ -2156,6 +2218,20 @@ window.LESSONS = [
       { hanzi: "恭喜發財！", jyutping: "gung1 hei2 faat3 coi4!", english: "Happy New Year (wishing you prosperity)!" },
       { hanzi: "細路鍾意收利是。", jyutping: "sai3 lou6 zung1 ji3 sau1 lai6 si6.", english: "Kids love getting red packets." },
       { hanzi: "我哋一齊食團年飯。", jyutping: "ngo5 dei6 jat1 cai4 sik6 tyun4 nin4 faan6.", english: "We have reunion dinner together." }
+    ],
+    notes: [
+      {
+        title: "Culture — 利是 (lai6 si6), lucky red packets",
+        body: "Married adults give 利是 — red packets of money — to children and unmarried people at New Year. The cheeky line 恭喜發財，利是逗來 asks for one."
+      },
+      {
+        title: "Culture — 團年飯, the reunion dinner",
+        body: "On New Year's Eve families gather for 團年飯, the most important meal of the year. Dishes are picked for their lucky-sounding names."
+      },
+      {
+        title: "Festival greetings",
+        body: "恭喜發財 (wishing you wealth) and 新年快樂 (happy new year) are the standard greetings — say them to everyone you meet over the holiday."
+      }
     ]
   },
   {
@@ -2167,7 +2243,12 @@ window.LESSONS = [
     subtitle: "救命 / 幫手 / 報警 / 火警 / 醫院 / 小心",
     minutes: 5,
     intro: "Important words for getting help in an emergency.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "救命呀！有人跌咗落水！", jyutping: "gau3 meng6 aa3! jau5 jan4 dit3 zo2 lok6 seoi2!", english: "Help! Someone fell into the water!" },
+      { speaker: "B", hanzi: "我幫手！快啲報警！", jyutping: "ngo5 bong1 sau2! faai3 di1 bou3 ging2!", english: "I'll help! Quick, call the police!" },
+      { speaker: "A", hanzi: "快啲叫救護車去醫院！", jyutping: "faai3 di1 giu3 gau3 wu6 ce1 heoi3 ji1 jyun2!", english: "Quick, call an ambulance to the hospital!" },
+      { speaker: "B", hanzi: "大家小心啲，唔好行得太近！", jyutping: "daai6 gaa1 siu2 sam1 di1, m4 hou2 haang4 dak1 taai3 kan5!", english: "Everyone be careful, don't go too close!" }
+    ],
     vocab: [
       { hanzi: "救命", jyutping: "gau3 meng6", english: "help! (save me)" },
       { hanzi: "幫手", jyutping: "bong1 sau2", english: "to help, give a hand" },
@@ -2180,6 +2261,20 @@ window.LESSONS = [
       { hanzi: "救命呀！", jyutping: "gau3 meng6 aa3!", english: "Help!" },
       { hanzi: "唔該幫手報警。", jyutping: "m4 goi1 bong1 sau2 bou3 ging2.", english: "Please help me call the police." },
       { hanzi: "小心啲！", jyutping: "siu2 sam1 di1!", english: "Be careful!" }
+    ],
+    notes: [
+      {
+        title: "救命 / 幫手 — calling for help",
+        body: "救命呀！ (gau3 meng6, \"help, save me!\") is for real danger; 幫手 (bong1 sau2) is everyday help: 唔該幫手 (please give a hand)."
+      },
+      {
+        title: "Culture — 999, the emergency number",
+        body: "In Hong Kong dial 999 for police, fire or ambulance. 報警 = call the police; 叫白車 (\"call the white car\") is slang for an ambulance."
+      },
+      {
+        title: "小心 + 啲 = be careful",
+        body: "小心 often takes 啲: 小心啲！ Add what to watch for: 小心地滑 (careful, wet floor), 小心啲行 (watch your step)."
+      }
     ]
   }
 ];
