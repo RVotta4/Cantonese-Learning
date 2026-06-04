@@ -540,7 +540,13 @@ window.LESSONS = [
     subtitle: "what / who / where / when / how",
     minutes: 5,
     intro: "These five question words let you ask about almost anything in everyday conversation.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你聽日做咩呀？", jyutping: "nei5 ting1 jat6 zou6 me1 aa3?", english: "What are you doing tomorrow?" },
+      { speaker: "B", hanzi: "去飲茶。你想去邊度呀？", jyutping: "heoi3 jam2 caa4. nei5 soeng2 heoi3 bin1 dou6 aa3?", english: "Going for dim sum. Where do you want to go?" },
+      { speaker: "A", hanzi: "邊度都得。不過點去呀？", jyutping: "bin1 dou6 dou1 dak1. bat1 gwo3 dim2 heoi3 aa3?", english: "Anywhere's fine. But how do we get there?" },
+      { speaker: "B", hanzi: "搭地鐵啦。我哋約邊個呀？", jyutping: "daap3 dei6 tit3 laa1. ngo5 dei6 joek3 bin1 go3 aa3?", english: "Take the MTR. Who should we invite?" },
+      { speaker: "A", hanzi: "約Amy。佢幾時得閒呀？", jyutping: "joek3 Amy. keoi5 gei2 si4 dak1 haan4 aa3?", english: "Invite Amy. When is she free?" }
+    ],
     vocab: [
       { hanzi: "咩", jyutping: "me1", english: "what" },
       { hanzi: "邊個", jyutping: "bin1 go3", english: "who, which one" },
@@ -553,6 +559,20 @@ window.LESSONS = [
       { hanzi: "你叫咩名呀？", jyutping: "nei5 giu3 me1 meng2 aa3?", english: "What is your name?" },
       { hanzi: "佢係邊個呀？", jyutping: "keoi5 hai6 bin1 go3 aa3?", english: "Who is he?" },
       { hanzi: "廁所喺邊度呀？", jyutping: "ci3 so2 hai2 bin1 dou6 aa3?", english: "Where is the toilet?" }
+    ],
+    notes: [
+      {
+        title: "Question words stay in place",
+        body: "Cantonese doesn't move the question word to the front like English. 你叫咩名呀？ is literally \"you call what name?\" — 咩 / 邊個 / 邊度 sits exactly where the answer will go."
+      },
+      {
+        title: "End questions with 呀 (aa3)",
+        body: "Adding the particle 呀 to the end of a question makes it sound natural and friendly: 幾時呀？ (when?), 邊個呀？ (who?). Without it, a bare question word can sound abrupt."
+      },
+      {
+        title: "Culture — 得閒飲茶 (dak1 haan4 jam2 caa4)",
+        body: "Literally \"free, drink tea\" — a warm, everyday way to say \"let's catch up sometime.\" Like \"let's grab a coffee,\" it's often said in passing rather than as a firm plan."
+      }
     ]
   },
   {
@@ -564,7 +584,12 @@ window.LESSONS = [
     subtitle: "有 (have) and 冇 (not have)",
     minutes: 5,
     intro: "有 means \"have\" and its opposite 冇 means \"not have\" — note Cantonese uses 冇, not 唔有.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你今個週末有冇時間呀？", jyutping: "nei5 gam1 go3 zau1 mut6 jau5 mou5 si4 gaan3 aa3?", english: "Do you have time this weekend?" },
+      { speaker: "B", hanzi: "有呀，做咩呀？", jyutping: "jau5 aa3, zou6 me1 aa3?", english: "Yeah, what's up?" },
+      { speaker: "A", hanzi: "我想去買嘢，不過我冇車。", jyutping: "ngo5 soeng2 heoi3 maai5 je5, bat1 gwo3 ngo5 mou5 ce1.", english: "I want to go shopping, but I don't have a car." },
+      { speaker: "B", hanzi: "冇問題，我有車，我載你。", jyutping: "mou5 man6 tai4, ngo5 jau5 ce1, ngo5 zoi3 nei5.", english: "No problem, I've got a car — I'll give you a lift." }
+    ],
     vocab: [
       { hanzi: "有", jyutping: "jau5", english: "to have, there is" },
       { hanzi: "冇", jyutping: "mou5", english: "to not have, there isn't" },
@@ -577,6 +602,20 @@ window.LESSONS = [
       { hanzi: "我有錢。", jyutping: "ngo5 jau5 cin2.", english: "I have money." },
       { hanzi: "我冇時間。", jyutping: "ngo5 mou5 si4 gaan3.", english: "I don't have time." },
       { hanzi: "你有冇車呀？", jyutping: "nei5 jau5 mou5 ce1 aa3?", english: "Do you have a car?" }
+    ],
+    notes: [
+      {
+        title: "冇 is the opposite of 有 — never 唔有",
+        body: "Cantonese has a dedicated negative for \"have\": 冇 (mou5). To say you don't have something you use 冇, never 唔有. So 有錢 (have money) becomes 冇錢 (no money)."
+      },
+      {
+        title: "Yes/no questions with 有冇",
+        body: "Ask \"do you have…?\" by saying 有冇 + the thing: 你有冇車呀？ Answer 有 (yes) or 冇 (no). It's the same positive-negative pattern as 係唔係."
+      },
+      {
+        title: "嘢 (je5) — \"stuff\"",
+        body: "嘢 is the all-purpose word for \"things\" and builds everyday verbs: 買嘢 (shop), 食嘢 (eat), 飲嘢 (have a drink). 買嘢 literally means \"buy stuff.\""
+      }
     ]
   },
   {
@@ -588,7 +627,13 @@ window.LESSONS = [
     subtitle: "呢個 / 嗰個 / 邊個 and the classifier 個",
     minutes: 5,
     intro: "呢 (this) and 嗰 (that) plus the classifier 個 let you point at things — 呢個 (this one), 嗰個 (that one).",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "呢個幾錢呀？", jyutping: "ni1 go3 gei2 cin2 aa3?", english: "How much is this one?" },
+      { speaker: "B", hanzi: "呢個八十蚊。", jyutping: "ni1 go3 baat3 sap6 man1.", english: "This one is eighty dollars." },
+      { speaker: "A", hanzi: "嗰個呢？", jyutping: "go2 go3 ne1?", english: "And that one?" },
+      { speaker: "B", hanzi: "嗰個平啲，五十蚊。你要邊個呀？", jyutping: "go2 go3 peng4 di1, ng5 sap6 man1. nei5 jiu3 bin1 go3 aa3?", english: "That one's a bit cheaper, fifty dollars. Which one do you want?" },
+      { speaker: "A", hanzi: "我要呢個。", jyutping: "ngo5 jiu3 ni1 go3.", english: "I'll take this one." }
+    ],
     vocab: [
       { hanzi: "呢", jyutping: "ni1", english: "this" },
       { hanzi: "嗰", jyutping: "go2", english: "that" },
@@ -601,6 +646,20 @@ window.LESSONS = [
       { hanzi: "呢個幾錢呀？", jyutping: "ni1 go3 gei2 cin2 aa3?", english: "How much is this one?" },
       { hanzi: "我要嗰個。", jyutping: "ngo5 jiu3 go2 go3.", english: "I want that one." },
       { hanzi: "你要邊個呀？", jyutping: "nei5 jiu3 bin1 go3 aa3?", english: "Which one do you want?" }
+    ],
+    notes: [
+      {
+        title: "Point with 個, not just 呢 / 嗰",
+        body: "When you single out one item you add the classifier 個: say 呢個 (this one) or 嗰個 (that one), not 呢 / 嗰 alone. 個 is the catch-all classifier for most things and people."
+      },
+      {
+        title: "呢 (near) vs 嗰 (far)",
+        body: "呢 (ni1) points to what's near you — \"this\"; 嗰 (go2) points further away — \"that.\" Pair either with 個 to get 呢個 / 嗰個, and ask 邊個 (which one)."
+      },
+      {
+        title: "Culture — 蚊 (man1) means \"bucks\"",
+        body: "In everyday speech Hongkongers count money in 蚊 — the same character as \"mosquito\" — rather than the formal 元. 五十蚊 = fifty dollars."
+      }
     ]
   },
   {
