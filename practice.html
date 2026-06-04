@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cantonese Learning — Practice</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">粵</span>
+        <span class="brand-text">Cantonese<span class="brand-text-accent">Learning</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Dashboard</a>
+        <a href="lessons.html" class="active">Lessons</a>
+        <a href="stories.html">Stories</a>
+        <a href="vocabulary.html">Vocabulary</a>
+        <a href="wordbank.html">Word Bank</a>
+        <a href="flashcards.html">Flashcards</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container main-content lesson-page">
+    <div id="practice-page"><p class="muted">Loading practice…</p></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made for Robbie · Cantonese Learning · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="data/lessons.js"></script>
+  <script src="data/wordbank.js"></script>
+  <script src="audio/manifest.js"></script>
+  <script src="js/data-utils.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/practice-logic.js"></script>
+  <script src="js/practice.js"></script>
+</body>
+</html>
