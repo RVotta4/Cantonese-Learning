@@ -497,7 +497,12 @@ window.LESSONS = [
     subtitle: "我 / 你 / 佢 and their plurals with 哋",
     minutes: 5,
     intro: "Master these six pronouns and you can talk about anyone — add 哋 to make any of them plural.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "佢係邊個呀？", jyutping: "keoi5 hai6 bin1 go3 aa3?", english: "Who's that?" },
+      { speaker: "B", hanzi: "佢係我朋友。", jyutping: "keoi5 hai6 ngo5 pang4 jau5.", english: "He's my friend." },
+      { speaker: "A", hanzi: "你哋係唔係學生呀？", jyutping: "nei5 dei6 hai6 m4 hai6 hok6 saang1 aa3?", english: "Are you two students?" },
+      { speaker: "B", hanzi: "係，我哋都係學生。", jyutping: "hai6, ngo5 dei6 dou1 hai6 hok6 saang1.", english: "Yes, we're both students." }
+    ],
     vocab: [
       { hanzi: "我", jyutping: "ngo5", english: "I, me" },
       { hanzi: "你", jyutping: "nei5", english: "you (singular)" },
@@ -510,6 +515,20 @@ window.LESSONS = [
       { hanzi: "我係學生。", jyutping: "ngo5 hai6 hok6 saang1.", english: "I am a student." },
       { hanzi: "佢係香港人。", jyutping: "keoi5 hai6 hoeng1 gong2 jan4.", english: "He is from Hong Kong." },
       { hanzi: "我哋鍾意飲茶。", jyutping: "ngo5 dei6 zung1 ji3 jam2 caa4.", english: "We like going for dim sum." }
+    ],
+    notes: [
+      {
+        title: "Plurals with 哋 (dei6)",
+        body: "Add 哋 after a pronoun to make it plural: 我 (I) becomes 我哋 (we), 你 (you) becomes 你哋, and 佢 (he/she) becomes 佢哋 (they). The pronoun itself never changes — you just add 哋."
+      },
+      {
+        title: "Yes/no questions with 係唔係",
+        body: "To ask a yes/no question, say the verb in its positive-negative form: 你係唔係學生呀？ is literally \"you are-not-are student?\" Answer 係 (yes) or 唔係 (no)."
+      },
+      {
+        title: "Culture — one word for he, she and it",
+        body: "Spoken Cantonese doesn't mark gender on pronouns: 佢 (keoi5) covers he, she and it. Listeners rely on context, so you never have to choose a gender as you speak."
+      }
     ]
   },
   {
