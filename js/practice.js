@@ -174,7 +174,7 @@
 
   // ---- cloze ----
   function clozeBody(task) {
-    var blanked = task.sentence.hanzi.split(task.target.hanzi).join('<span class="pr-blank">＿＿</span>');
+    var blanked = escapeHtml(task.sentence.hanzi).split(escapeHtml(task.target.hanzi)).join('<span class="pr-blank">＿＿</span>');
     return '<div class="pr-card">' +
       '<p class="pr-instr muted">Choose the missing word.</p>' +
       '<p class="pr-sentence hanzi" lang="yue">' + blanked + '</p>' +
