@@ -121,7 +121,7 @@
     }, 0);
   }
 
-  function reset() { var d = load(); save({ srs: {}, fcMode: d.fcMode, deck: d.deck }); }
+  function reset() { var d = load(); save({ srs: {}, fcMode: d.fcMode, deck: d.deck, practice: d.practice }); }
 
   function getFcMode() { return load().fcMode || null; }
   function setFcMode(m) { var d = load(); d.fcMode = m; save(d); }
@@ -181,6 +181,22 @@
   function deckList() { var deck = load().deck || {}; return Object.keys(deck).map(function (k) { return deck[k]; }); }
   function deckCount() { return Object.keys(load().deck || {}).length; }
 
+  // ---------- Per-lesson practice progress ----------
+  function recordPractice(lessonId, pct) {
+    if (!lessonId) return null;
+    var d = load();
+    d.practice = d.practice || {};
+    var p = d.practice[lessonId] || { best: 0, times: 0, last: 0 };
+    p.best = Math.max(p.best || 0, Math.round(pct || 0));
+    p.times = (p.times || 0) + 1;
+    p.last = Date.now();
+    d.practice[lessonId] = p;
+    save(d);
+    recordActivity();
+    return p;
+  }
+  function getPracticeStats(lessonId) { return (load().practice || {})[lessonId] || null; }
+
   window.Store = {
     getState: getState,
     rate: rate,
@@ -203,6 +219,8 @@
     removeFromDeck: removeFromDeck,
     inDeck: inDeck,
     deckList: deckList,
-    deckCount: deckCount
+    deckCount: deckCount,
+    recordPractice: recordPractice,
+    getPracticeStats: getPracticeStats
   };
 })();
