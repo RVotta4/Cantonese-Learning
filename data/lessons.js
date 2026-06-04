@@ -715,7 +715,13 @@ window.LESSONS = [
     subtitle: "Months, 號 for dates, and this/next month",
     minutes: 6,
     intro: "Cantonese months are just a number plus 月, and you give a date with the number plus 號.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你幾時生日呀？", jyutping: "nei5 gei2 si4 saang1 jat6 aa3?", english: "When's your birthday?" },
+      { speaker: "B", hanzi: "下個月五號。", jyutping: "haa6 go3 jyut6 ng5 hou6.", english: "The 5th of next month." },
+      { speaker: "A", hanzi: "咁啱！我都係下個月生日。", jyutping: "gam2 ngaam1! ngo5 dou1 hai6 haa6 go3 jyut6 saang1 jat6.", english: "What a coincidence! My birthday's next month too." },
+      { speaker: "B", hanzi: "真係？幾號呀？", jyutping: "zan1 hai6? gei2 hou6 aa3?", english: "Really? What date?" },
+      { speaker: "A", hanzi: "二十號。我哋一齊慶祝啦！", jyutping: "ji6 sap6 hou6. ngo5 dei6 jat1 cai4 hing3 zuk1 laa1!", english: "The 20th. Let's celebrate together!" }
+    ],
     vocab: [
       { hanzi: "月", jyutping: "jyut6", english: "month" },
       { hanzi: "一月", jyutping: "jat1 jyut6", english: "January" },
@@ -728,6 +734,20 @@ window.LESSONS = [
       { hanzi: "今日係五月三號。", jyutping: "gam1 jat6 hai6 ng5 jyut6 saam1 hou6.", english: "Today is the 3rd of May." },
       { hanzi: "我下個月去旅行。", jyutping: "ngo5 haa6 go3 jyut6 heoi3 leoi5 hang4.", english: "I'm travelling next month." },
       { hanzi: "你幾時生日呀？", jyutping: "nei5 gei2 si4 saang1 jat6 aa3?", english: "When is your birthday?" }
+    ],
+    notes: [
+      {
+        title: "Months = number + 月",
+        body: "Cantonese month names are just a number plus 月 (jyut6): 一月 (January), 二月 (February), all the way to 十二月 (December). There's nothing extra to memorize."
+      },
+      {
+        title: "Dates = number + 號",
+        body: "Give the day of the month with 號 (hou6): 五號 (the 5th), 二十號 (the 20th). A full date puts month before day: 三月五號 = March 5th."
+      },
+      {
+        title: "Culture — two calendars in Hong Kong",
+        body: "HK runs on the solar (Gregorian) calendar for daily life and the lunar calendar for festivals. Some people, especially older generations, also mark their birthday by the lunar date."
+      }
     ]
   },
   {
@@ -782,7 +802,12 @@ window.LESSONS = [
     subtitle: "頭 / 眼 / 耳 / 口 / 手 / 腳 / 肚",
     minutes: 5,
     intro: "Knowing your body parts helps a lot at the doctor — these are the everyday ones.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "醫生，我個頭好痛。", jyutping: "ji1 sang1, ngo5 go3 tau4 hou2 tung3.", english: "Doctor, my head really hurts." },
+      { speaker: "B", hanzi: "仲有邊度唔舒服呀？", jyutping: "zung6 jau5 bin1 dou6 m4 syu1 fuk6 aa3?", english: "Anywhere else feeling unwell?" },
+      { speaker: "A", hanzi: "我對眼好攰，隻手又痛。", jyutping: "ngo5 deoi3 ngaan5 hou2 gui6, zek3 sau2 jau6 tung3.", english: "My eyes are tired, and my hand hurts." },
+      { speaker: "B", hanzi: "你眼瞓啦。早啲瞓覺啦。", jyutping: "nei5 ngaan5 fan3 laa1. zou2 di1 fan3 gaau3 laa1.", english: "You're sleepy. Go to bed earlier." }
+    ],
     vocab: [
       { hanzi: "頭", jyutping: "tau4", english: "head" },
       { hanzi: "眼", jyutping: "ngaan5", english: "eye" },
@@ -796,6 +821,20 @@ window.LESSONS = [
       { hanzi: "我個頭好痛。", jyutping: "ngo5 go3 tau4 hou2 tung3.", english: "My head really hurts." },
       { hanzi: "佢隻手好凍。", jyutping: "keoi5 zek3 sau2 hou2 dung3.", english: "His hand is very cold." },
       { hanzi: "我肚好餓。", jyutping: "ngo5 tou5 hou2 ngo6.", english: "I'm very hungry." }
+    ],
+    notes: [
+      {
+        title: "Body parts take a classifier",
+        body: "Cantonese pairs a body part with a classifier: 個頭 (head), 對眼 (eyes, a pair), 隻手 / 隻腳 (a hand / foot). 對 is for natural pairs, 隻 for one of a pair."
+      },
+      {
+        title: "Say it hurts with 痛 (tung3)",
+        body: "Put the body part first, then 痛: 頭痛 (headache), 肚痛 (stomachache). Add 好 for emphasis: 我個頭好痛 = \"my head really hurts.\""
+      },
+      {
+        title: "眼瞓 (ngaan5 fan3) — sleepy",
+        body: "A vivid everyday expression literally meaning \"eyes want to sleep.\" 我好眼瞓 = \"I'm really sleepy.\""
+      }
     ]
   },
   {
@@ -807,7 +846,12 @@ window.LESSONS = [
     subtitle: "開心 / 唔開心 / 攰 / 肚餓 / 口渴 / 驚",
     minutes: 5,
     intro: "Say how you feel with these everyday words — most just follow 我 (I am ...).",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你做咩唔開心呀？", jyutping: "nei5 zou6 me1 m4 hoi1 sam1 aa3?", english: "Why are you unhappy?" },
+      { speaker: "B", hanzi: "我好攰，又肚餓。", jyutping: "ngo5 hou2 gui6, jau6 tou5 ngo6.", english: "I'm really tired, and hungry too." },
+      { speaker: "A", hanzi: "咁我哋去食嘢啦，食完你就開心啦。", jyutping: "gam2 ngo5 dei6 heoi3 sik6 je5 laa1, sik6 jyun4 nei5 zau6 hoi1 sam1 laa1.", english: "Then let's go eat — you'll feel happy after eating." },
+      { speaker: "B", hanzi: "好呀！我而家口渴添。", jyutping: "hou2 aa3! ngo5 ji4 gaa1 hau2 hot3 tim1.", english: "Sure! I'm thirsty too now." }
+    ],
     vocab: [
       { hanzi: "開心", jyutping: "hoi1 sam1", english: "happy" },
       { hanzi: "唔開心", jyutping: "m4 hoi1 sam1", english: "unhappy" },
@@ -820,6 +864,20 @@ window.LESSONS = [
       { hanzi: "我好開心。", jyutping: "ngo5 hou2 hoi1 sam1.", english: "I'm very happy." },
       { hanzi: "我好攰。", jyutping: "ngo5 hou2 gui6.", english: "I'm very tired." },
       { hanzi: "你肚唔肚餓呀？", jyutping: "nei5 tou5 m4 tou5 ngo6 aa3?", english: "Are you hungry?" }
+    ],
+    notes: [
+      {
+        title: "No \"to be\" before a feeling",
+        body: "Cantonese drops the verb \"to be\" before an adjective: say 我好攰 (I'm very tired) or 我肚餓 (I'm hungry), with no word for \"am\". 好 here means \"very\"."
+      },
+      {
+        title: "Negate and ask with 唔",
+        body: "Put 唔 (m4) before the feeling to flip it: 開心 → 唔開心 (unhappy). Ask a yes/no question by doubling it: 你開唔開心呀？"
+      },
+      {
+        title: "添 (tim1) — \"as well\"",
+        body: "A sentence-final particle that tacks on \"also / on top of that\": 我口渴添 (I'm thirsty too). Very common in casual speech."
+      }
     ]
   },
   {
@@ -831,7 +889,12 @@ window.LESSONS = [
     subtitle: "食 / 飲 / 睇 / 聽 / 講 / 行 / 坐 / 瞓",
     minutes: 6,
     intro: "These eight everyday verbs cover most of what you do in a day — eat, drink, watch, walk, sleep.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "今晚想做啲咩呀？", jyutping: "gam1 maan5 soeng2 zou6 di1 me1 aa3?", english: "What do you want to do tonight?" },
+      { speaker: "B", hanzi: "食完飯，睇下電視啦。", jyutping: "sik6 jyun4 faan6, tai2 haa5 din6 si6 laa1.", english: "After dinner, let's watch some TV." },
+      { speaker: "A", hanzi: "我想去公園行下。", jyutping: "ngo5 soeng2 heoi3 gung1 jyun2 haang4 haa5.", english: "I want to go for a walk in the park." },
+      { speaker: "B", hanzi: "都好。行完返嚟坐下，飲杯茶。", jyutping: "dou1 hou2. haang4 jyun4 faan1 lai4 co5 haa5, jam2 bui1 caa4.", english: "Sounds good. After the walk we'll come back, sit, and have some tea." }
+    ],
     vocab: [
       { hanzi: "食", jyutping: "sik6", english: "to eat" },
       { hanzi: "飲", jyutping: "jam2", english: "to drink" },
@@ -846,6 +909,20 @@ window.LESSONS = [
       { hanzi: "我想飲茶。", jyutping: "ngo5 soeng2 jam2 caa4.", english: "I want to drink tea." },
       { hanzi: "佢鍾意睇電視。", jyutping: "keoi5 zung1 ji3 tai2 din6 si6.", english: "He likes watching TV." },
       { hanzi: "我要瞓覺。", jyutping: "ngo5 jiu3 fan3 gaau3.", english: "I need to sleep." }
+    ],
+    notes: [
+      {
+        title: "Verbs never change form",
+        body: "Cantonese verbs stay identical for I/you/he and for past/present/future: 食 is always 食. Particles like 咗 and 緊 do the work, not the verb ending."
+      },
+      {
+        title: "V + 下 = do a little",
+        body: "Add 下 (haa5) after a verb to soften it to \"do a bit of\": 睇下 (have a look), 行下 (take a walk), 坐下 (sit for a while)."
+      },
+      {
+        title: "睇 does a lot of work",
+        body: "睇 (tai2) covers watch, look and read: 睇電視 (watch TV), 睇書 (read a book), even 睇醫生 (see a doctor)."
+      }
     ]
   },
   {
@@ -857,7 +934,12 @@ window.LESSONS = [
     subtitle: "大 / 細 / 多 / 少 / 長 / 短 / 平 / 貴",
     minutes: 5,
     intro: "These adjectives let you describe size, quantity, length and price.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "呢件衫好靚，不過好貴。", jyutping: "ni1 gin6 saam1 hou2 leng3, bat1 gwo3 hou2 gwai3.", english: "This shirt is nice, but very expensive." },
+      { speaker: "B", hanzi: "嗰件平啲，不過細啲。", jyutping: "go2 gin6 peng4 di1, bat1 gwo3 sai3 di1.", english: "That one's cheaper, but a bit small." },
+      { speaker: "A", hanzi: "有冇大啲嘅呀？", jyutping: "jau5 mou5 daai6 di1 ge3 aa3?", english: "Do you have a bigger one?" },
+      { speaker: "B", hanzi: "呢件大啲，又冇咁貴。", jyutping: "ni1 gin6 daai6 di1, jau6 mou5 gam3 gwai3.", english: "This one's bigger, and not as expensive." }
+    ],
     vocab: [
       { hanzi: "大", jyutping: "daai6", english: "big" },
       { hanzi: "細", jyutping: "sai3", english: "small" },
@@ -872,6 +954,20 @@ window.LESSONS = [
       { hanzi: "呢間屋好大。", jyutping: "ni1 gaan1 uk1 hou2 daai6.", english: "This house is very big." },
       { hanzi: "件衫好平。", jyutping: "gin6 saam1 hou2 peng4.", english: "This shirt is very cheap." },
       { hanzi: "我食得好少。", jyutping: "ngo5 sik6 dak1 hou2 siu2.", english: "I eat very little." }
+    ],
+    notes: [
+      {
+        title: "Comparatives with 啲 (di1)",
+        body: "Add 啲 after an adjective for \"-er / a bit more\": 大啲 (bigger), 平啲 (cheaper), 多啲 (more). There's no separate word like English \"more\"."
+      },
+      {
+        title: "Learn adjectives in opposite pairs",
+        body: "They come in natural pairs: 大 / 細 (big / small), 多 / 少 (many / few), 長 / 短 (long / short), 平 / 貴 (cheap / expensive)."
+      },
+      {
+        title: "冇咁 + adjective = not as…",
+        body: "冇咁貴 (not as expensive), 冇咁大 (not as big). It pairs naturally with comparisons when you weigh two things."
+      }
     ]
   },
   {
@@ -1324,7 +1420,12 @@ window.LESSONS = [
     subtitle: "今日 / 聽日 / 琴日 / 而家 / 朝早 / 晏晝 / 夜晚",
     minutes: 5,
     intro: "Words for talking about days and times of day.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你琴日去咗邊度呀？", jyutping: "nei5 kam4 jat6 heoi3 zo2 bin1 dou6 aa3?", english: "Where did you go yesterday?" },
+      { speaker: "B", hanzi: "我琴日喺屋企抖。今日先返工。", jyutping: "ngo5 kam4 jat6 hai2 uk1 kei2 tau2. gam1 jat6 sin1 faan1 gung1.", english: "I rested at home yesterday. Only went back to work today." },
+      { speaker: "A", hanzi: "咁聽日朝早得唔得閒呀？", jyutping: "gam2 ting1 jat6 ziu1 zou2 dak1 m4 dak1 haan4 aa3?", english: "Then are you free tomorrow morning?" },
+      { speaker: "B", hanzi: "朝早唔得，夜晚先得。", jyutping: "ziu1 zou2 m4 dak1, je6 maan5 sin1 dak1.", english: "Not in the morning — only in the evening." }
+    ],
     vocab: [
       { hanzi: "今日", jyutping: "gam1 jat6", english: "today" },
       { hanzi: "聽日", jyutping: "ting1 jat6", english: "tomorrow" },
@@ -1338,6 +1439,20 @@ window.LESSONS = [
       { hanzi: "我今日好攰。", jyutping: "ngo5 gam1 jat6 hou2 gui6.", english: "I'm very tired today." },
       { hanzi: "聽日朝早見。", jyutping: "ting1 jat6 ziu1 zou2 gin3.", english: "See you tomorrow morning." },
       { hanzi: "我而家喺屋企。", jyutping: "ngo5 ji4 gaa1 hai2 uk1 kei2.", english: "I'm at home now." }
+    ],
+    notes: [
+      {
+        title: "Cantonese day words",
+        body: "Cantonese uses its own words for days, different from Mandarin: 今日 (today), 聽日 (tomorrow, not 明日), 琴日 (yesterday, not 昨日)."
+      },
+      {
+        title: "咗 (zo2) marks a finished action",
+        body: "Add 咗 right after a verb for something completed: 去咗 (went), 食咗 (ate), 瞓咗 (slept). 你去咗邊度呀？ = \"Where did you go?\""
+      },
+      {
+        title: "Times of day go first",
+        body: "朝早 (morning) / 晏晝 (afternoon) / 夜晚 (evening) come before the rest: 聽日朝早 (tomorrow morning), 今日夜晚 (tonight)."
+      }
     ]
   },
   {
