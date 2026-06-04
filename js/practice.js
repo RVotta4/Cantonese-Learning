@@ -174,14 +174,14 @@
 
   // ---- cloze ----
   function clozeBody(task) {
-    var blanked = escapeHtml(task.sentence.hanzi).split(escapeHtml(task.target.hanzi)).join('<span class="pr-blank">＿＿</span>');
+    var blanked = escapeHtml(task.sentence.jyutping).split(escapeHtml(task.target.jyutping)).join('<span class="pr-blank">＿＿</span>');
     return '<div class="pr-card">' +
       '<p class="pr-instr muted">Choose the missing word.</p>' +
-      '<p class="pr-sentence hanzi" lang="yue">' + blanked + '</p>' +
+      '<p class="pr-sentence pr-sentence-jp">' + blanked + '</p>' +
       '<p class="pr-sentence-en muted">' + escapeHtml(task.sentence.english) + '</p>' +
       choiceButtons(task.options) + '</div>';
   }
-  function wireCloze(task) { wireChoiceButtons(task.target.hanzi, task.target); }
+  function wireCloze(task) { wireChoiceButtons(task.target.jyutping, task.target); }
 
   // ---- tone ----
   function toneBody(task) {
@@ -260,7 +260,8 @@
   // ---- matching ----
   function matchingBody(task) {
     var left = PL.shuffle(task.words).map(function (w) {
-      return '<button class="pr-chip pr-match-l" data-key="' + escapeAttr(w.hanzi) + '" lang="yue">' + escapeHtml(w.hanzi) + '</button>';
+      // data-key stays the hanzi (match identity + audio); the learner reads jyutping.
+      return '<button class="pr-chip pr-match-l" data-key="' + escapeAttr(w.hanzi) + '">' + escapeHtml(w.jyutping) + '</button>';
     }).join("");
     var right = PL.shuffle(task.words).map(function (w) {
       return '<button class="pr-chip pr-match-r" data-key="' + escapeAttr(w.hanzi) + '">' + escapeHtml(w.english) + '</button>';

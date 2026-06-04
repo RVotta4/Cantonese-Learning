@@ -718,6 +718,7 @@ a:hover { text-decoration: underline; }
 
 .pr-bigaudio { font-size: 1.6rem; width: 64px; height: 64px; border-radius: 50%; margin: 4px auto 6px; display: block; }
 .pr-sentence { font-size: 1.7rem; margin: 10px 0 6px; }
+.pr-sentence-jp { font-size: 1.3rem; font-weight: 600; line-height: 1.6; }
 .pr-sentence-en { margin: 0 0 8px; }
 .pr-blank { display: inline-block; min-width: 1.6em; border-bottom: 3px solid var(--red); margin: 0 2px; }
 

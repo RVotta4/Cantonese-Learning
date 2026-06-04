@@ -100,10 +100,13 @@
       if (tokens.length >= 3 && tokens.length <= 8) reorder.push({ type: "reorder", sentence: s, tokens: tokens });
       var target = null;
       for (var i = 0; i < words.length; i++) {
-        if (words[i].hanzi && s.hanzi.indexOf(words[i].hanzi) > -1) { target = words[i]; break; }
+        // Require the word in BOTH scripts so the jyutping sentence can be
+        // blanked and answered without ever showing hanzi.
+        if (words[i].hanzi && s.hanzi.indexOf(words[i].hanzi) > -1 &&
+            words[i].jyutping && s.jyutping.indexOf(words[i].jyutping) > -1) { target = words[i]; break; }
       }
       if (target) {
-        var options = optionsWith(target.hanzi, "hanzi", distractors, 3);
+        var options = optionsWith(target.jyutping, "jyutping", distractors, 3);
         if (options.length >= 2) cloze.push({ type: "cloze", sentence: s, target: target, options: options });
       }
     });
