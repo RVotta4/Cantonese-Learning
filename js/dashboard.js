@@ -23,6 +23,7 @@
 
   set("cards-due", due > 0 ? due : (fresh > 0 ? fresh + " new" : "0"));
   set("lessons-done", doneLessons);
+  set("lessons-practised", lessons.filter(function (l) { return window.Store.getPracticeStats(l.id); }).length);
   set("streak", window.Store.getStreak());
   if (known > 0) set("words-known", known);
 

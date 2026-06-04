@@ -121,6 +121,15 @@
     html += '</section>';
   }
 
+  // ----- Practice -----
+  var pstats = window.Store ? window.Store.getPracticeStats(lesson.id) : null;
+  html += '<section class="lesson-section lesson-practice">';
+  html += '<h2 class="lesson-section-title">Practice</h2>';
+  html += '<p class="muted">Active recall, listening, matching, cloze, tone and speaking drills built from this lesson.</p>';
+  html += '<a class="btn btn-primary" href="practice.html?id=' + encodeURIComponent(lesson.id) + '">▶ Practice this lesson</a>';
+  if (pstats) html += '<p class="practice-stats muted">Best ' + pstats.best + '% · practised ' + pstats.times + '×</p>';
+  html += '</section>';
+
   // ----- Mark-complete bar -----
   html += '<div class="complete-bar" id="complete-bar"></div>';
 

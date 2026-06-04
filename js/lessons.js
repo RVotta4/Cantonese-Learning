@@ -33,6 +33,7 @@
 
     lessons.forEach(function (l, i) {
       var done = window.Store && window.Store.isLessonComplete(l.id);
+      var pstats = window.Store ? window.Store.getPracticeStats(l.id) : null;
       html +=
         '<a class="lesson-row' + (done ? ' done' : '') + '" href="lesson.html?id=' + encodeURIComponent(l.id) + '">' +
           '<span class="lesson-num">' + (done ? '✓' : (i + 1)) + '</span>' +
@@ -43,6 +44,7 @@
           '<span class="lesson-meta">' +
             (done ? 'Completed' : (l.minutes ? l.minutes + ' min' : '')) +
           '</span>' +
+          (pstats ? '<span class="lesson-practice-badge" title="Best practice score">🎯 ' + pstats.best + '%</span>' : '') +
           '<span class="lesson-go">→</span>' +
         '</a>';
     });
