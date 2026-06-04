@@ -612,7 +612,12 @@ window.LESSONS = [
     subtitle: "Name the basic colours",
     minutes: 5,
     intro: "Colours come up everywhere — clothes, food, directions. Here are the everyday ones.",
-    dialogue: [],
+    dialogue: [
+      { speaker: "A", hanzi: "你鍾意咩顏色呀？", jyutping: "nei5 zung1 ji3 me1 ngaan4 sik1 aa3?", english: "What colour do you like?" },
+      { speaker: "B", hanzi: "我鍾意藍色同綠色。你呢？", jyutping: "ngo5 zung1 ji3 laam4 sik1 tung4 luk6 sik1. nei5 ne1?", english: "I like blue and green. And you?" },
+      { speaker: "A", hanzi: "我最鍾意紅色。", jyutping: "ngo5 zeoi3 zung1 ji3 hung4 sik1.", english: "I like red the most." },
+      { speaker: "B", hanzi: "紅色好靚呀！", jyutping: "hung4 sik1 hou2 leng3 aa3!", english: "Red is really pretty!" }
+    ],
     vocab: [
       { hanzi: "顏色", jyutping: "ngaan4 sik1", english: "colour" },
       { hanzi: "紅色", jyutping: "hung4 sik1", english: "red" },
@@ -626,6 +631,20 @@ window.LESSONS = [
       { hanzi: "我鍾意紅色。", jyutping: "ngo5 zung1 ji3 hung4 sik1.", english: "I like red." },
       { hanzi: "呢件衫係咩顏色呀？", jyutping: "ni1 gin6 saam1 hai6 me1 ngaan4 sik1 aa3?", english: "What colour is this shirt?" },
       { hanzi: "天係藍色。", jyutping: "tin1 hai6 laam4 sik1.", english: "The sky is blue." }
+    ],
+    notes: [
+      {
+        title: "Colour = base word + 色 (sik1)",
+        body: "Most colour names are a base word plus 色 (sik1, \"colour\"): 紅 (red) → 紅色, 藍 (blue) → 藍色, 黑 (black) → 黑色. Using the full …色 form is always safe."
+      },
+      {
+        title: "同 (tung4) — \"and\"",
+        body: "Join two things with 同 (tung4): 藍色同綠色 = \"blue and green\". 同 links nouns; it isn't used to join whole sentences."
+      },
+      {
+        title: "Culture — red for luck, white for mourning",
+        body: "In Cantonese culture 紅色 (red) means luck and joy — it's the colour of lai-see (lucky money) packets and weddings. 白色 (white) is linked to funerals, so it's avoided for gifts and celebrations."
+      }
     ]
   },
   {
